@@ -1,0 +1,188 @@
+*{
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+}
+:root{
+    --colorbg1: rgb(40, 40, 40);
+    --colorblock1: rgb(102, 102, 102);
+    --colortext1: rgb(207, 207, 207);
+    --colorside1: rgb(73, 73, 73);
+    --colorbtn: rgb(0, 222, 255);
+}
+.teme--black{
+    --colorbg1: rgb(40, 40, 40);
+    --colorblock1: rgb(102, 102, 102);
+    --colortext1: rgb(207, 207, 207);
+    --colorside1: rgb(73, 73, 73);
+    transition: 2000ms;
+}
+.teme--white{
+    --colorbg1: rgb(255, 255, 255);
+    --colorblock1: rgb(178, 178, 178);
+    --colortext1: rgb(35, 35, 35);
+    --colorside1: rgb(140, 140, 140);
+    transition: 2000ms;
+}
+.var--fontSN{
+    font-family: 'Signika Negative', sans-serif;
+}
+.var--fontUB{
+    font-family: 'Urbanist', sans-serif;
+}
+.var--fzlogo{
+    font-size: 2.75em;
+}
+.var--fzsubmenu{
+    font-size: 1.25em;
+}
+.var--cont1{
+    font-size: 3.5em;
+}
+.var--text{
+    color: white;
+}
+.var--text-black{
+    color: black;
+}
+.var--bgc-btn{
+    background-color: rgb(0, 222, 255);
+}
+.wh--100{
+    width: 100%;
+    height: 100%;
+}
+.var--center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+
+.body-menu{
+    /* display: flex; */
+    min-width: 100vh;
+    min-height: 100vh;
+    margin: 0;
+    background-color: var(--colorbg1);
+}
+
+
+
+
+/* FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER */
+
+
+
+
+.menu-footer{
+    height: 12em;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "find contact fhelp legal";
+    letter-spacing: .05em;
+    background-color: var(--colorblock1);
+}
+/* .menu-footer::before{
+    content: '';
+    display: block;
+    outline: solid red;
+} */
+    .footer__find-us__container{
+        /* background-color: royalblue; */
+        grid-area: find;
+    }
+        .footer-title--container{
+            margin-left: 1.5em;
+            margin-top: 1em;
+            cursor: default;
+            /* text-decoration: underline var(--colorside1) */
+        }
+        .footer__contact__container{
+            /* background-color: violet; */
+            grid-area: contact;
+        }
+        .footer__contact__container::before{
+            content: '';
+            height: 75%;
+            outline: solid var(--colorside1) .04em;
+        }
+            .footer__contact__container::before{
+                content: '';
+                width: .25em;
+                height: 25%;
+                transform: translate(25%, 25%);
+                display: block;
+                position: absolute;
+                background-color: var(--colorbtn);
+            }
+    .footer__help__container{
+        /* background-color: turquoise; */
+        grid-area: fhelp;
+    }
+        .footer__help__container::before{
+            content: '';
+            height: 75%;
+            outline: solid var(--colorside1) .04em;
+        }
+            .footer__help__container::before{
+                content: '';
+                width: .25em;
+                height: 25%;
+                transform: translate(25%, 25%);
+                display: block;
+                position: absolute;
+                background-color: var(--colorbtn);
+            }
+    .footer__legal__container{
+        /* background-color: peru; */
+        grid-area: legal;
+    }
+        .footer__legal__container::before{
+            content: '';
+            height: 75%;
+            outline: solid var(--colorside1) .04em;
+        }
+            .footer__legal__container::before{
+                content: '';
+                width: .25em;
+                height: 25%;
+                transform: translate(25%, 25%);
+                display: block;
+                position: absolute;
+                background-color: var(--colorbtn);
+            }
+        .footer-boxs__content{
+            display: flex;
+            flex-wrap: wrap;
+            margin-left: 2em;
+            width: 90%;
+            height: 2.5em;
+            cursor: default;
+        }
+            .footer__text{
+                margin-left: 1em;
+                display: flex;
+                align-items: center;
+                cursor: pointer;
+                transition: 300ms;
+            }
+            .footer__text:hover{
+                transform: scale(1.2);
+                color: var(--colorbtn);
+            }
+            .footer__icon{
+                margin: 0;
+                display: flex;
+                align-items: center;
+                cursor: pointer;
+            }
+                .footer__icon:hover{
+                    color: var(--colorbtn);
+                }
