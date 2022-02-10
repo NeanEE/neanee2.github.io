@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@500;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Signika+Negative&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Material+Icons+Outlined">
     <link rel="stylesheet" href="style.css\menu.css">
+    <link rel="stylesheet" href="style.css\generals.css">
     <title>Menu - Decap</title>
 </head>
 <body class="body-menu">
@@ -19,7 +20,10 @@
         <ul class="m-s__items var--fzsubmenu active" id="objets-ms_items">
             <li class="ms-items__search-container"><span class="material-icons-outlined ms-search__icon">search</span></li>
             <li class="ms-items__list">Cuenta
-                <ul class="msi__submenu"></ul>
+                <ul class="msi__submenu">
+                    <!-- <li class="msi-sm__li">letra</li>
+                    <li class="msi-sm__li">casas</li> -->
+                </ul>
             </li>
             <li class="ms-items__list">Mi Comercio</li>
             <li class="ms-items__list">Contacto</li>
@@ -27,6 +31,87 @@
         </ul>
         <span class="material-icons-outlined mw-btn__menu" id="objets-btn_navbar">menu</span>
     </nav>
+    <div class="menu-container var--text var--fontUB">
+        <div class="box__search"></div>
+        <div class="box__bt box__conts var--center">Buscar Trabajo</div>
+        <div class="box__products  box__conts var--center">Productos</div>
+        <div class="box__ot  box__conts var--center">Ofrecer Trabajo</div>
+        <div class="box__services box__conts var--center">Servicios</div>
+        <div class="box__ads"></div>
+        <div class="box__container-market"></div>
+    </div>
+    <footer class="menu-footer wh--100 var--fontSN" id="footerprueba">
+        <div class="footer__find-us__container footer__container--display">
+                <div class="footer-title--container var--fzsubmenu var--text">
+                        Encontranos en
+                </div>
+                <div class="footer__find-us__box var--text">
+                        <div class="footer-boxs__content">
+                                <span class="material-icons-outlined footer__icon">email</span>
+                                <p class="footer__text">Instagram</p>
+                        </div>
+                        <div class="footer-boxs__content">
+                                <span class="material-icons-outlined footer__icon">email</span>
+                                <p class="footer__text">Youtube</p>
+                        </div>
+                </div>
+                <div class="footer__find-us__outline"></div>
+        </div>
+        <div class="footer__contact__container footer__container--display">
+                <div class="footer-title--container var--fzsubmenu var--text">
+                        Contacto
+                </div>
+                <div class="footer__find-us__box var--text">
+                        <div class="footer-boxs__content">
+                                <span class="material-icons-outlined footer__icon">whatsapp</span>
+                                <p class="footer__text">1010101010</p>
+                        </div>
+                        <div class="footer-boxs__content">
+                                <span class="material-icons-outlined footer__icon">send</span>
+                                <p class="footer__text">Enviar comentarios</p>
+                        </div>
+                        <div class="footer-boxs__content">
+                                <span class="material-icons-outlined footer__icon">email</span>
+                                <p class="footer__text">Gmail</p>
+                        </div> 
+                </div>
+        </div>
+        <div class="footer__help__container footer__container--display">
+                <div class="footer-title--container var--fzsubmenu var--text">
+                        Ayuda
+                </div>
+                <div class="footer__find-us__box  var--text">
+                        <div class="footer-boxs__content">
+                                <span class="material-icons-outlined footer__icon">info</span>
+                                <p class="footer__text">Guia</p>
+                        </div>
+                        <div class="footer-boxs__content">
+                                <span class="material-icons-outlined footer__icon">question_answer</span>
+                                <p class="footer__text">Preguntas frecuentes</p>
+                        </div>
+                </div>
+        </div>
+        <div class="footer__legal__container footer__container--display">
+                <div class="footer-title--container var--fzsubmenu var--text">
+                        Legales
+                </div>
+                <div class="footer__find-us__box var--text">
+                        <div class="footer-boxs__content">
+                                <span class="material-icons-outlined footer__icon">policy</span>
+                                <p class="footer__text">Politica de privacidad</p>
+                        </div>
+                        <div class="footer-boxs__content">
+                                <span class="material-icons-outlined footer__icon">lock_open</span>
+                                <p class="footer__text">Condiciones de uso</p>
+                        </div>
+                        <div class="footer-boxs__content">
+                                <span class="material-icons-outlined footer__icon">cookie</span>
+                                <p class="footer__text">Cookies</p>
+                        </div> 
+                </div>
+        </div>
+        <!-- <i class="fab fa-instagram var--fz4"></i> -->
+    </footer>
     <script src="js\objets.js"></script>
 </body>
 </html>
