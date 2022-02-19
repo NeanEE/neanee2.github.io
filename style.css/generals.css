@@ -64,7 +64,6 @@
 
 
 .body-menu{
-    /* display: flex; */
     min-width: 100vh;
     min-height: 100vh;
     margin: 0;
@@ -89,41 +88,27 @@
     letter-spacing: .05em;
     background-color: var(--colorblock1);
 }
-/* .menu-footer::before{
-    content: '';
-    display: block;
-    outline: solid red;
-} */
     .footer__find-us__container{
-        /* background-color: royalblue; */
         grid-area: find;
     }
         .footer-title--container{
             margin-left: 1.5em;
             margin-top: 1em;
             cursor: default;
-            /* text-decoration: underline var(--colorside1) */
         }
-        .footer__contact__container{
-            /* background-color: violet; */
-            grid-area: contact;
-        }
+    .footer__contact__container{
+        grid-area: contact;
+    }
         .footer__contact__container::before{
             content: '';
-            height: 75%;
-            outline: solid var(--colorside1) .04em;
+            width: .25em;
+            height: 20%;
+            transform: translate(25%, 25%);
+            display: block;
+            position: absolute;
+            background-color: var(--colorbtn);
         }
-            .footer__contact__container::before{
-                content: '';
-                width: .25em;
-                height: 25%;
-                transform: translate(25%, 25%);
-                display: block;
-                position: absolute;
-                background-color: var(--colorbtn);
-            }
     .footer__help__container{
-        /* background-color: turquoise; */
         grid-area: fhelp;
     }
         .footer__help__container::before{
@@ -134,14 +119,13 @@
             .footer__help__container::before{
                 content: '';
                 width: .25em;
-                height: 25%;
+                height: 20%;
                 transform: translate(25%, 25%);
                 display: block;
                 position: absolute;
                 background-color: var(--colorbtn);
             }
     .footer__legal__container{
-        /* background-color: peru; */
         grid-area: legal;
     }
         .footer__legal__container::before{
@@ -152,7 +136,7 @@
             .footer__legal__container::before{
                 content: '';
                 width: .25em;
-                height: 25%;
+                height: 20%;
                 transform: translate(25%, 25%);
                 display: block;
                 position: absolute;
@@ -162,7 +146,7 @@
             display: flex;
             flex-wrap: wrap;
             margin-left: 2em;
-            width: 90%;
+            width: 85%;
             height: 2.5em;
             cursor: default;
         }
@@ -182,7 +166,95 @@
                 display: flex;
                 align-items: center;
                 cursor: pointer;
+                transition: 300ms;
             }
                 .footer__icon:hover{
                     color: var(--colorbtn);
+                    transition: 300ms;
                 }
+
+
+
+
+
+    /* MEDIA MEDIA MEDIA MEDIA MEDIA MEDIA MEDIA MEDIA */
+
+
+
+
+@media screen and (max-width: 974px){
+    .menu-footer{
+        height: 21.25em;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "find contact"
+                             "fhelp legal";
+    }
+    .footer-title--container::after{
+        content: '';
+        display: block;
+        width: 80%;
+        height: .25em;
+        background-color: var(--colorbtn);
+    }
+    .footer__contact__container::before{
+        display: none;
+    }
+    .footer__help__container::before{
+        display: none;
+    }
+    .footer__legal__container::before{
+        display: none;
+    }
+}
+@media screen and (max-width: 679px){
+    .body-menu{
+        min-width: 0;
+    }
+    .menu-footer{
+        max-width: 100%;
+        height: 37.6em;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "find"
+                             "contact"
+                             "fhelp"
+                             "legal";
+        justify-content: center;         
+    }
+        .footer-title--container::after{
+            content: '';
+            display: block;
+            width: 60%;
+            height: .25em;
+            background-color: var(--colorbtn);
+        }
+        /* .footer__find-us__container{
+            
+        }
+        .footer__contact__container{
+        
+        }
+        .footer__help__container{
+        
+        }
+        .footer__legal__container{
+        
+        } */
+            .footer-boxs__content{
+                margin-left: 4em;
+                width: 60%;
+            }
+}
+@media screen and (max-width: 356px){
+        .footer-boxs__content{
+            margin-left: auto;
+            margin-right: auto;
+            width: 85%;
+        }
+            .footer__text{
+                font-size: .75em;
+            }
+}
