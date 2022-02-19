@@ -17,25 +17,35 @@
     align-content: center;
     border-top: .25em solid var(--colorbtn);
     border-bottom: .25em solid var(--colorbtn);
+    z-index: 10;
     background-color: var(--colorside1);
 }
 .menu-sidebar--btn{
     background-color: var(--colorbtn);
-    /* border-top: .25em solid black;
-    border-bottom: .25em solid black; */
 }
     .m-s__logo{
         margin-left: .5em;
+        font-size: 2.75em;
         font-weight: 700;
+        transform: translate(0, -.1em);
         letter-spacing: .05em;
         cursor: pointer;
+        transition: 300ms;
+    }
+    .m-s__logo:hover{
+        color: var(--colorbtn);
+    }
+    .m-s__logo:focus{
+        color: var(--colorbtn);
     }
     .m-s__items{
         display: flex;
         margin-right: 2.5em;
         letter-spacing: .1em;
-        /* border-bottom: .5em solid var(--colorbtn); */
         cursor: default;
+    }
+    .m-s__items li{
+        font-size: 1.25em;
     }
         .ms-items__search-container{
             width: 2.25em;
@@ -61,35 +71,60 @@
             padding: .5em;
             margin: 0 1em;
             height: 100%;
+            /* z-index: 1; */
+        }
+        .ms-items__list:focus .msil__dsm{
+            display: block;
         }
         .ms-items__list:hover{
             background-color: var(--colorbg1);
         }
-            /* .msi__submenu{
-                width: 10em;
-                    position: absolute;
-                    margin-top: 1.75em;
-                    padding: .25em;
-                    background-color: salmon;
+
+            .msil__dsm{
+                display: none;
+                position: absolute;
+                margin-top: .8em;
+                padding: 1em .5em .5em .5em;
+                opacity: 0;
+                text-align: left;
+                border: .2em solid var(--colorbtn);
+                border-top: .2em solid var(--colorside1);
+                cursor: pointer;
+                transform: translateY(-100%);
+                transition: 300ms;
+                background-color: var(--colorside1)
+            }
+                .msil__submenu{
+                    font-size: .7em;
+                    text-align: left;
+                    margin-left: -2em;
+                }
+                    .msil__text{
+                        margin-bottom: .25em;
+                        transition: 300ms;
                     }
-                .msi-sm__li{
-                    width: 100%;
-                    height: 100%;
-                    margin: 0 0 .5em 1em;
-                }
-                .msi-sm__li::before{
-                    transition: 300ms;
-                    content: '';
-                    width: .5em;
-                    height: 100%;
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    background-color: blanchedalmond;
-                }
-                .msi-sm__li:hover::before {
-                    width: 100%;
-                } */
+                    .msil__text:hover{
+                        transform: scale(1.1);
+                    }
+            .ms-items__list:hover .msil__dsm{
+                opacity: 1;
+                display: block;
+                transform: translateY(0);
+            }
+            .msil__dsm::before{
+                content: '';
+                position: absolute;
+                top: -1.25em;
+                left: -.2em;
+                width: calc(100% + .4em);
+                height: 1.5em;
+                display: block;
+                cursor: default;
+                background-color: transparent;
+            }
+            .msil__submenu:hover{
+                display: block;
+            }
     .mw-btn__menu{
         margin-right: 1em;
         display: none;
@@ -129,11 +164,22 @@
         font-weight: 600;
         background-color: var(--colorside1)
     }
+        .box__conts{
+            transition: 300ms;
+        }
         .box__conts:hover{
             color: var(--colorbtn);
             text-decoration: none;
             font-size: 4.25em;
             cursor: pointer;
+            transition: font-size 300ms;
+        }
+        .box__conts:focus{
+            color: var(--colorbtn);
+            text-decoration: none;
+            font-size: 4.25em;
+            cursor: pointer;
+            transition: font-size 300ms;
         }
     .box__products{
         grid-area: mpb;
@@ -206,7 +252,7 @@
         margin-top: 3em;
     }
 }
-@media screen and (max-width: 831px){
+@media screen and (max-width: 874px){
     .menu-container{
         height: 55em;
         margin-top: 4em;
@@ -221,6 +267,22 @@
                             "mcmb mcmb mcmb mcmb";
     }
 }
+@media screen and (max-width: 813px){
+    .m-s__items li{
+        font-size: 1em;
+    }
+    .m-s__logo{
+        color: white;
+    }
+}
+@media screen and (min-width: 686px){
+    .menu-sidebar{
+        background-color: var(--colorside1);
+    }
+    .m-s__logo{
+        color: white;
+    }
+}
 @media screen and (max-width: 685px){
     .menu-sidebar{
         width: 100%;
@@ -228,10 +290,14 @@
         /* flex-direction: column; */
         align-items: center;
         align-content: center;
+        /* background-color: var(--colorside1); */
+    }
+    .m-s__logo{
+        color: white;
     }
     .m-s__items{
         width: 100%;
-        margin-top: 14em;
+        margin-top: 17em;
         position: absolute;
         display: flex;
         flex-direction: column;
@@ -258,5 +324,38 @@
                             "mserb mserb mserb mserb"
                             "ads ads ads ads"
                             "mcmb mcmb mcmb mcmb";
+    }
+    .m-s__logo{
+        color: white;
+    }
+}
+@media screen and (max-width: 437px){
+    .menu-sidebar{
+        height: 6em;
+        border-top: .5em solid var(--colorbtn);
+        border-bottom: .5em solid var(--colorbtn);
+    }
+    .m-s__items{
+        padding: 0;
+        height: 40em;
+        transform: translateY(14em);
+    }
+        .ms-items__list{
+            height: 3em;
+        }
+        .m-s__logo{
+            margin-left: .25em;
+            font-size: 3.5em;
+            color: white;
+            }
+    .mw-btn__menu{
+        font-size: 2.5em;
+        margin-right: .5em;
+    }
+    .box__conts{
+        font-size: 2em;
+    }
+    .box__conts:hover{
+        font-size: 2.1em;
     }
 }
