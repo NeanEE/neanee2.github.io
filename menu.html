@@ -14,29 +14,55 @@
     <title>Menu - Decap</title>
 </head>
 <body class="body-menu">
-    <!-- usar urbanist para el logo -->
+
+
     <nav class="menu-sidebar var--text var--fontUB expand" id="objets-navbar">
-        <label class="m-s__logo var--fzlogo" id="objets-navbar-logo">Decap</label>
-        <ul class="m-s__items var--fzsubmenu active" id="objets-ms_items">
+        <label class="m-s__logo" id="objets-navbar-logo" tabindex="1">Decap</label>
+        <ul class="m-s__items active" id="objets-ms_items">
             <li class="ms-items__search-container"><span class="material-icons-outlined ms-search__icon">search</span></li>
-            <li class="ms-items__list">Cuenta
-                <ul class="msi__submenu">
-                    <!-- <li class="msi-sm__li">letra</li>
-                    <li class="msi-sm__li">casas</li> -->
-                </ul>
+            <li class="ms-items__list" tabindex="2">Cuenta
+                <div class="msil__dsm">
+                        <ul class="msil__submenu">
+                                <li class="msil__text" tabindex="3">Perfil</li>
+                                <li class="msil__text" tabindex="4">Mi CV</li>
+                                <li class="msil__text" tabindex="5">Mis Propuestas</li>
+                        </ul>
+                </div>
             </li>
-            <li class="ms-items__list">Mi Comercio</li>
-            <li class="ms-items__list">Contacto</li>
-            <li class="ms-items__list">Configuracion</li>
+            <li class="ms-items__list">Mi Comercio
+                <div class="msil__dsm">
+                        <ul class="msil__submenu">
+                                <li class="msil__text">Registrar</li>
+                        </ul>
+                </div>
+            </li>
+            <li class="ms-items__list">Contacto
+                <div class="msil__dsm">
+                        <ul class="msil__submenu">
+                                <li class="msil__text">Enviar Comentario</li>
+                        </ul>
+                </div>
+            </li>
+            <li class="ms-items__list">Configuracion
+                <div class="msil__dsm">
+                        <ul class="msil__submenu">
+                                <li class="msil__text">Notificaciones</li>
+                                <li class="msil__text">Tema</li>
+                                <li class="msil__text">Salir</li>
+                        </ul>
+                </div>
+            </li>
         </ul>
         <span class="material-icons-outlined mw-btn__menu" id="objets-btn_navbar">menu</span>
     </nav>
+
+
     <div class="menu-container var--text var--fontUB">
         <div class="box__search"></div>
-        <div class="box__bt box__conts var--center">Buscar Trabajo</div>
-        <div class="box__products  box__conts var--center">Productos</div>
-        <div class="box__ot  box__conts var--center">Ofrecer Trabajo</div>
-        <div class="box__services box__conts var--center">Servicios</div>
+        <div class="box__bt box__conts var--center" tabindex="">Buscar Trabajo</div>
+        <div class="box__products  box__conts var--center" tabindex="">Productos</div>
+        <div class="box__ot  box__conts var--center" tabindex="">Ofrecer Trabajo</div>
+        <div class="box__services box__conts var--center" tabindex="">Servicios</div>
         <div class="box__ads"></div>
         <div class="box__container-market"></div>
     </div>
