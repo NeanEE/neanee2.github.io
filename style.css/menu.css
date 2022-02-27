@@ -5,131 +5,7 @@
 
 
 
-.menu-sidebar{
-    width: 100%;
-    height: 4em;
-    top: 0;
-    left: 0;
-    position: fixed;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    align-content: center;
-    border-top: .25em solid var(--colorbtn);
-    border-bottom: .25em solid var(--colorbtn);
-    z-index: 10;
-    background-color: var(--colorside1);
-}
-.menu-sidebar--btn{
-    background-color: var(--colorbtn);
-}
-    .m-s__logo{
-        margin-left: .5em;
-        font-size: 2.75em;
-        font-weight: 700;
-        transform: translate(0, -.1em);
-        letter-spacing: .05em;
-        cursor: pointer;
-        transition: 300ms;
-    }
-    .m-s__logo:hover{
-        color: var(--colorbtn);
-    }
-    .m-s__logo:focus{
-        color: var(--colorbtn);
-    }
-    .m-s__items{
-        display: flex;
-        margin-right: 2.5em;
-        letter-spacing: .1em;
-        cursor: default;
-    }
-    .m-s__items li{
-        font-size: 1.25em;
-    }
-        .ms-items__search-container{
-            width: 2.25em;
-            height: 2.25em;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background-color: var(--colorblock1);
-            cursor: pointer;
-            transition: 600ms;
-        }
-            .ms-search__icon{
-                transform: scale(1.3);
-            }
-        .ms-items__search-container.active{
-            position: absolute;
-            top: 0;
-            left: 0;
-            transform: translate(1em, 4em);
-        }
-        .ms-items__list{
-            padding: .5em;
-            margin: 0 1em;
-            height: 100%;
-            /* z-index: 1; */
-        }
-        .ms-items__list:focus .msil__dsm{
-            display: block;
-        }
-        .ms-items__list:hover{
-            background-color: var(--colorbg1);
-        }
 
-            .msil__dsm{
-                display: none;
-                position: absolute;
-                margin-top: .8em;
-                padding: 1em .5em .5em .5em;
-                opacity: 0;
-                text-align: left;
-                border: .2em solid var(--colorbtn);
-                border-top: .2em solid var(--colorside1);
-                cursor: pointer;
-                transform: translateY(-100%);
-                transition: 300ms;
-                background-color: var(--colorside1)
-            }
-                .msil__submenu{
-                    font-size: .7em;
-                    text-align: left;
-                    margin-left: -2em;
-                }
-                    .msil__text{
-                        margin-bottom: .25em;
-                        transition: 300ms;
-                    }
-                    .msil__text:hover{
-                        transform: scale(1.1);
-                    }
-            .ms-items__list:hover .msil__dsm{
-                opacity: 1;
-                display: block;
-                transform: translateY(0);
-            }
-            .msil__dsm::before{
-                content: '';
-                position: absolute;
-                top: -1.25em;
-                left: -.2em;
-                width: calc(100% + .4em);
-                height: 1.5em;
-                display: block;
-                cursor: default;
-                background-color: transparent;
-            }
-            .msil__submenu:hover{
-                display: block;
-            }
-    .mw-btn__menu{
-        margin-right: 1em;
-        display: none;
-        cursor: pointer;
-    }
 
 
 
@@ -144,7 +20,7 @@
     margin: 4em auto 10em auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: .3fr .65fr .65fr 1.5fr .65fr;
+    grid-template-rows: .3fr .65fr .65fr 23em .65fr;
     grid-template-areas: ". msb msb ."
                          "mbtb mbtb mpb mpb"
                          "motb motb mserb mserb"
@@ -204,12 +80,58 @@
     }
     .box__ads{
         grid-area: ads;
+        display: flex;
+        justify-content: center;
         background-color: teal;
     }
+        .menu__ads-img{
+                max-width: 80em;
+                height: 100%;
+            }
     .box__container-market{
         grid-area: mcmb;
-        background-color: powderblue;
+        height: 13em;
+        padding: 1.3em;
+        display: grid;
+        grid-template-columns: 1.5fr 2fr 1fr 1fr;
+        grid-template-rows: 1fr 3fr 1.5fr; 
+        grid-template-areas: "cmprofile cmtitle cmtitle cmtitle"
+                             "cmprofile cmtitle cmtitle cmtitle"
+                             "cmprofile . cmhorarios cmop";
+        gap: 1em;
+        letter-spacing: .1em;
+        background-color: var(--colorblock1);
     }
+        .cm-profile{
+            grid-area: cmprofile;
+            background-color: blueviolet;
+        }
+        .cm__title{
+            grid-area: cmtitle;
+            font-size: 2.5em;
+        }
+        .box-cm__horarios{
+            grid-area: cmhorarios;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: var(--colorside1);
+        }
+            .cm__horarios{
+                font-size: 1.5em;
+            }
+        .cm__open-close__box{
+            grid-area: cmop;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(28, 187, 22);
+        }
+            .cm__open-close{
+                letter-spacing: .2em;
+                font-weight: 600;
+                font-size: 1.5em;
+            }
 
 
 
@@ -221,33 +143,8 @@
 
 
 
-@media screen and (max-width: 1006px){
-    .m-s__items{
-        margin-right: 0;
-    }
-}
+
 @media screen and (max-width: 956px){
-    .menu-sidebar{
-        height: 3em;
-    }
-    .m-s__logo{
-        font-size: 2em;
-    }
-    .ms-items__search-container{
-        margin-top: .4em;
-        height: 1.95em;
-        margin-right: 1em;
-    }
-        .ms-search__icon{
-            transform: scale(1);
-        }
-    .m-s__items{
-        font-size: 1em;
-    }
-        .ms-items__list{
-            margin: 0.25em;
-            height: 2.4em;
-        }
     .menu-container{
         margin-top: 3em;
     }
@@ -257,7 +154,7 @@
         height: 55em;
         margin-top: 4em;
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: .75fr 1fr 1fr 1fr 1fr 2.5fr 1.5fr;
+        grid-template-rows: .75fr 1fr 1fr 1fr 1fr 23em 1.5fr;
         grid-template-areas: "msb msb msb msb"
                             "mbtb mbtb mbtb mbtb"
                             "motb motb motb motb"
@@ -267,56 +164,11 @@
                             "mcmb mcmb mcmb mcmb";
     }
 }
-@media screen and (max-width: 813px){
-    .m-s__items li{
-        font-size: 1em;
-    }
-    .m-s__logo{
-        color: white;
-    }
-}
-@media screen and (min-width: 686px){
-    .menu-sidebar{
-        background-color: var(--colorside1);
-    }
-    .m-s__logo{
-        color: white;
-    }
-}
-@media screen and (max-width: 685px){
-    .menu-sidebar{
-        width: 100%;
-        display: flex;
-        /* flex-direction: column; */
-        align-items: center;
-        align-content: center;
-        /* background-color: var(--colorside1); */
-    }
-    .m-s__logo{
-        color: white;
-    }
-    .m-s__items{
-        width: 100%;
-        margin-top: 17em;
-        position: absolute;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        /* border-bottom: .5em solid var(--colorbtn); */
-        background-color: var(--colorside1);
-        cursor: pointer;
-    }
-        .active{
-            display: none;
-        }
-        .mw-btn__menu{
-            display: block;
-        }
-}
+
 @media screen and (max-width: 664px){
     .menu-container{
         grid-template-columns: 0.25fr 1.75fr 1.75fr 0.25fr;
-        grid-template-rows: .75fr 1fr 1fr 1fr 1fr 2.5fr 1.5fr;
+        grid-template-rows: .75fr 1fr 1fr 1fr 1fr 23em 1.5fr;
         grid-template-areas: "msb msb msb msb"
                             "mbtb mbtb mbtb mbtb"
                             "motb motb motb motb"
@@ -330,28 +182,6 @@
     }
 }
 @media screen and (max-width: 437px){
-    .menu-sidebar{
-        height: 6em;
-        border-top: .5em solid var(--colorbtn);
-        border-bottom: .5em solid var(--colorbtn);
-    }
-    .m-s__items{
-        padding: 0;
-        height: 40em;
-        transform: translateY(14em);
-    }
-        .ms-items__list{
-            height: 3em;
-        }
-        .m-s__logo{
-            margin-left: .25em;
-            font-size: 3.5em;
-            color: white;
-            }
-    .mw-btn__menu{
-        font-size: 2.5em;
-        margin-right: .5em;
-    }
     .box__conts{
         font-size: 2em;
     }
