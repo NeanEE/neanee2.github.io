@@ -13,12 +13,13 @@
     <link rel="stylesheet" href="style.css\generals.css">
     <title>Menu - Decap</title>
 </head>
-<body class="body-menu">
+<body class="body-menu var--text teme--black" id="body-menu">
+<!-- SOPORTA HASTA 209PX DE RESOLUCION -->
 
-
-    <nav class="menu-sidebar var--text var--fontUB expand" id="objets-navbar">
+<!-- SIDEBAR -->
+    <nav class="menu-sidebar var--fontUB expand" id="objets-navbar">
         <label class="m-s__logo" id="objets-navbar-logo" tabindex="1">Decap</label>
-        <ul class="m-s__items active" id="objets-ms_items">
+        <ul class="m-s__items" id="objets-ms_items">
             <li class="ms-items__search-container"><span class="material-icons-outlined ms-search__icon">search</span></li>
             <li class="ms-items__list" tabindex="2">Cuenta
                 <div class="msil__dsm">
@@ -47,7 +48,7 @@
                 <div class="msil__dsm">
                         <ul class="msil__submenu">
                                 <li class="msil__text">Notificaciones</li>
-                                <li class="msil__text">Tema</li>
+                                <li class="msil__text" id="color-selector">Tema</li>
                                 <li class="msil__text">Salir</li>
                         </ul>
                 </div>
@@ -57,21 +58,77 @@
     </nav>
 
 
-    <div class="menu-container var--text var--fontUB">
+    <!-- SELECTOR DE COLORES -->
+
+
+    <div class="teme-color-selector teme-color-selector" id="teme-color-selector">
+            <div class="tcs__box var--fontSN">
+                    <div class="tcs__close-btn" id="tcs-c-btn">
+                        <span class="material-icons-outlined tcs__close-btn-span">close</span>                                
+                    </div>
+                <div class="tcs__title">
+                        <h4 class="tcs__h4">Tema</h4>
+                        <div class="tcs__teme">
+                                <div class="tcs__t-light" id="tcs-t-light">Claro</div>
+                                <div class="tcs__t-dark tcs--active" id="tcs-t-dark">Oscuro</div>
+                        </div>
+                </div>
+                <div class="tcs__subtitle">
+                        <h4 class="tcs__colors">Colores</h4>
+                        <div class="tcs__colors-selectors">
+                                <div class="tcs-colors__cian tcs-colors__boxs tcs--cb-active" id="tcs-c-cian">Cian
+                                        <div class="tcs__point" id="tcs-point-1"></div>
+                                </div>
+                                <div class="tcs-colors__aqua tcs-colors__boxs" id="tcs-c-aqua">Aqua
+                                        <div class="" id="tcs-point-2"></div>
+                                </div>
+                                <div class="tcs-colors__malaquita tcs-colors__boxs" id="tcs-c-malaquita">Malaquita
+                                        <div class="" id="tcs-point-3"></div>
+                                </div>
+                                <div class="tcs-colors__malva tcs-colors__boxs" id="tcs-c-malva">Malva
+                                        <div class="" id="tcs-point-4"></div>
+                                </div>
+                                <div class="tcs-colors__coral tcs-colors__boxs" id="tcs-c-coral">Coral
+                                        <div class="" id="tcs-point-5"></div>
+                                </div>
+                        </div>
+                </div>
+            </div>
+    </div>
+<!-- CONTENIDO DEL MENU -->
+    <div class="menu-container var--fontUB">
         <div class="box__search"></div>
         <div class="box__bt box__conts var--center" tabindex="">Buscar Trabajo</div>
         <div class="box__products  box__conts var--center" tabindex="">Productos</div>
         <div class="box__ot  box__conts var--center" tabindex="">Ofrecer Trabajo</div>
         <div class="box__services box__conts var--center" tabindex="">Servicios</div>
-        <div class="box__ads"></div>
-        <div class="box__container-market"></div>
+        <div class="box__ads">
+                <!-- <img class="menu__ads-img" src="assets\images\maxresdefault.jpg" alt="Hola" srcset=""> -->
+                <!-- <img src="js\assets\images\Estrenos_20220204_2.jpg" alt="" class="menu__ads-img"> -->
+                <!-- <img src="assets\images\Roku-SS-4K_blog.jpg" alt="" class="menu__ads-img"> -->
+                <!-- <img src="assets\images\thumb-1920-283700.jpg" alt="" class="menu__ads-img"> -->
+        </div>
+        <div class="box__container-market">
+                <div class="cm-profile"></div>
+                <h3 class="cm__title">Farmauno home claro</h3>
+                <h4 class="cm__cont"></h4>
+                <div class="box-cm__horarios">
+                        <h5 class="cm__horarios">Horarios</h5>
+                </div>
+                <div class="cm__open-close__box">
+                        <h5 class="cm__open-close">ABIERTO</h5>
+                </div>
+        </div>
     </div>
-    <footer class="menu-footer wh--100 var--fontSN" id="footerprueba">
+
+<!-- FOOTER -->
+    <footer>
+        <footer class="menu-footer wh--100 var--fontSN" id="footerprueba">
         <div class="footer__find-us__container footer__container--display">
-                <div class="footer-title--container var--fzsubmenu var--text">
+                <div class="footer-title--container var--fzsubmenu">
                         Encontranos en
                 </div>
-                <div class="footer__find-us__box var--text">
+                <div class="footer__find-us__box">
                         <div class="footer-boxs__content">
                                 <span class="material-icons-outlined footer__icon">email</span>
                                 <p class="footer__text">Instagram</p>
@@ -84,10 +141,10 @@
                 <div class="footer__find-us__outline"></div>
         </div>
         <div class="footer__contact__container footer__container--display">
-                <div class="footer-title--container var--fzsubmenu var--text">
+                <div class="footer-title--container var--fzsubmenu">
                         Contacto
                 </div>
-                <div class="footer__find-us__box var--text">
+                <div class="footer__find-us__box">
                         <div class="footer-boxs__content">
                                 <span class="material-icons-outlined footer__icon">whatsapp</span>
                                 <p class="footer__text">1010101010</p>
@@ -103,10 +160,10 @@
                 </div>
         </div>
         <div class="footer__help__container footer__container--display">
-                <div class="footer-title--container var--fzsubmenu var--text">
+                <div class="footer-title--container var--fzsubmenu ">
                         Ayuda
                 </div>
-                <div class="footer__find-us__box  var--text">
+                <div class="footer__find-us__box">
                         <div class="footer-boxs__content">
                                 <span class="material-icons-outlined footer__icon">info</span>
                                 <p class="footer__text">Guia</p>
@@ -118,10 +175,10 @@
                 </div>
         </div>
         <div class="footer__legal__container footer__container--display">
-                <div class="footer-title--container var--fzsubmenu var--text">
+                <div class="footer-title--container var--fzsubmenu">
                         Legales
                 </div>
-                <div class="footer__find-us__box var--text">
+                <div class="footer__find-us__box">
                         <div class="footer-boxs__content">
                                 <span class="material-icons-outlined footer__icon">policy</span>
                                 <p class="footer__text">Politica de privacidad</p>
@@ -137,7 +194,19 @@
                 </div>
         </div>
         <!-- <i class="fab fa-instagram var--fz4"></i> -->
+        </footer>
+        <div class="sub__footer">
+        <div class="sub__footer-cont1">
+                <span class="material-icons-outlined">copyright</span>
+                <h4 class="sfc__text">Decap - 2022 Todos los Derechos Reservados</h4>
+        </div>
+        <div class="sub__footer-cont2">
+                <span class="material-icons-outlined sfc__text1">bug_report</span>
+                <h4 class="sfc__text2">Reportar error</h4>
+        </div>
+
+        </div>
     </footer>
     <script src="js\objets.js"></script>
 </body>
-</html>
+</html>         
