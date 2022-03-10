@@ -1,0 +1,79 @@
+.profile{
+    width: 100%;
+    margin: 4em auto 5em auto;
+    background-color: cadetblue;
+}
+    .profile-cont1{
+        width: 100%;
+        display: flex;
+        margin-top: 9em;
+        background-color: crimson;
+    }
+        .profile__avatar{
+            width: 13em;
+            height: 13em;
+            margin-left: auto;
+            /* margin-right: auto; */
+            border-radius: 50%;
+            background-color: cornflowerblue;
+        }
+        .profile__personal-info{
+            width: 17em;
+            height: 13em;
+            /* margin-left: auto; */
+            margin-right: auto;
+            transform: translateX(1em);
+            background-color: forestgreen;
+        }
+            .ppi__text{
+                height: 20%;
+                background-color: aqua;
+            }
+                .ppi-t__1{
+                    transform: translateX(-1.25em);
+                }
+                .ppi-t__2{
+                    transform: translateX(-.6em);
+                }
+    .profile-cont2{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        background-color: darkgreen;
+    }
+        .profile__cv{
+            width: 30%;
+            height: 10em;
+            background-color: darkgoldenrod;
+        }
+        .profile__postulations{
+            width: 60%;
+            height: 10em;
+            background-color: darkorchid;
+        }
+    .profile-cont3{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        background-color: fuchsia;
+    }
+        .profile__my-markets{
+            width: 60%;
+            height: 10em;
+            background-color: greenyellow;
+        }
+        .profile__certifications{
+            width: 30%;
+            height: 10em;
+            background-color: tomato;
+        }
+    .profile__space{
+        margin: 2em 0 2em 0;
+        display: flex;
+        justify-content: center;
+    }
+        .ps__line{
+            width: 80%;
+            height: .25em;
+            background-color: var(--colorblock1);
+        }
