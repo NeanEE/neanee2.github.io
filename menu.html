@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#9d4edd"
+    <meta name="theme-color" content="#282828"
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@500;600;700&display=swap" rel="stylesheet">
@@ -17,41 +17,67 @@
 <body class="body-menu var--text teme--black" id="body-menu">
 <!-- SOPORTA HASTA 209PX DE RESOLUCION -->
 
+
 <!-- SIDEBAR -->
+
     <nav class="menu-sidebar var--fontUB expand" id="objets-navbar">
-        <label class="m-s__logo" id="objets-navbar-logo" tabindex="1">Decap</label>
+        <a href="menu.html" class="m-s__logo var--text"  id="objets-navbar-logo" tabindex="1">Decap</a>
         <ul class="m-s__items" id="objets-ms_items">
             <li class="ms-items__search-container"><span class="material-icons-outlined ms-search__icon">search</span></li>
-            <li class="ms-items__list" tabindex="2">Cuenta
-                <div class="msil__dsm">
+            <li class="ms-items__list" tabindex="2" id="ms-cuenta">Cuenta
+                <div class="msil__dsm" id="msil-cuenta">
                         <ul class="msil__submenu">
-                                <li class="msil__text" tabindex="3">Perfil</li>
+                                <a href="profile.html" class="msil__text var--text" tabindex="3">Perfil</a>
                                 <li class="msil__text" tabindex="4">Mi CV</li>
-                                <li class="msil__text" tabindex="5">Mis Propuestas</li>
+                                <li class="msil__text" tabindex="5">Mis Postulaciones</li>
                         </ul>
                 </div>
             </li>
-            <li class="ms-items__list">Mi Comercio
+            <li class="ms-items__list__dupped" id="d-mssm-perfil">
+                <div class="ms-dupped-list">
+                        <a href="profile.html" class="msil__text__dupped var--text">Perfil</a>
+                        <ul class="msil__text__dupped">Mi CV</ul>
+                        <ul class="msil__text__dupped">Mis Postulaciones</ul>
+                </div>
+            </li>
+            <li class="ms-items__list" id="ms-micomercio">Mi Comercio
                 <div class="msil__dsm">
-                        <ul class="msil__submenu">
+                        <ul class="msil__submenu" id="msil-micomercio">
                                 <li class="msil__text">Registrar</li>
                         </ul>
                 </div>
             </li>
-            <li class="ms-items__list">Contacto
+            <li class="ms-items__list__dupped">
+                <div class="ms-dupped-list">
+                        <ul class="msil__text__dupped">Registrar</ul>
+                </div>
+            </li>
+            <li class="ms-items__list" id="ms-contacto">Contacto
                 <div class="msil__dsm">
-                        <ul class="msil__submenu">
+                        <ul class="msil__submenu" id="msil-contacto">
                                 <li class="msil__text">Enviar Comentario</li>
                         </ul>
                 </div>
             </li>
-            <li class="ms-items__list">Configuracion
+            <li class="ms-items__list__dupped">
+                <div class="ms-dupped-list">
+                        <ul class="msil__text__dupped">Enviar Comentario</ul>
+                </div>
+            </li>
+            <li class="ms-items__list" id="ms-configuracion">Configuracion
                 <div class="msil__dsm">
-                        <ul class="msil__submenu">
+                        <ul class="msil__submenu" id="msil-configuracion">
                                 <li class="msil__text">Notificaciones</li>
                                 <li class="msil__text" id="color-selector">Tema</li>
                                 <li class="msil__text">Salir</li>
                         </ul>
+                </div>
+            </li>
+            <li class="ms-items__list__dupped">
+                <div class="ms-dupped-list">
+                        <ul class="msil__text__dupped">Notificaciones</ul>
+                        <ul class="msil__text__dupped">Tema</ul>
+                        <ul class="msil__text__dupped">Salir</ul>
                 </div>
             </li>
         </ul>
@@ -60,7 +86,6 @@
 
 
     <!-- SELECTOR DE COLORES -->
-
 
     <div class="teme-color-selector teme-color-selector" id="teme-color-selector">
             <div class="tcs__box var--fontSN">
@@ -76,33 +101,48 @@
                 </div>
                 <div class="tcs__subtitle">
                         <h4 class="tcs__colors">Colores</h4>
+
                         <div class="tcs__colors-selectors">
-                                <div class="tcs-colors__cian tcs-colors__boxs tcs--cb-active" id="tcs-c-cian">Cian
+                                <div class="tcs-colors__cian tcs-colors__boxs tcs--cb-active" id="tcs-c-cian">
                                         <div class="tcs__point" id="tcs-point-1"></div>
+                                        <h4 class="tcs-h4__cian tcs-h4__colors">Cian</h4>
                                 </div>
-                                <div class="tcs-colors__aqua tcs-colors__boxs" id="tcs-c-aqua">Aqua
+                                <div class="tcs-colors__aqua tcs-colors__boxs" id="tcs-c-aqua">
                                         <div class="" id="tcs-point-2"></div>
+                                        <h4 class="tcs-h4__aqua tcs-h4__colors">Aqua</h4>
                                 </div>
-                                <div class="tcs-colors__malaquita tcs-colors__boxs" id="tcs-c-malaquita">Malaquita
+                                <div class="tcs-colors__malaquita tcs-colors__boxs" id="tcs-c-malaquita">
                                         <div class="" id="tcs-point-3"></div>
+                                        <h4 class="tcs-h4__malaquita tcs-h4__colors">Malaquita</h4>
                                 </div>
-                                <div class="tcs-colors__malva tcs-colors__boxs" id="tcs-c-malva">Malva
+
+                                <div class="tcs-colors__malva tcs-colors__boxs" id="tcs-c-malva">
                                         <div class="" id="tcs-point-4"></div>
+                                        <h4 class="tcs-h4__malva tcs-h4__colors">Malva</h4>
                                 </div>
-                                <div class="tcs-colors__coral tcs-colors__boxs" id="tcs-c-coral">Coral
+
+                                <div class="tcs-colors__coral tcs-colors__boxs" id="tcs-c-coral">
                                         <div class="" id="tcs-point-5"></div>
+                                        <h4 class="tcs-h4__coral tcs-h4__colors">Coral</h4>
+                                </div>
+
+                                <div class="tcs-colors__oro tcs-colors__boxs" id="tcs-c-oro">
+                                        <div class="" id="tcs-point-6"></div>
+                                        <h4 class="tcs-h4__oro tcs-h4__colors">Oro</h4>
                                 </div>
                         </div>
                 </div>
             </div>
     </div>
+
+    
 <!-- CONTENIDO DEL MENU -->
+
     <div class="menu-container var--fontUB">
-        <div class="box__search"></div>
-        <div class="box__bt box__conts var--center" tabindex="">Buscar Trabajo</div>
-        <div class="box__products  box__conts var--center" tabindex="">Productos</div>
-        <div class="box__ot  box__conts var--center" tabindex="">Ofrecer Trabajo</div>
-        <div class="box__services box__conts var--center" tabindex="">Servicios</div>
+        <div class="box__bt box__conts principal__boxs var--center" tabindex="">Buscar Trabajo</div>
+        <a href="market_list_p.html" class="box__products principal__boxs box__conts var--center var--text" tabindex="">Productos</a>
+        <div class="box__ot principal__boxs box__conts var--center" tabindex="">Ofrecer Trabajo</div>
+        <div class="box__services principal__boxs box__conts var--center" tabindex="">Servicios</div>
         <div class="box__ads">
                 <!-- <img class="menu__ads-img" src="assets\images\maxresdefault.jpg" alt="Hola" srcset=""> -->
                 <!-- <img src="js\assets\images\Estrenos_20220204_2.jpg" alt="" class="menu__ads-img"> -->
@@ -122,7 +162,9 @@
         </div>
     </div>
 
+
 <!-- FOOTER -->
+
     <footer>
         <footer class="menu-footer wh--100 var--fontSN" id="footerprueba">
         <div class="footer__find-us__container footer__container--display">
@@ -208,6 +250,8 @@
 
         </div>
     </footer>
+
+
     <script src="js\objets.js"></script>
 </body>
 </html>         
