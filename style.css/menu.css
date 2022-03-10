@@ -17,7 +17,7 @@
 .menu-container{
     width: 95%;
     height: 56em;
-    margin: 4em auto 10em auto;
+    margin: 4em auto 4em auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: .3fr .65fr .65fr 23em .65fr;
@@ -33,12 +33,18 @@
         /* height: 5; */
         background-color: aquamarine;
     }                
-    .box__bt{
-        grid-area: mbtb;
+    .principal__boxs{
         text-decoration: underline var(--colorbtn);
         font-size: 3.5em;
         font-weight: 600;
         background-color: var(--colorside1)
+    }
+    .box__bt{
+        grid-area: mbtb;
+        /* text-decoration: underline var(--colorbtn);
+        font-size: 3.5em;
+        font-weight: 600;
+        background-color: var(--colorside1) */
     }
         .box__conts{
             transition: 300ms;
@@ -46,7 +52,7 @@
         .box__conts:hover{
             color: var(--colorbtn);
             text-decoration: none;
-            font-size: 4.25em;
+            font-size: 3.75em;
             cursor: pointer;
             transition: font-size 300ms;
         }
@@ -59,30 +65,30 @@
         }
     .box__products{
         grid-area: mpb;
-        text-decoration: underline var(--colorbtn);
+        /* text-decoration: underline var(--colorbtn);
         font-size: 3.5em;
         font-weight: 600;
-        background-color: var(--colorside1)
+        background-color: var(--colorside1) */
     }
     .box__ot{
         grid-area: motb;
-        text-decoration: underline var(--colorbtn);
+        /* text-decoration: underline var(--colorbtn);
         font-size: 3.5em;
         font-weight: 600;
-        background-color: var(--colorside1)
+        background-color: var(--colorside1) */
     }
     .box__services{
         grid-area: mserb;
-        text-decoration: underline var(--colorbtn);
+        /* text-decoration: underline var(--colorbtn);
         font-size: 3.5em;
         font-weight: 600;
-        background-color: var(--colorside1)
+        background-color: var(--colorside1) */
     }
     .box__ads{
         grid-area: ads;
         display: flex;
         justify-content: center;
-        background-color: teal;
+        background-color: var(--colorblock1)
     }
         .menu__ads-img{
                 max-width: 80em;
@@ -149,12 +155,12 @@
         margin-top: 3em;
     }
 }
-@media screen and (max-width: 874px){
+@media screen and (max-width: 946px){
     .menu-container{
-        height: 55em;
+        height: 60em;
         margin-top: 4em;
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: .75fr 1fr 1fr 1fr 1fr 23em 1.5fr;
+        grid-template-rows: .5fr 1fr 1fr 1fr 1fr 18em 1.5fr;
         grid-template-areas: "msb msb msb msb"
                             "mbtb mbtb mbtb mbtb"
                             "motb motb motb motb"
@@ -177,9 +183,9 @@
                             "ads ads ads ads"
                             "mcmb mcmb mcmb mcmb";
     }
-    .m-s__logo{
+    /* .m-s__logo{
         color: white;
-    }
+    } */
 }
 @media screen and (max-width: 437px){
     .box__conts{
