@@ -163,6 +163,10 @@
     .m-s__items li{
         font-size: 1.25em;
     }
+    .m-s__items a{
+        font-size: 1.25em;
+        display: block;
+    }
         .ms-items__search-container{
             width: 2.25em;
             height: 2.25em;
@@ -505,6 +509,9 @@
                 cursor: pointer;
                 transition: transform 300ms;
             }
+            .footer__text--1{
+                margin-left: 1.3em;
+            }
             .footer__text:hover{
                 transform: scale(1.1);
                 color: var(--colorbtn);
@@ -514,11 +521,29 @@
                 display: flex;
                 align-items: center;
                 cursor: pointer;
-                transition: transform 300ms;
+            }
+            .footer__icon__fa--1{
+                /* width: 24px; */
+                height: 30px;
+                font-size: 1.5em;
+                transform: translate(2.19px, .35em);
+                cursor: pointer;
+            }
+            .footer__icon__fa--1:hover{
+                color: var(--colorbtn);
+            }
+            .footer__icon__fa--2{
+                /* width: 24px; */
+                height: 30px;
+                font-size: 1.4em;
+                transform: translateY(.35em);
+                cursor: pointer;
+            }
+            .footer__icon__fa--2:hover{
+                color: var(--colorbtn);
             }
                 .footer__icon:hover{
                     color: var(--colorbtn);
-                    transition: 300ms;
                 }
     .sub__footer{
         width: 100%;
@@ -554,7 +579,9 @@
         .sfc__text2:hover{
             color: var(--colorbtn);
         }
-
+    /* .icon__youtube__svg{
+        width: 2em;
+    } */
 
 
 
@@ -604,6 +631,9 @@
         font-size: 2em;
     }
     .m-s__items li{
+        font-size: 1em;
+    }
+    .m-s__items a{
         font-size: 1em;
     }
     .ms-items__search-container{
