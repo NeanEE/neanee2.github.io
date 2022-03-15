@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#282828"
+    <meta name="theme-color" content="#282828">
+    <meta name="description" content="Decap es un sitio web para conectar a las personas, donde puedes encontrar u ofrecer trabajo, publicitar tu comercio o emprendimiento y mucho mas! (disponible por el momento para Salto, Bs.As)">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@500;600;700&display=swap" rel="stylesheet">
@@ -12,6 +13,8 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Material+Icons+Outlined">
     <link rel="stylesheet" href="style.css\menu.css">
     <link rel="stylesheet" href="style.css\generals.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/brands.min.css" integrity="sha512-bSncow0ApIhONbz+pNI52n0trz5fMWbgteHsonaPk42JbunIeM9ee+zTYAUP1eLPky5wP0XZ7MSLAPxKkwnlzw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/f11779bb83.js"></script>
     <title>Menu - Decap</title>
 </head>
 <body class="body-menu var--text teme--black" id="body-menu">
@@ -139,7 +142,7 @@
 <!-- CONTENIDO DEL MENU -->
 
     <div class="menu-container var--fontUB">
-        <div class="box__bt box__conts principal__boxs var--center" tabindex="">Buscar Trabajo</div>
+        <a href="search-job-list.html" class="box__bt box__conts principal__boxs var--center var--text" tabindex="">Buscar Trabajo</a>
         <a href="market_list_p.html" class="box__products principal__boxs box__conts var--center var--text" tabindex="">Productos</a>
         <div class="box__ot principal__boxs box__conts var--center" tabindex="">Ofrecer Trabajo</div>
         <div class="box__services principal__boxs box__conts var--center" tabindex="">Servicios</div>
@@ -149,20 +152,44 @@
                 <!-- <img src="assets\images\Roku-SS-4K_blog.jpg" alt="" class="menu__ads-img"> -->
                 <!-- <img src="assets\images\thumb-1920-283700.jpg" alt="" class="menu__ads-img"> -->
         </div>
-        <div class="box__container-market">
-                <div class="cm-profile"></div>
-                <h3 class="cm__title">Farmauno home claro</h3>
-                <h4 class="cm__cont"></h4>
-                <div class="box-cm__horarios">
-                        <h5 class="cm__horarios">Horarios</h5>
+        <div class="box__pharmacy-turn__container">
+                <div class="ptc__conts__photo__container">
+                        <div class="ptc__photo__box">
+                                <img src="assets\images\market_cont\market-profile-photos\pahrmacys-profiles\farmacia3.jpg" alt="" class="ptc__photo__img">
+                        </div>
                 </div>
-                <div class="cm__open-close__box">
-                        <h5 class="cm__open-close">ABIERTO</h5>
+                <div class="ptc__conts__cont__container">
+                        <div class="ptc__cont__title__container">
+                                <h4 class="ptc__cont__title__text">Farmacia de turno:</h4>
+                        </div>
+                        <div class="ptc__cont__pharmacy-name__container">
+                                <i class="fas fa-clinic-medical"></i>
+                                <h4 class="ptc__cont__pharmacy-name__text">FarmaPlus</h4>
+                        </div>
+                        <div class="ptc__cont__direction__container">
+                                <span class="material-icons-outlined">location_on</span>                                        
+                                <h4 class="ptc__cont__direction__text">Av italia y Vicente Arl
+                                </h4> 
+                        </div>
+                        <div class="ptc__cont__btns__container">
+                                <div class="ptc__c__btn-hour">
+                                        <h4 class="ptc__c__btn-hour__text">Horarios</h4>
+                                </div>
+                                <div class="ptc__c__btn-op">
+                                        <h4 class="ptc__c__btn-op__text">Abierto</h4>
+                                </div>
+                        </div>
                 </div>
         </div>
     </div>
 
 
+    <!-- BUTTONS UP AND NOTIFICATIONS -->
+
+    <div class="fixed-button__up"></div>
+    <div class="fixed-button__notifications"></div>
+
+    
 <!-- FOOTER -->
 
     <footer>
@@ -173,12 +200,13 @@
                 </div>
                 <div class="footer__find-us__box">
                         <div class="footer-boxs__content">
-                                <span class="material-icons-outlined footer__icon">email</span>
-                                <p class="footer__text">Instagram</p>
+                                <a href="https://www.instagram.com/" target="_blank" class="fa-brands fa-instagram footer__icon__fa--1 var--text">
+                                </a>
+                                <a href="https://www.instagram.com/" target="_blank" class="footer__text footer__text--1 var--text">Instagram</a>
                         </div>
                         <div class="footer-boxs__content">
-                                <span class="material-icons-outlined footer__icon">email</span>
-                                <p class="footer__text">Youtube</p>
+                                <a href="https://www.youtube.com/" target="_blank" class="fa-brands fa-youtube footer__icon__fa--2 var--text"></a>
+                                <a href="https://www.youtube.com/" target="_blank" class="footer__text var--text">Youtube</a>
                         </div>
                 </div>
                 <div class="footer__find-us__outline"></div>
@@ -189,8 +217,8 @@
                 </div>
                 <div class="footer__find-us__box">
                         <div class="footer-boxs__content">
-                                <span class="material-icons-outlined footer__icon">whatsapp</span>
-                                <p class="footer__text">1010101010</p>
+                                <a href="https://web.whatsapp.com/" target="_blank" class="material-icons-outlined footer__icon var--text">whatsapp</a>
+                                <a href="https://web.whatsapp.com/" target="_blank"class="footer__text var--text">1010101010</a>
                         </div>
                         <div class="footer-boxs__content">
                                 <span class="material-icons-outlined footer__icon">send</span>
@@ -198,7 +226,7 @@
                         </div>
                         <div class="footer-boxs__content">
                                 <span class="material-icons-outlined footer__icon">email</span>
-                                <p class="footer__text">Gmail</p>
+                                <p class="footer__text">correo@mail.com</p>
                         </div> 
                 </div>
         </div>
