@@ -17,7 +17,7 @@
 .menu-container{
     width: 95%;
     height: 56em;
-    margin: 4em auto 4em auto;
+    margin: 6em auto 2em auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: .65fr .65fr 23em .65fr;
@@ -82,7 +82,7 @@
         grid-area: ads;
         display: flex;
         justify-content: center;
-        background-color: var(--colorblock1)
+        background-color: var(--colorside1)
     }
         .menu__ads-img{
                 max-width: 80em;
@@ -93,7 +93,7 @@
         height: 14em;
         display: flex;
         padding: .5em;
-        background-color: var(--colorblock1);
+        background-color: var(--colorside1);
     }
         .ptc__conts__photo__container{
             width: 17em;
@@ -103,10 +103,10 @@
                 width: 100%;
                 height: 100%;
                 overflow: hidden;
-                background-color: cadetblue;
+                /* background-color: cadetblue; */
             }
                 .ptc__photo__img{
-                    height: 100%;
+                    /* height: 100%; */
                     transform: translateX(-2em);
                 }
         .ptc__conts__cont__container{
@@ -121,7 +121,7 @@
                 padding: 0 .5em;
                 display: flex;
                 align-items: center;
-                background-color: cornflowerblue;
+                /* background-color: cornflowerblue; */
             }
                 .ptc__cont__title__text{
                     font-size: 1.2em;
@@ -130,9 +130,15 @@
                 height: 30%;
                 padding: .5em;
                 display: flex;
-                background-color: chocolate;
+                align-items: center;
+                /* background-color: chocolate; */
             }
+                .svg__icon--3{
+                    fill: white;
+                    width: 2.3em;   
+                }
                 .ptc__cont__pharmacy-name__text{
+                    margin-left: .5em;
                     font-size: 1.6em;
                 }
             .ptc__cont__direction__container{
@@ -140,9 +146,14 @@
                 height: 30%;
                 padding: .5em;
                 display: flex;
-                background-color: darkolivegreen;
+                align-items: center;
+                /* background-color: darkolivegreen; */
             }
+                .icon__gg--1{
+                    font-size: 2.3em;
+                }
                 .ptc__cont__direction__text{
+                    margin-left: .5em;
                     font-size: 1.6em;
                 }
             .ptc__cont__btns__container{
@@ -150,7 +161,7 @@
                 height: 25%;
                 display: flex;
                 justify-content: end;
-                background-color: goldenrod;
+                /* background-color: goldenrod; */
             }
                 .ptc__c__btn-hour{
                     width: 8em;
@@ -159,10 +170,10 @@
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    background-color: darksalmon;
+                    background-color: var(--colorblock1)
                 }
                     .ptc__c__btn-hour__text{
-
+                        font-size: 1.5em;
                     }
                 .ptc__c__btn-op{
                     width: 8em;
@@ -171,10 +182,10 @@
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    background-color: paleturquoise
+                    background-color: var(--colorblock1)
                 }
                     .ptc__c__btn-op__text{
-
+                        font-size: 1.5em;
                     }
 
 
@@ -187,13 +198,13 @@
 
 @media screen and (max-width: 956px){
     .menu-container{
-        margin-top: 3em;
+        margin-top: 2em;
     }
 }
 @media screen and (max-width: 946px){
     .menu-container{
         height: 60em;
-        margin-top: 4em;
+        margin-top: 2em;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: .5fr 1fr 1fr 1fr 1fr 18em 1.5fr;
         grid-template-areas: "msb msb msb msb"
@@ -208,8 +219,9 @@
 
 @media screen and (max-width: 664px){
     .menu-container{
+        margin-top: 2em;
         grid-template-columns: 0.25fr 1.75fr 1.75fr 0.25fr;
-        grid-template-rows: .75fr 1fr 1fr 1fr 1fr 23em 1.5fr;
+        grid-template-rows: 2em 1fr 1fr 1fr 1fr 23em 1.5fr;
         grid-template-areas: "msb msb msb msb"
                             "mbtb mbtb mbtb mbtb"
                             "motb motb motb motb"
@@ -223,10 +235,13 @@
     } */
 }
 @media screen and (max-width: 437px){
-    .box__conts{
-        font-size: 2em;
+    .menu-container{
+        margin-top: 2em;
     }
-    .box__conts:hover{
-        font-size: 2.1em;
-    }
+        .box__conts{
+            font-size: 2em;
+        }
+        .box__conts:hover{
+            font-size: 2.1em;
+        }
 }
