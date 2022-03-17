@@ -13,8 +13,8 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Material+Icons+Outlined">
     <link rel="stylesheet" href="style.css\menu.css">
     <link rel="stylesheet" href="style.css\generals.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/brands.min.css" integrity="sha512-bSncow0ApIhONbz+pNI52n0trz5fMWbgteHsonaPk42JbunIeM9ee+zTYAUP1eLPky5wP0XZ7MSLAPxKkwnlzw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="https://kit.fontawesome.com/f11779bb83.js"></script>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/brands.min.css" integrity="sha512-bSncow0ApIhONbz+pNI52n0trz5fMWbgteHsonaPk42JbunIeM9ee+zTYAUP1eLPky5wP0XZ7MSLAPxKkwnlzw==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+    <!-- <script src="https://kit.fontawesome.com/f11779bb83.js"></script> -->
     <title>Menu - Decap</title>
 </head>
 <body class="body-menu var--text teme--black" id="body-menu">
@@ -24,15 +24,16 @@
 <!-- SIDEBAR -->
 
     <nav class="menu-sidebar var--fontUB expand" id="objets-navbar">
-        <a href="menu.html" class="m-s__logo var--text"  id="objets-navbar-logo" tabindex="1">Decap</a>
+        <a href="menu.html" class="m-s__logo var--text"  id="objets-navbar-logo" tabindex="0">Decap</a>
         <ul class="m-s__items" id="objets-ms_items">
-            <li class="ms-items__search-container"><span class="material-icons-outlined ms-search__icon">search</span></li>
-            <li class="ms-items__list" tabindex="2" id="ms-cuenta">Cuenta
+            <li class="ms-items__search-container"><span class="material-icons-outlined ms-search__icon">search</span>
+            </li>
+            <li class="ms-items__list" tabindex="0" id="ms-cuenta">Cuenta
                 <div class="msil__dsm" id="msil-cuenta">
                         <ul class="msil__submenu">
-                                <a href="profile.html" class="msil__text var--text" tabindex="3">Perfil</a>
-                                <li class="msil__text" tabindex="4">Mi CV</li>
-                                <li class="msil__text" tabindex="5">Mis Postulaciones</li>
+                                <li><a href="profile.html" class="msil__text var--text" tabindex="0">Perfil</a></li>
+                                <li class="msil__text" tabindex="0">Mi CV</li>
+                                <li class="msil__text" tabindex="0">Mis Postulaciones</li>
                         </ul>
                 </div>
             </li>
@@ -142,20 +143,20 @@
 <!-- CONTENIDO DEL MENU -->
 
     <div class="menu-container var--fontUB">
-        <a href="search-job-list.html" class="box__bt box__conts principal__boxs var--center var--text" tabindex="">Buscar Trabajo</a>
-        <a href="market_list_p.html" class="box__products principal__boxs box__conts var--center var--text" tabindex="">Productos</a>
-        <div class="box__ot principal__boxs box__conts var--center" tabindex="">Ofrecer Trabajo</div>
-        <div class="box__services principal__boxs box__conts var--center" tabindex="">Servicios</div>
-        <div class="box__ads">
+        <a href="search-job-list.html" class="box__bt box__conts principal__boxs var--center var--text" tabindex="0">Buscar Trabajo</a>
+        <a href="market_list_p.html" class="box__products principal__boxs box__conts var--center var--text" tabindex="0" accesskey="p">Productos</a>
+        <div class="box__ot principal__boxs box__conts var--center" tabindex="0">Ofrecer Trabajo</div>
+        <div class="box__services principal__boxs box__conts var--center" tabindex="0">Servicios</div>
+        <div class="box__ads">(publicidad)-->
                 <!-- <img class="menu__ads-img" src="assets\images\maxresdefault.jpg" alt="Hola" srcset=""> -->
-                <!-- <img src="js\assets\images\Estrenos_20220204_2.jpg" alt="" class="menu__ads-img"> -->
-                <!-- <img src="assets\images\Roku-SS-4K_blog.jpg" alt="" class="menu__ads-img"> -->
-                <!-- <img src="assets\images\thumb-1920-283700.jpg" alt="" class="menu__ads-img"> -->
+                <img src="assets\images\ads\Estrenos_20220204_2.jpg" alt="" class="menu__ads-img">
+                <!-- <img src="assets\images\ads\Roku-SS-4K_blog.jpg" alt="" class="menu__ads-img"> -->
+                <!-- <img src="assets\images\ads\thumb-1920-283700.jpg" alt="" class="menu__ads-img"> -->
         </div>
         <div class="box__pharmacy-turn__container">
                 <div class="ptc__conts__photo__container">
                         <div class="ptc__photo__box">
-                                <img src="assets\images\market_cont\market-profile-photos\pahrmacys-profiles\farmacia3.jpg" alt="" class="ptc__photo__img">
+                                <img src="assets\images\market_cont\market-profile-photos\pahrmacys-profiles\farmacia3.webp" height="208" width="370" alt="" class="ptc__photo__img">
                         </div>
                 </div>
                 <div class="ptc__conts__cont__container">
@@ -163,11 +164,11 @@
                                 <h4 class="ptc__cont__title__text">Farmacia de turno:</h4>
                         </div>
                         <div class="ptc__cont__pharmacy-name__container">
-                                <i class="fas fa-clinic-medical"></i>
+                                <svg class="svg__icon--3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) --><path d="M288 115L69.47 307.71c-1.62 1.46-3.69 2.14-5.47 3.35V496a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16V311.1c-1.7-1.16-3.72-1.82-5.26-3.2zm96 261a8 8 0 0 1-8 8h-56v56a8 8 0 0 1-8 8h-48a8 8 0 0 1-8-8v-56h-56a8 8 0 0 1-8-8v-48a8 8 0 0 1 8-8h56v-56a8 8 0 0 1 8-8h48a8 8 0 0 1 8 8v56h56a8 8 0 0 1 8 8zm186.69-139.72l-255.94-226a39.85 39.85 0 0 0-53.45 0l-256 226a16 16 0 0 0-1.21 22.6L25.5 282.7a16 16 0 0 0 22.6 1.21L277.42 81.63a16 16 0 0 1 21.17 0L527.91 283.9a16 16 0 0 0 22.6-1.21l21.4-23.82a16 16 0 0 0-1.22-22.59z"/></svg>
                                 <h4 class="ptc__cont__pharmacy-name__text">FarmaPlus</h4>
                         </div>
                         <div class="ptc__cont__direction__container">
-                                <span class="material-icons-outlined">location_on</span>                                        
+                                <span class="material-icons-outlined icon__gg--1">location_on</span>                                        
                                 <h4 class="ptc__cont__direction__text">Av italia y Vicente Arl
                                 </h4> 
                         </div>
@@ -200,12 +201,13 @@
                 </div>
                 <div class="footer__find-us__box">
                         <div class="footer-boxs__content">
-                                <a href="https://www.instagram.com/" target="_blank" class="fa-brands fa-instagram footer__icon__fa--1 var--text">
-                                </a>
+                                <a href="https://www.instagram.com/" target="_blank">
+                                <svg class="svg__icon--1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) --><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg></a>
                                 <a href="https://www.instagram.com/" target="_blank" class="footer__text footer__text--1 var--text">Instagram</a>
                         </div>
                         <div class="footer-boxs__content">
-                                <a href="https://www.youtube.com/" target="_blank" class="fa-brands fa-youtube footer__icon__fa--2 var--text"></a>
+                                <a href="https://www.youtube.com/" target="_blank">
+                                <svg class="svg__icon--2" fill="white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) --><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"/></svg></a>
                                 <a href="https://www.youtube.com/" target="_blank" class="footer__text var--text">Youtube</a>
                         </div>
                 </div>
@@ -217,7 +219,7 @@
                 </div>
                 <div class="footer__find-us__box">
                         <div class="footer-boxs__content">
-                                <a href="https://web.whatsapp.com/" target="_blank" class="material-icons-outlined footer__icon var--text">whatsapp</a>
+                                <a href="https://web.whatsapp.com/" target="_blank"  class="material-icons-outlined footer__icon var--text">whatsapp</a>
                                 <a href="https://web.whatsapp.com/" target="_blank"class="footer__text var--text">1010101010</a>
                         </div>
                         <div class="footer-boxs__content">
