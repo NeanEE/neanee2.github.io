@@ -81,6 +81,7 @@
     .box__ads{
         grid-area: ads;
         display: flex;
+        padding: 0.5em;
         justify-content: center;
         background-color: var(--colorside1)
     }
