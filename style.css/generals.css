@@ -586,7 +586,6 @@
             fill: white;
             width: 1.45em;
             height: 100%;
-            transform: translate(.1em, .25em);
             cursor: pointer;
         }
         .svg__icon--1:hover{
@@ -596,7 +595,6 @@
         .svg__icon--2{
             fill: white;
             width: 1.6em;
-            transform: translateY(.45em);
             cursor: pointer;
         }
         .svg__icon--2:hover{
