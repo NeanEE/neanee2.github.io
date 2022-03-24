@@ -3,7 +3,7 @@
     text-decoration: none;
     list-style: none;
     margin: 0;
-    transition: background-color 2700ms;
+    /* transition: background-color 2700ms; */
 }
 :root{
     --colorbg1: rgb(40, 40, 40);
@@ -164,7 +164,7 @@
         font-size: 1.25em;
     }
     .m-s__items a{
-        font-size: 1.25em;
+        /* font-size: 1.25em; */
         display: block;
     }
         .ms-items__search-container{
@@ -502,6 +502,22 @@
             height: 2.5em;
             cursor: default;
         }
+                .svg__icon--1{
+                    fill: white;
+                    width: 1.5em;
+                    transform: translate(.1em, 0em);
+                }
+                .svg__icon--1:hover{
+                    fill: var(--colorbtn);
+                }
+                .svg__icon--2{
+                    fill: white;
+                    width: 1.6em;
+                    transform: translateY(.45em .2em);
+                }
+                .svg__icon--2:hover{
+                    fill: var(--colorbtn);
+                }
             .footer__text{
                 margin-left: 1em;
                 display: flex;
@@ -510,7 +526,7 @@
                 transition: transform 300ms;
             }
             .footer__text--1{
-                margin-left: 1.3em;
+                margin-left: 1.2em;
             }
             .footer__text:hover{
                 transform: scale(1.1);
@@ -520,7 +536,6 @@
                 margin: 0;
                 display: flex;
                 align-items: center;
-                cursor: pointer;
             }
             .footer__icon__fa--1{
                 /* width: 24px; */
@@ -579,24 +594,9 @@
         .sfc__text2:hover{
             color: var(--colorbtn);
         }
-             .svg__icon--1{
-                fill: white;
-                width: 1.45em;
-                height: 100%;
-                cursor: pointer;
-            }
-            .svg__icon--1:hover{
-                fill: var(--colorbtn);
-                /* display: inline-block; */
-            }
-            .svg__icon--2{
-                fill: white;
-                width: 1.6em;
-                cursor: pointer;
-            }
-            .svg__icon--2:hover{
-                fill: var(--colorbtn);
-            }
+
+
+
 
 
 
@@ -819,7 +819,7 @@
     }
     .m-s__items{
         height: 40em;
-        margin-top: 15em;
+        margin-top: 10em;
         padding: 0;
         transform: translate(-100%, 14.75em);
     }
