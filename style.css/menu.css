@@ -81,7 +81,6 @@
     .box__ads{
         grid-area: ads;
         display: flex;
-        padding: 0.5em;
         justify-content: center;
         background-color: var(--colorside1)
     }
@@ -222,7 +221,7 @@
     .menu-container{
         margin-top: 2em;
         grid-template-columns: 0.25fr 1.75fr 1.75fr 0.25fr;
-        grid-template-rows: 2em 1fr 1fr 1fr 1fr 23em 1.5fr;
+        grid-template-rows: 2em 1fr 1fr 1fr 1fr min-content 1.5fr;
         grid-template-areas: "msb msb msb msb"
                             "mbtb mbtb mbtb mbtb"
                             "motb motb motb motb"
@@ -234,6 +233,12 @@
     /* .m-s__logo{
         color: white;
     } */
+    .box__ads{
+        height: max-content;
+    }
+        .menu__ads-img{
+            max-width: 100%;
+        }
 }
 @media screen and (max-width: 437px){
     .menu-container{
@@ -244,5 +249,11 @@
         }
         .box__conts:hover{
             font-size: 2.1em;
+        }
+    .box__ads{
+        height: max-content;
+    }
+        .menu__ads-img{
+            max-width: 100%;
         }
 }
