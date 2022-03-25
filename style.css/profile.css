@@ -14,20 +14,23 @@
             height: 13em;
             margin-left: auto;
             /* margin-right: auto; */
+            overflow: hidden;
             border-radius: 50%;
             background-color: cornflowerblue;
         }
+            .ppi__img{
+                width: 100%;
+            }
         .profile__personal-info{
             width: 17em;
             height: 13em;
-            /* margin-left: auto; */
             margin-right: auto;
             transform: translateX(1em);
             background-color: forestgreen;
         }
             .ppi__text{
                 height: 20%;
-                background-color: aqua;
+                background-color: coral;
             }
                 .ppi-t__1{
                     transform: translateX(-1.25em);
@@ -43,14 +46,133 @@
     }
         .profile__cv{
             width: 30%;
-            height: 10em;
+            height: 9em;
+            display: flex;
+            flex-direction: column;
             background-color: darkgoldenrod;
         }
+            .profile__cv__box--top{
+                width: 100%;
+                height: 4em;
+                margin-top: .5em;
+                border-radius: 1.3em 1.3em 0 0;
+                display: flex;
+                justify-content: center;
+                background-color: var(--colorblock1);
+                z-index: 1;
+            }
+                .p__cv__cv{
+                    position: absolute;
+                    transform: translateY(.1em);
+                    font-size: 3em;
+                }
+                .ps__line--2{
+                    /* width: 20em; */
+                    width: 80%;
+                    height: .25em;
+                    /* position: absolute; */
+                    transform: translateY(4em);
+                    background-color: var(--colorside1);
+                }
+            /* .profile__cv__box--mid{
+                width: 30%;
+                height: min-content;
+                position: absolute;
+                transform: scaleY(0%) translateY(1.5em);
+                inset-inline-start: top;
+                background-color: var(--colorblock1);
+                transition: transform 400ms;
+                transform-origin: bottom center;
+            }
+
+            .profile__cv__box--mid--expand{
+                transform: scaleY(100%) translateY(4.5em) ;
+            } */
+                /* .p__cv__edit{
+                    height: 4em;
+                    background-color: brown;
+                } */
+                                 
+
+
+
+            .profile__cv__box--mid{
+                width: 30%;
+                height: 0;
+                position: absolute;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                transform: translateY(4.5em);
+                transition: height 400ms;
+                background-color: var(--colorblock1);
+            }
+
+            .profile__cv__box--mid--expand{
+                height: 6em;
+                transform: translateY(4.5em);
+                transition: height 300ms;
+            }
+                .p__cv__edit{
+                    font-size: 2em;
+                }
+
+
+
+
+
+            .profile__cv__box--botton{
+                width: 100%;
+                height: 4em;
+                margin-bottom: .5em;
+                border-radius: 0 0 1.3em 1.3em;
+                display: flex;
+                justify-content: center;
+                background-color: var(--colorblock1);
+                /* background-color: dodgerblue; */
+                z-index: 0;
+                transition: transform 400ms;
+            }
+            .profile__cv__box--botton--expand{
+                transform: translateY(6em);
+            }
+                .p__cv__expand__container{
+                    width: 3.25em;
+                    height: 3.25em;
+                    border-radius: 50%;
+                    transform: translateY(.5em);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    cursor: pointer;
+                    background-color: var(--colorside1);
+                }
+                    .p__cv__expand{
+                        font-size: 2.5em;
+                        transform: rotate(270deg);
+                        transition: transform 300ms;
+                    }
+                    .p__cv__expand:hover{
+                        transform: scale(1.1) rotate(270deg);
+                        color: var(--colorbtn);
+                    }
+                    .p__cv__expand--expand{
+                        transform: rotate(180deg);
+                        transition: transform 300ms;
+                    }
         .profile__postulations{
             width: 60%;
-            height: 10em;
+            height: 9em;
+            display: flex;
+            align-items: center;
             background-color: darkorchid;
         }
+            .profile__postulations__box{
+                width: 100%;
+                height: 90%;
+                border-radius: 1.3em;
+                background-color: var(--colorblock1);
+            }
     .profile-cont3{
         width: 100%;
         display: flex;
