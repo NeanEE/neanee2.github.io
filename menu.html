@@ -4,32 +4,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#00ff09">
     <meta name="description" content="Decap es un sitio web para conectar a las personas, donde puedes encontrar u ofrecer trabajo, publicitar tu comercio o emprendimiento y mucho mas! (disponible por el momento solo para Salto Bs.As)">
     <meta name="author" content="N">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@500;600;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Signika+Negative&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Material+Icons+Outlined">
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@500;600;700&display=opcional" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Signika+Negative&display=opcional" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Material+Icons+Outlined"> -->
 
-    <link rel="apple-touch-icon" sizes="57x57" href="assets/favicons/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="assets/favicons/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="assets/favicons/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="assets/favicons/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="assets/favicons/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="assets/favicons/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="assets/favicons/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="assets/favicons/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="assets/favicons/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="assets/favicons/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png">
-    <link rel="manifest" href="assets/favicons/manifest.json">
-    <meta name="msapplication-TileColor" content="#ea1b1b">
+    <link rel="apple-touch-icon" sizes="57x57" href="assets\icons\favicons\apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="assets\icons\favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets\icons\favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets\icons\favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets\icons\favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets\icons\favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets\icons\favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets\icons\favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets\icons\favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="assets\icons\favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets\icons\favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets\icons\favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets\icons\favicons/favicon-16x16.png">
+    <link rel="manifest" href="assets\icons\favicons/manifest.json">
+    <!-- <meta name="msapplication-TileColor" content="#373737"> -->
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <!-- <meta name="theme-color" content="#ffffff"> -->
+    <meta name="theme-color" content="#282828">
+
+
+    <!-- MANIFEST.JSON -->
+    <!-- {
+        "theme_color": "#282828"
+      } -->
+
 
     <link rel="stylesheet" href="style.css\menu.css">
     <link rel="stylesheet" href="style.css\generals.css">
@@ -105,7 +112,7 @@
                 </div>
             </li>
         </ul>
-        <span class="material-icons-outlined mw-btn__menu" id="objets-btn_navbar">menu</span>
+        <svg xmlns="http://www.w3.org/2000/svg" class="mw-btn__menu" id="objets-btn_navbar" viewBox="0 0 24 24"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
     </nav>
 
 
@@ -168,30 +175,36 @@
         <div class="box__ot principal__boxs box__conts var--center" tabindex="0">Ofrecer Trabajo</div>
         <div class="box__services principal__boxs box__conts var--center" tabindex="0">Servicios</div>
         <div class="box__ads">
-                <img class="menu__ads-img" src="assets\images\ads\maxresdefault.jpg" alt="Hola" srcset="">
-                <!-- <img src="assets\images\ads\Estrenos_20220204_2.jpg" alt="" class="menu__ads-img"> -->
-                <!-- <img src="assets\images\ads\Roku-SS-4K_blog.jpg" alt="" class="menu__ads-img"> -->
-                <!-- <img src="assets\images\ads\thumb-1920-283700.jpg" alt="" class="menu__ads-img"> -->
+                <img class="menu__ads-img" src="assets\ads\maxresdefault.webp" alt="Hola" height="368">
+                <!-- <img src="assets\images\ads\Estrenos_20220204_2.jpg" alt="" class="menu__ads-img" height="368px"> -->
+                <!-- <img src="assets\images\ads\Roku-SS-4K_blog.jpg" alt="" class="menu__ads-img" height="368px"> -->
+                <!-- <img src="assets\images\ads\thumb-1920-283700.jpg" alt="" class="menu__ads-img" height="368px"> -->
         </div>
         <div class="box__pharmacy-turn__container">
                 <div class="ptc__conts__photo__container">
                         <div class="ptc__photo__box">
-                                <img src="assets\images\market_cont\market-profile-photos\pahrmacys-profiles\farmacia3.webp" height="208" width="370" loading="lazy" alt="" class="ptc__photo__img">
+                                <img src="assets\market-turn-pharmacy\pharmacy-3\farmacia3.webp" height="208" width="370" loading="lazy" alt="" class="ptc__photo__img">
                         </div>
                 </div>
                 <div class="ptc__conts__cont__container">
                         <div class="ptc__cont__title__container">
-                                <h4 class="ptc__cont__title__text">Farmacia de turno:</h4>
+                                <h4 class="ptc__cont__title__text">Farmunos js polus:</h4>
                         </div>
                         <div class="ptc__cont__pharmacy-name__container">
-                                <svg class="svg__icon--3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) --><path d="M288 115L69.47 307.71c-1.62 1.46-3.69 2.14-5.47 3.35V496a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16V311.1c-1.7-1.16-3.72-1.82-5.26-3.2zm96 261a8 8 0 0 1-8 8h-56v56a8 8 0 0 1-8 8h-48a8 8 0 0 1-8-8v-56h-56a8 8 0 0 1-8-8v-48a8 8 0 0 1 8-8h56v-56a8 8 0 0 1 8-8h48a8 8 0 0 1 8 8v56h56a8 8 0 0 1 8 8zm186.69-139.72l-255.94-226a39.85 39.85 0 0 0-53.45 0l-256 226a16 16 0 0 0-1.21 22.6L25.5 282.7a16 16 0 0 0 22.6 1.21L277.42 81.63a16 16 0 0 1 21.17 0L527.91 283.9a16 16 0 0 0 22.6-1.21l21.4-23.82a16 16 0 0 0-1.22-22.59z"/></svg>
+                                <div class="svg__icon--3__container">
+                                        <svg class="svg__icon--3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) --><path d="M288 115L69.47 307.71c-1.62 1.46-3.69 2.14-5.47 3.35V496a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16V311.1c-1.7-1.16-3.72-1.82-5.26-3.2zm96 261a8 8 0 0 1-8 8h-56v56a8 8 0 0 1-8 8h-48a8 8 0 0 1-8-8v-56h-56a8 8 0 0 1-8-8v-48a8 8 0 0 1 8-8h56v-56a8 8 0 0 1 8-8h48a8 8 0 0 1 8 8v56h56a8 8 0 0 1 8 8zm186.69-139.72l-255.94-226a39.85 39.85 0 0 0-53.45 0l-256 226a16 16 0 0 0-1.21 22.6L25.5 282.7a16 16 0 0 0 22.6 1.21L277.42 81.63a16 16 0 0 1 21.17 0L527.91 283.9a16 16 0 0 0 22.6-1.21l21.4-23.82a16 16 0 0 0-1.22-22.59z"/></svg>
+                                </div>
                                 <h4 class="ptc__cont__pharmacy-name__text">FarmaPlus Arreglando</h4>
                         </div>
                         <div class="ptc__cont__direction__container">
-                                <span class="material-icons-outlined icon__gg--1">location_on</span>                                        
+                                <div class="icon__gg--1__container">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="icon__gg--1" viewBox="0 0 24 24" ><path d="M0 0h24v24H0V0z" fill="none"/><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zM7 9c0-2.76 2.24-5 5-5s5 2.24 5 5c0 2.88-2.88 7.19-5 9.88C9.92 16.21 7 11.85 7 9z"/><circle cx="12" cy="9" r="2.5"/></svg>                
+                                </div>                        
                                 <h4 class="ptc__cont__direction__text">Av italia redondo y Vicente Arl perez doble a
                                 </h4> 
                         </div>
+                </div>
+                <div class="ptc__conts__btn__container">
                         <div class="ptc__cont__btns__container">
                                 <div class="ptc__c__btn-hour">
                                         <h4 class="ptc__c__btn-hour__text">Horarios</h4>
@@ -207,8 +220,8 @@
 
     <!-- BUTTONS UP AND NOTIFICATIONS -->
 
-    <div class="fixed-button__up"></div>
-    <div class="fixed-button__notifications"></div>
+    <!-- <div class="fixed-button__up"></div>
+    <div class="fixed-button__notifications"></div> -->
 
     
 <!-- FOOTER -->
@@ -237,15 +250,15 @@
                 </div>
                 <div class="footer__find-us__box">
                         <div class="footer-boxs__content">
-                                <span class="material-icons-outlined footer__icon var--text">whatsapp</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="footer__icon" enable-background="new 0 0 24 24" viewBox="0 0 24 24"><g><rect fill="none" height="24" width="24" y="0"/></g><g><g><g><path d="M19.05,4.91C17.18,3.03,14.69,2,12.04,2c-5.46,0-9.91,4.45-9.91,9.91c0,1.75,0.46,3.45,1.32,4.95L2.05,22l5.25-1.38 c1.45,0.79,3.08,1.21,4.74,1.21h0c0,0,0,0,0,0c5.46,0,9.91-4.45,9.91-9.91C21.95,9.27,20.92,6.78,19.05,4.91z M12.04,20.15 L12.04,20.15c-1.48,0-2.93-0.4-4.2-1.15l-0.3-0.18l-3.12,0.82l0.83-3.04l-0.2-0.31c-0.82-1.31-1.26-2.83-1.26-4.38 c0-4.54,3.7-8.24,8.24-8.24c2.2,0,4.27,0.86,5.82,2.42c1.56,1.56,2.41,3.63,2.41,5.83C20.28,16.46,16.58,20.15,12.04,20.15z M16.56,13.99c-0.25-0.12-1.47-0.72-1.69-0.81c-0.23-0.08-0.39-0.12-0.56,0.12c-0.17,0.25-0.64,0.81-0.78,0.97 c-0.14,0.17-0.29,0.19-0.54,0.06c-0.25-0.12-1.05-0.39-1.99-1.23c-0.74-0.66-1.23-1.47-1.38-1.72c-0.14-0.25-0.02-0.38,0.11-0.51 c0.11-0.11,0.25-0.29,0.37-0.43c0.12-0.14,0.17-0.25,0.25-0.41c0.08-0.17,0.04-0.31-0.02-0.43c-0.06-0.12-0.56-1.34-0.76-1.84 c-0.2-0.48-0.41-0.42-0.56-0.43C8.86,7.33,8.7,7.33,8.53,7.33c-0.17,0-0.43,0.06-0.66,0.31C7.65,7.89,7.01,8.49,7.01,9.71 c0,1.22,0.89,2.4,1.01,2.56c0.12,0.17,1.75,2.67,4.23,3.74c0.59,0.26,1.05,0.41,1.41,0.52c0.59,0.19,1.13,0.16,1.56,0.1 c0.48-0.07,1.47-0.6,1.67-1.18c0.21-0.58,0.21-1.07,0.14-1.18S16.81,14.11,16.56,13.99z"/></g></g></g></svg>
                                 <a href="https://web.whatsapp.com/" target="_blank"class="footer__text var--text">1010101010</a>
                         </div>
                         <div class="footer-boxs__content">
-                                <span class="material-icons-outlined footer__icon">send</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="footer__icon" viewBox="0 0 24 24"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M4.01 6.03l7.51 3.22-7.52-1 .01-2.22m7.5 8.72L4 17.97v-2.22l7.51-1M2.01 3L2 10l15 2-15 2 .01 7L23 12 2.01 3z"/></svg>
                                 <p class="footer__text">Enviar comentarios</p>
                         </div>
                         <div class="footer-boxs__content">
-                                <span class="material-icons-outlined footer__icon">email</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="footer__icon" viewBox="0 0 24 24"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6zm-2 0l-8 5-8-5h16zm0 12H4V8l8 5 8-5v10z"/></svg>
                                 <p class="footer__text">correo@mail.com</p>
                         </div> 
                 </div>
@@ -256,11 +269,11 @@
                 </div>
                 <div class="footer__find-us__box">
                         <div class="footer-boxs__content">
-                                <span class="material-icons-outlined footer__icon">info</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="footer__icon" viewBox="0 0 24 24"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M11 18h2v-2h-2v2zm1-16C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm0-14c-2.21 0-4 1.79-4 4h2c0-1.1.9-2 2-2s2 .9 2 2c0 2-3 1.75-3 5h2c0-2.25 3-2.5 3-5 0-2.21-1.79-4-4-4z"/></svg>
                                 <p class="footer__text">Guia</p>
                         </div>
                         <div class="footer-boxs__content">
-                                <span class="material-icons-outlined footer__icon">question_answer</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="footer__icon" viewBox="0 0 24 24"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M15 4v7H5.17l-.59.59-.58.58V4h11m1-2H3c-.55 0-1 .45-1 1v14l4-4h10c.55 0 1-.45 1-1V3c0-.55-.45-1-1-1zm5 4h-2v9H6v2c0 .55.45 1 1 1h11l4 4V7c0-.55-.45-1-1-1z"/></svg>
                                 <p class="footer__text">Preguntas frecuentes</p>
                         </div>
                 </div>
@@ -271,15 +284,15 @@
                 </div>
                 <div class="footer__find-us__box">
                         <div class="footer-boxs__content">
-                                <span class="material-icons-outlined footer__icon">policy</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" class="footer__icon" viewBox="0 0 24 24"><g><rect fill="none" height="24" width="24"/></g><g><g/><g><path d="M12,1L3,5v6c0,5.55,3.84,10.74,9,12c5.16-1.26,9-6.45,9-12V5L12,1z M19,11c0,1.85-0.51,3.65-1.38,5.21l-1.45-1.45 c1.29-1.94,1.07-4.58-0.64-6.29c-1.95-1.95-5.12-1.95-7.07,0c-1.95,1.95-1.95,5.12,0,7.07c1.71,1.71,4.35,1.92,6.29,0.64 l1.72,1.72c-1.19,1.42-2.73,2.51-4.47,3.04C7.98,19.69,5,15.52,5,11V6.3l7-3.11l7,3.11V11z M12,15c-1.66,0-3-1.34-3-3s1.34-3,3-3 s3,1.34,3,3S13.66,15,12,15z"/></g></g></svg>
                                 <p class="footer__text">Politica de privacidad</p>
                         </div>
                         <div class="footer-boxs__content">
-                                <span class="material-icons-outlined footer__icon">lock_open</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="footer__icon" viewBox="0 0 24 24"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6h2c0-1.66 1.34-3 3-3s3 1.34 3 3v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm0 12H6V10h12v10zm-6-3c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z"/></svg>
                                 <p class="footer__text">Condiciones de uso</p>
                         </div>
                         <div class="footer-boxs__content">
-                                <span class="material-icons-outlined footer__icon">cookie</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" class="footer__icon" viewBox="0 0 24 24"><g><rect fill="none" height="24" width="24"/></g><g><g><circle cx="10.5" cy="8.5" r="1.5"/><circle cx="8.5" cy="13.5" r="1.5"/><circle cx="15" cy="15" r="1"/><path d="M21.95,10.99c-1.79-0.03-3.7-1.95-2.68-4.22c-2.97,1-5.78-1.59-5.19-4.56C7.11,0.74,2,6.41,2,12c0,5.52,4.48,10,10,10 C17.89,22,22.54,16.92,21.95,10.99z M12,20c-4.41,0-8-3.59-8-8c0-3.31,2.73-8.18,8.08-8.02c0.42,2.54,2.44,4.56,4.99,4.94 c0.07,0.36,0.52,2.55,2.92,3.63C19.7,16.86,16.06,20,12,20z"/></g></g></svg>
                                 <p class="footer__text">Cookies</p>
                         </div> 
                 </div>
@@ -288,11 +301,15 @@
         </footer>
         <div class="sub__footer">
         <div class="sub__footer-cont1">
-                <span class="material-icons-outlined">copyright</span>
+                <div class="sfc__icn__container">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="sfc__icon" viewBox="0 0 24 24"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M10.08 10.86c.05-.33.16-.62.3-.87s.34-.46.59-.62c.24-.15.54-.22.91-.23.23.01.44.05.63.13.2.09.38.21.52.36s.25.33.34.53.13.42.14.64h1.79c-.02-.47-.11-.9-.28-1.29s-.4-.73-.7-1.01-.66-.5-1.08-.66-.88-.23-1.39-.23c-.65 0-1.22.11-1.7.34s-.88.53-1.2.92-.56.84-.71 1.36S8 11.29 8 11.87v.27c0 .58.08 1.12.23 1.64s.39.97.71 1.35.72.69 1.2.91c.48.22 1.05.34 1.7.34.47 0 .91-.08 1.32-.23s.77-.36 1.08-.63.56-.58.74-.94.29-.74.3-1.15h-1.79c-.01.21-.06.4-.15.58s-.21.33-.36.46-.32.23-.52.3c-.19.07-.39.09-.6.1-.36-.01-.66-.08-.89-.23-.25-.16-.45-.37-.59-.62s-.25-.55-.3-.88-.08-.67-.08-1v-.27c0-.35.03-.68.08-1.01zM12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/></svg>
+                </div>
                 <h4 class="sfc__text">Decap - 2022 Todos los Derechos Reservados</h4>
         </div>
         <div class="sub__footer-cont2">
-                <span class="material-icons-outlined sfc__text1">bug_report</span>
+                <div class="sfc__text1__container">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="sfc__text1" viewBox="0 0 24 24"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M20 8h-2.81c-.45-.78-1.07-1.45-1.82-1.96L17 4.41 15.59 3l-2.17 2.17C12.96 5.06 12.49 5 12 5s-.96.06-1.41.17L8.41 3 7 4.41l1.62 1.63C7.88 6.55 7.26 7.22 6.81 8H4v2h2.09c-.05.33-.09.66-.09 1v1H4v2h2v1c0 .34.04.67.09 1H4v2h2.81c1.04 1.79 2.97 3 5.19 3s4.15-1.21 5.19-3H20v-2h-2.09c.05-.33.09-.66.09-1v-1h2v-2h-2v-1c0-.34-.04-.67-.09-1H20V8zm-4 4v3c0 .22-.03.47-.07.7l-.1.65-.37.65c-.72 1.24-2.04 2-3.46 2s-2.74-.77-3.46-2l-.37-.64-.1-.65C8.03 15.48 8 15.23 8 15v-4c0-.23.03-.48.07-.7l.1-.65.37-.65c.3-.52.72-.97 1.21-1.31l.57-.39.74-.18c.31-.08.63-.12.94-.12.32 0 .63.04.95.12l.68.16.61.42c.5.34.91.78 1.21 1.31l.38.65.1.65c.04.22.07.47.07.69v1zm-6 2h4v2h-4zm0-4h4v2h-4z"/></svg>
+                </div>
                 <h4 class="sfc__text2">Reportar error</h4>
         </div>
 
@@ -301,5 +318,6 @@
 
 
     <script src="js\objets.js"></script>
+    <script src="js\menu.js"></script>
 </body>
 </html>         
