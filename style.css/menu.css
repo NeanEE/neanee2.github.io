@@ -183,10 +183,19 @@
                     display: flex;
                     justify-content: center;
                     align-items: center;
+                    cursor: pointer;
                     background-color: var(--colorblock1)
+                }
+                .ptc__c__btn-hour:hover{
+                    color: var(--colorbtn);
+                }
+                .ptc__c__btn-hour:hover .ptc__c__btn-hour__text{
+                    transition: transform 300ms;
+                    transform: scale(1.1);
                 }
                     .ptc__c__btn-hour__text{
                         font-size: 1.5em;
+                        transition: transform 300ms;
                     }
                 .ptc__c__btn-op{
                     width: 8em;
@@ -194,10 +203,19 @@
                     display: flex;
                     justify-content: center;
                     align-items: center;
+                    cursor: pointer;
                     background-color: var(--colorblock1)
+                }
+                .ptc__c__btn-op:hover{
+                    color: var(--colorbtn);
+                }
+                .ptc__c__btn-op:hover .ptc__c__btn-op__text{
+                    transition: transform 300ms;
+                    transform: scale(1.1);
                 }
                     .ptc__c__btn-op__text{
                         font-size: 1.5em;
+                        transition: transform 300ms;
                     }
 
 
