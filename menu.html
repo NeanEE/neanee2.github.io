@@ -53,7 +53,8 @@
     <nav class="menu-sidebar var--fontUB expand" id="objets-navbar">
         <a href="menu.html" class="m-s__logo var--text"  id="objets-navbar-logo" tabindex="0">Decap</a>
         <ul class="m-s__items" id="objets-ms_items">
-            <li class="ms-items__search-container"><span class="material-icons-outlined ms-search__icon">search</span>
+            <li class="ms-items__search-container">
+                <svg xmlns="http://www.w3.org/2000/svg" class="ms-search__icon" viewBox="0 0 24 24"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
             </li>
             <li class="ms-items__list" tabindex="0" id="ms-cuenta">Cuenta
                 <div class="msil__dsm" id="msil-cuenta">
@@ -121,7 +122,7 @@
     <div class="teme-color-selector teme-color-selector" id="teme-color-selector">
             <div class="tcs__box var--fontUB">
                     <div class="tcs__close-btn" id="tcs-c-btn">
-                        <span class="material-icons-outlined tcs__close-btn-span">close</span>                                
+                        <svg xmlns="http://www.w3.org/2000/svg" class="tcs__close-btn-span" height="24px" viewBox="0 0 24 24" width="24px"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>                                
                     </div>
                 <div class="tcs__title">
                         <h4 class="tcs__h4">Tema</h4>
@@ -210,7 +211,10 @@
                                         <h4 class="ptc__c__btn-hour__text">Horarios</h4>
                                 </div>
                                 <div class="ptc__c__btn-op">
-                                        <h4 class="ptc__c__btn-op__text">Abierto</h4>
+                                        <!-- <h4 class="ptc__c__btn-op__text">Abierto</h4> -->
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="ptc__c__btn-op__text" width="100px" height="24px">
+                                                <text x="10" y="20">Abierto</text>
+                                              </svg>
                                 </div>
                         </div>
                 </div>
@@ -318,6 +322,6 @@
 
 
     <script src="js\objets.js"></script>
-<!--     <script src="js\menu.js"></script> -->
+    <script src="js\menu.js"></script>
 </body>
 </html>         
