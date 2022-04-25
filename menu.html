@@ -24,7 +24,7 @@
     <link rel="icon" type="image/png" sizes="192x192"  href="assets\icons\favicons/android-icon-192x192.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets\icons\favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="assets\icons\favicons/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets\icons\favicons/favicon-16x16.png">
+  p  <link rel="icon" type="image/png" sizes="16x16" href="assets\icons\favicons/favicon-16x16.png">
     <link rel="manifest" href="assets\icons\favicons/manifest.json">
     <!-- <meta name="msapplication-TileColor" content="#373737"> -->
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
@@ -175,12 +175,52 @@
         <a href="market_list_p.html" class="box__products principal__boxs box__conts var--center var--text" tabindex="0" accesskey="p">Productos</a>
         <div class="box__ot principal__boxs box__conts var--center" tabindex="0">Ofrecer Trabajo</div>
         <div class="box__services principal__boxs box__conts var--center" tabindex="0">Servicios</div>
-        <div class="box__ads">
-                <img class="menu__ads-img" src="assets\ads\maxresdefault.webp" alt="Hola" height="368">
-                <!-- <img src="assets\images\ads\Estrenos_20220204_2.jpg" alt="" class="menu__ads-img" height="368px"> -->
-                <!-- <img src="assets\images\ads\Roku-SS-4K_blog.jpg" alt="" class="menu__ads-img" height="368px"> -->
-                <!-- <img src="assets\images\ads\thumb-1920-283700.jpg" alt="" class="menu__ads-img" height="368px"> -->
-        </div>
+        <!-- <div class="box__ads" id="box-ads">
+                <div class="box__ads__arrow-l box__ads__arrow" id="left-arrow"></div>
+                <div class="box__ads__imgs__container" id="slider-container">
+                        <img class="menu__ads-img" src="assets\ads\ads1.webp" alt="Hola" height="368" id="imagen-s"> -->
+
+                        <!-- <img src="assets\ads\ads2.webp" alt="" class="menu__ads-img" height="368px"> -->
+                        <!-- <img src="assets\ads\ads3.webp" alt="" class="menu__ads-img" height="368px"> -->
+                        <!-- <img src="assets\ads\ads4.webp" alt="" class="menu__ads-img" height="368px"> -->
+
+                <!-- </div>
+                <div class="box__ads__arrow-r box__ads__arrow" id="right-arrow"></div>
+        </div> -->
+        <!-- <div class="contenedor box__ads">
+                <div class="atras botones">
+                        &#60
+                </div>
+                <div class="adelante botones">
+                        &#62
+                </div>
+                <img src="assets\ads\ads1.webp" alt="" class="menu__ads-img" id="imagen">
+        </div> -->
+
+
+
+
+
+        <div class="slider box__ads" >
+                <div class="slider__item slider__item--visible">
+                  <img src="assets\ads\ads1.webp" class="slider__img" loading="lazy"/>
+                </div>
+                <div class="slider__item">
+                  <img src="assets\ads\ads2.webp" class="slider__img" loading="lazy"/>
+                </div>
+                <div class="slider__item">
+                  <img src="assets\ads\ads3.webp" class="slider__img" loading="lazy"/>
+                </div>
+          
+                <div class="slider__actions">
+                  <button id="slider__button--prev" class="slider__btn-prev slider__btn"></button>
+                  <button id="slider__button--next" class="slider__btn-next slider__btn"></button>
+                </div>
+              </div>
+          
+
+
+
         <div class="box__pharmacy-turn__container">
                 <div class="ptc__conts__photo__container">
                         <div class="ptc__photo__box">
@@ -211,10 +251,10 @@
                                         <h4 class="ptc__c__btn-hour__text">Horarios</h4>
                                 </div>
                                 <a href="index.html" class="ptc__c__btn-op">
-                                        <!-- <h4 class="ptc__c__btn-op__text">Abierto</h4> -->
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="ptc__c__btn-op__text" width="100px" height="24px">
+                                        <h4 class="ptc__c__btn-op__text">Abierto</h4>
+                                        <!-- <svg xmlns="http://www.w3.org/2000/svg" class="ptc__c__btn-op__text" width="100px" height="24px">
                                                 <text x="10" y="20">Abierto</text>
-                                              </svg>
+                                              </svg> -->
                                 </a>
                         </div>
                 </div>
@@ -322,6 +362,6 @@
 
 
     <script src="js\objets.js"></script>
-<!--     <script src="js\menu.js"></script> -->
+    <script src="js\menu.js"></script>
 </body>
 </html>         
