@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@300;500;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Signika+Negative&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Material+Icons+Outlined">
     <link rel="stylesheet" href="style.css\profile.css">
@@ -138,39 +138,95 @@
 
     <div class="profile">
         <div class="profile-cont1">
-            <div class="profile__avatar">
-                    <img src="assets\images\profile\user_1\This is fine Mate - comp.png" class="ppi__img" alt="">
-            </div>
-            <div class="profile__personal-info var--fontSN">
-                    <h2 class="ppi__text ppi-t__1">Nestor Elizondo</h2>
-                    <h2 class="ppi__text ppi-t__2">Edad: 20 Años - 20/04/22</h2>
-                    <h2 class="ppi__text ppi-t__3">Localidad: Salto</h2>
-                    <h2 class="ppi__text ppi-t__2">Telefono: 2474281492</h2>
-                    <h2 class="ppi__text ppi-t__1">Tipo de cuenta: ADMIN</h2>
-            </div>
+                <div class="profile__avatar__container">
+                        <div class="profile__avatar">
+                                <img src="assets\users\user-1\cv-photos\This-is-fine-Mate.webp" class="ppi__img" alt="">
+                        </div>
+                </div>
+                <div class="profile__personal-info__container">
+                        <div class="profile__personal-info var--fontSN">
+                                <h2 class="ppi__text ppi-t__1">Nestor Elizondo</h2>
+                                <h2 class="ppi__text ppi-t__2">Edad: 20 Años - 20/04/22</h2>
+                                <h2 class="ppi__text ppi-t__3">Localidad: Salto</h2>
+                                <h2 class="ppi__text ppi-t__2">Telefono: 2474281492</h2>
+                                <h2 class="ppi__text ppi-t__1">Tipo de cuenta: ADMIN</h2>
+                        </div>
+                </div>
         </div>
 
         <div class="profile__space">
             <div class="ps__line"></div>
         </div>
 
-        <div class="profile-cont2 var--fontUB">
+        <div class="profile-cont2 var--fontUB" id="profile-cont2">
             <div class="profile__cv">
                     <div class="profile__cv__box--top">
-                        <h2 class="p__cv__cv">Mi GG</h2>
+                        <h2 class="p__title-boxs">Mi GG</h2>
                         <div class="ps__line--2"></div>
                     </div>
+
                     <div class="profile__cv__box--mid" id="profile-cv-mid">
                             <h2 class="p__cv__edit">Editar</h2>
+                            <div class="ps__line--3"></div>
                     </div>
+
                     <div class="profile__cv__box--botton" id="profile-cv-botton">
-                        <div class="p__cv__expand__container" id="profile-cv-btn">
-                                <span class="material-icons-outlined p__cv__expand">arrow_back_ios_new</span>
+                        <div class="p__btn__expand__container" id="profile-cv-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="p__btn__expand" id="p-cv-expand" enable-background="new 0 0 24 24" height="36px" viewBox="0 0 24 24" width="36px" fill="#000000"><rect fill="none" height="24" width="24"/><g><polygon points="17.77,3.77 16,2 6,12 16,22 17.77,20.23 9.54,12"/></g></svg>
                         </div>                       
                     </div>
             </div>
-            <div class="profile__postulations">
-                    <div class="profile__postulations__box"></div>
+
+
+            <div class="profile__postulations" id="profile-postulations">
+                    <div class="profile__postulations__box__top">
+                        <h2 class="p__title-boxs">Mis PoPOOPPPOOPOP</h2>
+                        <div class="ps__line--2"></div>
+                    </div>
+                
+                <div class="profile__postulations__mid__container" id="profile-postulations-mid-container">
+                    <div class="profile__postulations__box__mid" id="profile-postulations-mid">
+                        <div class="p_p_cont__container">
+                                <div class="p_p_box">
+                                        <div class="p__p__owner__container">
+                                        </div>
+                                        <div class="p_p_photo__container">
+                                                <img src="assets\markets\market-1\photos\the-bear-draws-profile.jpg" alt="" class="p__p__photo">
+                                        </div>
+                                        <div class="p_p_text__container">
+                                                <h3 class="p__p__owner__name">The Bear Draws busca:</h3>
+                                                <h5 class="p__p__text__title">The Bear Draws busca un artista especializado en el 3D</h5>
+                                                <h4 class="p__p__text__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem consectetur quos minus in cumque excepturi aliquid recusandae, eaque eos iste ducimus, perspiciatis cupiditate modi quibusdam pariatur id earum illo. Deleniti Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem aut perspiciatis ullam aliquam ratione nulla sequi rerum magnam perferendis cum ex quas a provident blanditiis, distinctio minus alias, aliquid harum!.</h4>
+                                        </div>
+                                </div>
+                        </div>
+                        <div class="p_p_cont__container">
+                                <div class="p_p_box">
+                                        <div class="p_p_photo__container">
+                                                <img src="assets\markets\market-2\000.jpg" alt="" class="p__p__photo">
+                                        </div>
+                                        <div class="p_p_text__container">
+                                                <h3 class="p__p__owner__name">Panaderia de pan busca:</h3>
+                                                <h5 class="p__p__text__title">Se busca un panadero / cajero</h5>
+                                                <h4 class="p__p__text__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea aliquam praesentium eveniet nemo, dignissimos velit ipsum facere, ab placeat sequi at eligendi eius rerum quaerat error in inventore facilis! Nemo!</h4>
+                                        </div>
+                                </div>
+                        </div>
+                        <div class="p_p_cont__container">
+                                <div class="p_p_box"></div>
+                        </div>
+                        <div class="p_p_cont__container">
+                                <div class="p_p_box"></div>
+                        </div>
+                        <!-- <div class="ps__line--3"></div> -->
+                    </div>
+                    <div class="p__p__space-scroll__container" id="profile-postulations-mid-scroll"></div>
+                </div>
+                    <div class="profile__postulations__box__botton" id="profile-postulations-botton">
+                        <div class="p__btn__expand__container" id="profile-p-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="p__btn__expand" id="p-p-expand" enable-background="new 0 0 24 24" height="36px" viewBox="0 0 24 24" width="36px" fill="#000000"><rect fill="none" height="24" width="24"/><g><polygon points="17.77,3.77 16,2 6,12 16,22 17.77,20.23 9.54,12"/></g></svg>
+                        </div>
+                    </div>
             </div>
         </div>
 
@@ -178,10 +234,80 @@
             <div class="ps__line"></div>
         </div>
 
-        <div class="profile-cont3">
-            <div class="profile__my-markets"></div>
-            <div class="profile__certifications"></div>
-        </div>
+
+        
+        
+
+        <div class="profile-cont3 var--fontUB" id="profile-cont3">
+                <div class="profile__my-markets">
+                    <div class="profile__mm__box--top">
+                            <h2 class="p__title-boxs">Mis Coccoococ</h2>
+                            <div class="ps__line--2"></div>
+                    </div>
+                    <div class="profile__mm__mid__container">
+                            <div class="profile__mm__box--mid" id="profile-mm-mid">
+                                    <div class="p__mm__mm__box__container" id="p-mm-mm-box-container">
+                                            <div class="p__mm__mm__profile-img__container">
+                                                    <img class="p__mm__mm__profile-img__img" src="assets\markets\market-3\sankarnypng (2).png" alt="Carniceria de carne">
+                                            </div>
+                                            <div class="p__mm__mm__title" id="p-mm-mm-title">
+                                                    <h2 class="p__mm__mm__text">Text TextText TextText TextText Text</h2>
+                                            </div>
+                                    </div>
+                                    <div class="p__mm__mm__expand__box__container" id="p-mm-mm-expand-box-container">
+                                            <div class="p__mm__mm__options__container" id="p-mm-mm-options-container">
+                                                    <div class="p__mm__mm__recive-cv" id="p-mm-mm-recive-cv">
+                                                            <div class="p__mm__mm__option__text" id="p-mm-mm-option-text">
+                                                                    <div class="p__mm__mm__option__text__text">Recibir GGs</div>
+                                                            </div>
+                                                            <div class="p__mm__mm__option__btns" id="p-mm-mm-option-btns">
+                                                                    <div class="p__mm__mm__option__torf">
+                                                                            <div class="p__mm__mm__option__torf__text">Si</div>
+    
+                                                                    </div>
+                                                                    <div class="p__mm__mm__option__torf">
+                                                                            <div class="p__mm__mm__option__torf__text">No</div>
+                                                                    </div>
+                                                            </div>
+                                                    </div>
+                                                    <div class="p__mm__mm__dats-maps">
+    
+                                                    </div>
+                                                    <div class="p__mm__mm__delete-my-market">
+                                                            <div class="p__mm__mm__delete-my-market__container">
+                                                                    <h3 class="p__mm__mm__delete-mm">Borrar este Market</h3>
+                                                            </div>
+                                                    </div>
+                                            </div>
+                                    </div>
+                            </div>
+                            <div class="p__mm__space-scroll__container" id="profile-mm-mid-scroll"></div>         
+                    </div>
+                    <div class="profile__mm__box--botton" id="profile-mm-botton">
+                            <div class="p__btn__expand__container" id="profile-mm-btn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="p__btn__expand" id="p-mm-expand" enable-background="new 0 0 24 24" height="36px" viewBox="0 0 24 24" width="36px" fill="#000000"><rect fill="none" height="24" width="24"/><g><polygon points="17.77,3.77 16,2 6,12 16,22 17.77,20.23 9.54,12"/></g></svg>
+                            </div>                       
+                    </div>
+                </div>
+                <div class="profile__certifications" id="profile-certifications">
+                            <div class="profile__cer__box--top">
+                                <h2 class="p__title-boxs">Ceceececccec</h2>
+                                <div class="ps__line--2"></div>
+                            </div>
+        
+                            <div class="profile__cer__box--mid" id="profile-cer-mid">
+                                    <h2 class="p__cer__cooming">Proximamente</h2>
+                                    <div class="ps__line--3"></div>
+                            </div>
+        
+                            <div class="profile__cer__box--botton" id="profile-cer-botton">
+                                <div class="p__btn__expand__container" id="profile-cer-btn">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="p__btn__expand" id="p-cer-expand" enable-background="new 0 0 24 24" height="36px" viewBox="0 0 24 24" width="36px" fill="#000000"><rect fill="none" height="24" width="24"/><g><polygon points="17.77,3.77 16,2 6,12 16,22 17.77,20.23 9.54,12"/></g></svg>
+                                </div>                       
+                    </div>
+                </div>
+            </div>
+        
     </div>
 
 
