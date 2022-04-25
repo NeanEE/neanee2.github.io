@@ -625,6 +625,7 @@
         display: block;
         width: 80%;
         height: .25em;
+        transform: translateY(.1em);
         background-color: var(--colorbtn);
     }
     .footer__contact__container::before{
@@ -670,10 +671,13 @@
                 transform: translateY(.15em);
             }
 }
-@media screen and (max-width: 863px){
+@media screen and (max-width: 878px){
     .sub__footer{
         height: 3em;
     }
+        .sfc__text{
+            transform: translate(0.25em, 0em);
+        }
 }
 @media screen and (max-width: 813px){
     .msil__dsm{
@@ -788,7 +792,7 @@
 }
 @media screen and (max-width: 521px){
     .sub__footer{
-        height: 5.5em;
+        height: 5em;
         flex-direction: column;
         font-size: .9em;
     }
