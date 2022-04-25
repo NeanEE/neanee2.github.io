@@ -17,7 +17,7 @@
 .menu-container{
     width: 95%;
     height: 56em;
-    margin: 6em auto 2em auto;
+    margin: 5em auto 2em auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: .65fr .65fr 23em .65fr;
@@ -84,10 +84,113 @@
         justify-content: center;
         background-color: var(--colorside1)
     }
-        .menu__ads-img{
-                max-width: 80em;
+
+
+
+
+
+
+
+
+
+    .slider {
+        overflow: hidden;
+        /* max-width: 600px; */
+        position: relative;
+      }
+      
+      .slider .slider__item,
+      .slider .slider__item--hidden{
+        display: none;
+      }
+      
+      .slider__img{
+        /* width: 100%;
+        max-width: 600px;
+        height: auto; */
+        height: 100%;
+        max-width: 80em;
+      }
+      
+      .slider .slider__item--visible {
+        display: block;
+        animation: fadeVisibility 0.5s;
+      }
+      
+      .slider__actions{
+        width: 100%;
+        height: 23em;
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+        /* top: 50%; */
+        /* transform: translateY(-50%); */
+      }
+      
+      .slider__btn{
+        /* border-radius: 50px;
+        border: 0;
+        font-weight: bold;
+        cursor: pointer;
+        width: 40px;
+        height: 40px; */
+        min-width: 10%;
+        max-width: 9em;
+        height: 100%;
+        position: absolute;
+        border-style: none;
+        background-color: rgba(0, 155, 155, .5);
+      }
+      
+      .slider__btn-prev{
+        /* margin-left: 20px; */
+        left: 0%;
+      }
+      
+      .slider__btn-next{
+        /* margin-right: 20px; */
+        right: 0%;
+      }
+      
+      @keyframes fadeVisibility {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+          transform: opacity linear;
+        }
+      }
+
+
+
+
+
+
+
+
+      
+
+        .box__ads__arrow{
+            min-width: 10%;
+            max-width: 9em;
+            height: 23em;
+            position: absolute;
+            background-color: rgba(0, 155, 155, .5);
+        }
+        .box__ads__arrow-l{
+            left: 2.5%;
+        }
+        .box__ads__imgs__container{
+
+        }
+            .menu__ads-img{
                 height: 100%;
+                max-width: 80em;
             }
+        .box__ads__arrow-r{
+            right: 2.5%;
+        }
     .box__pharmacy-turn__container{
         grid-area: mptc;
         height: 14em;
@@ -204,6 +307,8 @@
                     display: flex;
                     justify-content: center;
                     align-items: center;
+                    /* border-left: 1em solid var(--colorbtn);  */
+                    clip-path: polygon(0 0, 94% 10%, 100% 100%, 6% 94%);
                     cursor: pointer;
                     background-color: var(--colorblock1)
                 }
@@ -212,13 +317,12 @@
                 }
                 .ptc__c__btn-op:hover .ptc__c__btn-op__text{
                     transition: transform 300ms;
-                    fill: var(--colorbtn);
+                    color: var(--colorbtn);
                     transform: scale(1.1);
                 }
                     .ptc__c__btn-op__text{
-                        fill: white;
+                        color: white;
                         font-size: 1.5em;
-                        font-weight: 700;
                         transition: transform 300ms;
                     }
 
@@ -232,13 +336,14 @@
 
 @media screen and (max-width: 956px){
     .menu-container{
-        margin-top: 2em;
+        margin-top: 4.25em;
     }
+
 }
 @media screen and (max-width: 946px){
     .menu-container{
         height: 60em;
-        margin-top: 2em;
+        margin-top: .75em;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: .5fr 1fr 1fr 1fr 1fr 18em 1.5fr;
         grid-template-areas: "msb msb msb msb"
@@ -249,6 +354,12 @@
                             "ads ads ads ads"
                             "mptc mptc mptc mptc";
     }
+    .slider__actions{
+        height: 18em;
+    }
+            .box__ads__arrow{
+                height: 18em;
+            }
 }
 @media screen and (max-width: 744px){
     .menu-container{
@@ -295,7 +406,7 @@
 }
 @media screen and (max-width: 664px){
     .menu-container{
-        margin-top: 2em;
+        margin-top: .5em;
         grid-template-columns: 0.25fr 1.75fr 1.75fr 0.25fr;
         grid-template-rows: 2em 1fr 1fr 1fr 1fr min-content 1.5fr;
         grid-template-areas: "msb msb msb msb"
@@ -312,9 +423,15 @@
     .box__ads{
         height: max-content;
     }
-        .menu__ads-img{
-            max-width: 100%;
-        }
+            .box__ads__arrow{
+                
+            }
+                .menu__ads-img{
+                    max-width: 100%;
+                }
+                .slider__img{
+                    max-width: 100%;
+                }
             .ptc__c__btn-hour{
                 width: 80%;
             }
@@ -332,7 +449,8 @@
 }
 @media screen and (max-width: 480px){
     .menu-container{
-        height: 83em;
+        /* height: 83em; */
+        height: 72em;
     }    
     .box__pharmacy-turn__container{
         height: 33em;
