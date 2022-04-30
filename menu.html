@@ -201,22 +201,32 @@
 
 
 
-        <div class="slider box__ads" >
+        <div class="slider box__ads">
                 <div class="slider__item slider__item--visible">
-                  <img src="assets\ads\ads1.webp" class="slider__img" loading="lazy"/>
+                        <img src="assets\ads\ads1.webp" class="slider__img" loading="lazy"/>
                 </div>
-                <div class="slider__item">
-                  <img src="assets\ads\ads2.webp" class="slider__img" loading="lazy"/>
+                <div class="slider__item slider__item--hidden">
+                        <img src="assets\ads\ads2.webp" class="slider__img" loading="lazy"/>
                 </div>
-                <div class="slider__item">
-                  <img src="assets\ads\ads3.webp" class="slider__img" loading="lazy"/>
+                <div class="slider__item slider__item--hidden">
+                        <img src="assets\ads\ads3.webp" class="slider__img" loading="lazy"/>
+                </div>
+                <div class="slider__item slider__item--hidden">
+                        <img src="assets\ads\ads4.webp" class="slider__img" loading="lazy"/>
                 </div>
           
                 <div class="slider__actions">
-                  <button id="slider__button--prev" class="slider__btn-prev slider__btn"></button>
-                  <button id="slider__button--next" class="slider__btn-next slider__btn"></button>
+                        <button id="slider__button--prev" class="slider__btn-prev slider__btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="slider__btn-izq__svg" enable-background="new 0 0 24 24" viewBox="0 0 24 24"><rect fill="none" height="24" width="24"/><g><polygon points="17.77,3.77 16,2 6,12 16,22 17.77,20.23 9.54,12"/></g></svg>
+                        </button>
+
+                        <div onmouseover="stopover()" onmouseout="moveout()" class="slider__space__temp"></div>
+
+                        <button id="slider__button--next" class="slider__btn-next slider__btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="slider__btn-der__svg" enable-background="new 0 0 24 24" viewBox="0 0 24 24"><rect fill="none" height="24" width="24"/><g><polygon points="17.77,3.77 16,2 6,12 16,22 17.77,20.23 9.54,12"/></g></svg>
+                        </button>
                 </div>
-              </div>
+        </div>
           
 
 
