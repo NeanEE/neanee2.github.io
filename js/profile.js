@@ -58,10 +58,10 @@ profile_cv_btn.addEventListener("click", ()=>{
         {
             profile_cont2.classList.toggle("profile-cont2--expand--3");
         }
-        // if (profile_cont2.classList.contains("profile-cont2--expand--3") && profile_p_btn.classList.contains("p__btn__expand--expand") == true)
-        // {
-        //     profile_postulations_mid_container.classList.toggle("profile__postulations__mid__container");
-        // }
+        if(profile_postulations_mid.classList.contains("profile__postulations__box__mid--expand") == true){
+            profile_postulations_mid_container.classList.toggle("profile__postulations__mid__container--900px");
+            // Tengo que decirle que se ejecute esto para añadir la clase al hacer click en cv y estando pop activo, pero si el click es para cerrar el cv, entonces tiene que remover la clase, el problema es que tiene que hacerlo con un timeout de 800, al abrir lo hacer al instante
+        }
     }
 });
 
@@ -77,6 +77,8 @@ profile_p_btn.addEventListener("click", ()=>{
     p_p_expand.classList.toggle("p__btn__expand--expand");
 
     if (window.matchMedia("(max-width:900px)").matches){
+        // pop añadir clase -- cambiando el width
+        profile_postulations_mid_container.classList.add("profile__postulations__mid__container--900px");
         if (profile_cv_btn.classList.contains("p__btn__expand--expand") == true)
         {
             profile_cont2.classList.toggle("profile-cont2--expand--3");
