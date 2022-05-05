@@ -1,0 +1,695 @@
+                         /* SIDEBAR SIDEBAR SIDEBAR SIDEBAR SIDEBAR */
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* CONTENIDO DE MENU     CONTENIDO DE MENU    CONTENIDO DE MENU     CONTENIDO DE MENU */
+ 
+.menu-container{
+    width: 95%;
+    height: 63em;
+    /* le sume 7 em en total */
+    margin: 5em auto 2em auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: .65fr .65fr 30em .65fr;
+    /* 23em original */
+    /* 4 em mas otros 3, en total 7 */
+    grid-template-areas: "mbtb mbtb mpb mpb"
+                         "motb motb mserb mserb"
+                         "ads ads ads ads"
+                         "mptc mptc mptc mptc";
+    gap: 1em;
+}           
+    .principal__boxs{
+        text-decoration: underline var(--colorbtn);
+        font-size: 3.5em;
+        font-weight: 600;
+        background-color: var(--colorside1)
+    }
+    .box__bt{
+        grid-area: mbtb;
+        /* text-decoration: underline var(--colorbtn);
+        font-size: 3.5em;
+        font-weight: 600;
+        background-color: var(--colorside1) */
+    }
+        .box__conts{
+            transition: 300ms;
+        }
+        .box__conts:hover{
+            color: var(--colorbtn);
+            text-decoration: none;
+            font-size: 3.75em;
+            cursor: pointer;
+            transition: font-size 300ms;
+        }
+        .box__conts:focus{
+            color: var(--colorbtn);
+            text-decoration: none;
+            font-size: 4.25em;
+            cursor: pointer;
+            transition: font-size 300ms;
+        }
+    .box__products{
+        grid-area: mpb;
+        /* text-decoration: underline var(--colorbtn);
+        font-size: 3.5em;
+        font-weight: 600;
+        background-color: var(--colorside1) */
+    }
+    .box__ot{
+        grid-area: motb;
+        /* text-decoration: underline var(--colorbtn);
+        font-size: 3.5em;
+        font-weight: 600;
+        background-color: var(--colorside1) */
+    }
+    .box__services{
+        grid-area: mserb;
+        /* text-decoration: underline var(--colorbtn);
+        font-size: 3.5em;
+        font-weight: 600;
+        background-color: var(--colorside1) */
+    }
+    .box__ads{
+        grid-area: ads;
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        background-color: var(--colorside1)
+    }
+
+
+
+
+
+
+
+
+
+    .slider {
+        overflow: hidden;
+        /* max-width: 600px; */
+        /* flex-direction: column; */
+        padding-top: .5em;
+        position: relative;
+      }
+        .slider__click__container{
+            width: 100%;
+            height: calc(100% - 4em);
+            position: absolute;
+        }
+        .slider__item--hidden{
+            /* width: 100%; */
+            display: none;
+        }
+        .slider__item{
+            justify-content: center;
+        }
+        .slider__img{
+            /* width: 100%;
+            max-width: 600px;
+            height: auto; */
+            /* height: 100%; */
+            height: 26em;
+            max-width: 80em;
+        }
+        
+        .slider__item--visible {
+            display: flex;
+            animation: fadeVisibility 0.5s;
+        }
+        .slider__ads__modal__container{
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(0, 0, 0, .5);
+            display: none;
+            /* display: block; */
+            z-index: 100;
+        }
+        .slider__ads__modal__container--show{
+            display: flex;
+        }
+
+
+
+        .slider__options__container{
+            width: 100%;
+            height: 3.5em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: var(--colorside1);
+        }
+            .slider__options__boxs{
+                width: 5em;
+                height: 92%;
+                margin: 0 .5em;
+                overflow: hidden;
+                cursor: pointer;
+                background-color: var(--colorblock1);
+            }
+                /* .slider__pause__play{
+                    
+                } */
+                .slider__options__svg--prev{
+                    display: flex;
+                    fill: white;
+                    transform: translate(-1.1em, -.6em) scale(1.1) rotate(180deg);
+                    transition: transform 300ms, fill 300ms;
+                }
+                .slider__options__b--prev:hover .slider__options__svg--prev{
+                    fill: var(--colorbtn);
+                    transform: translate(-1.2em, -.65em) scale(1.2) rotate(180deg);
+                    transition: transform 300ms, fill 300ms;
+                }
+
+                .slider__options__svg{
+                    display: flex;
+                    fill: white;
+                    transform: translate(1em, .2em) scale(1.1);
+                    transition: transform 300ms, fill 300ms;
+                }
+                .slider__options__b--pp:hover .slider__options__svg{
+                    fill: var(--colorbtn);
+                    transform: translate(1.1em, .2em) scale(1.2);
+                    transition: transform 300ms, fill 300ms;
+                }
+
+                .slider__options__svg--pause{
+                    display: flex;
+                    fill: white;
+                    transform: translate(1em, .25em) scale(1);
+                    transition: transform 300ms, fill 300ms;
+                }
+                .slider__options__b--pp:hover .slider__options__svg--pause{
+                    fill: var(--colorbtn);
+                    transform: translate(1.1em, .25em) scale(1.1);
+                    transition: transform 300ms, fill 300ms;
+                }
+                .slider__options__svg--next{
+                    display: flex;
+                    fill: white;
+                    transform: translate(1em, .25em) scale(1.1);
+                    transition: transform 300ms, fill 300ms;
+                }
+                .slider__options__b--next:hover .slider__options__svg--next{
+                    fill: var(--colorbtn);
+                    transform: translate(1.1em, .25em) scale(1.2);
+                    transition: transform 300ms, fill 300ms;
+                }
+                .slider__options__svg--none{
+                    display: none;
+                }
+
+
+            .sam__box{
+                width: 50%;
+                height: 50vh;
+                border-radius: 1.3em;
+                background-color: var(--colorblock1);
+            }
+                .sam__close__btn__container{
+                    width: 2.75em;
+                    height: 2.75em;
+                    position: absolute;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 50%;
+                    /* height: 2.75em; */
+                    /* height: 0em; */
+                    /* margin-right: auto; */
+                    /* position: absolute; */
+                    /* border-radius: 50%; */
+                    /* margin-left: auto; */
+                    /* left: 70%; */
+                    transform: translateY(-1.325em);
+                    background-color: var(--colorblock1);
+                }
+                        .sam__close__btn{
+                            width: 2.25em;
+                            fill: white;
+                            /* position: absolute; */
+                        }
+                .sam__title{
+                    width: 100%;
+                    height: 25%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    /* background-color: crimson; */
+                }
+                    .sam__title__text{
+                        font-size: 2em;
+                        text-decoration: underline;
+                    }
+                .sam__text{
+                    width: 100%;
+                    height: 50%;
+                    padding: 0 2em;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    /* background-color: thistle; */
+                }
+                    .sam__text__text{
+                        font-size: 1.15em;
+                        text-align: center;
+                    }
+                .sam__btns{
+                    width: 100%;
+                    height: 25%;
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                    /* background-color: seagreen; */
+                }
+                    .sam__back{
+                        min-width: 30%;
+                        max-width: 12em;
+                        height: 4em;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        cursor: pointer;
+                        background-color: var(--colorside1);
+                    }
+                    .sam__back:hover .sam__btn__back{
+                        transform: scale(1.1);
+                        transition: transform 300ms, color 300ms;
+                        color: var(--colorbtn);
+                    }
+                        .sam__btn__back{
+                            /* font-size: 1.25em; */
+                            transition: transform 300ms, color 300ms;
+                        }
+                    .sam__enter{
+                        min-width: 30%;
+                        max-width: 12em;
+                        height: 4em;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        cursor: pointer;
+                        color: white;
+                        background-color: var(--colorside1);
+                    }
+                    .sam__enter:hover .sam__btn__enter{
+                        transform: scale(1.1);
+                        transition: transform 300ms, color 300ms;
+                        color: var(--colorbtn);
+                    }
+                        .sam__btn__enter{
+                            transition: transform 300ms, color 300ms;
+                        }
+                            .sam__btn__text{
+                                font-size: 1.5em;
+                            }
+        @keyframes fadeVisibility {
+            0% {
+            opacity: 0;
+            }
+            100% {
+            opacity: 1;
+            transform: opacity linear;
+            }
+        }
+
+    .box__pharmacy-turn__container{
+        grid-area: mptc;
+        height: 14em;
+        padding: .5em;
+        display: grid;
+        grid-template-columns: 17em calc(100% - 17em);
+        grid-template-rows: 75% 25%;
+        grid-template-areas: "ptcp ptct"
+                             "ptcp ptcb";
+        background-color: var(--colorside1);
+    }
+        .ptc__conts__photo__container{
+            grid-area: ptcp;
+            width: 17em;
+            height: 13em;
+        }
+            .ptc__photo__box{
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+                /* background-color: cadetblue; */
+            }
+                .ptc__photo__img{
+                    /* height: 100%; */
+                    transform: translateX(-2em);
+                }
+        .ptc__conts__cont__container{
+            grid-area: ptct;
+            width: 100%;
+        }
+            .ptc__cont__title__container{
+                width: 100%;
+                height: 13%;
+                padding: 0 .5em;
+                display: flex;
+                align-items: center;
+            }
+                .ptc__cont__title__text{
+                    font-size: 1.2em;
+                }
+            .ptc__cont__pharmacy-name__container{
+                height: 43.5%;
+                padding: .5em;
+                display: flex;
+                align-items: center;
+            }
+                .svg__icon--3__container{
+                    width: 2.3em;
+                }
+                    .svg__icon--3{
+                        fill: white;
+                        width: 2.3em;   
+                    }
+                .ptc__cont__pharmacy-name__text{
+                    margin-left: .5em;
+                    font-size: 1.6em;
+                }
+            .ptc__cont__direction__container{
+                width: 100%;
+                height: 43.5%;
+                padding: .5em;
+                display: flex;
+                align-items: center;
+                /* background-color: darkolivegreen; */
+            }
+                .icon__gg--1__container{
+                    height: 2.4em;
+                }
+                    .icon__gg--1{
+                        height: 2.4em;
+                        fill: white;
+                    }
+                .ptc__cont__direction__text{
+                    margin-left: .5em;
+                    font-size: 1.6em;
+                }
+        .ptc__conts__btn__container{
+            grid-area: ptcb;
+            width: 17em;
+            margin-left: auto;
+            height: 3.25em;
+        }
+            .ptc__cont__btns__container{
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: end;
+                /* background-color: goldenrod; */
+            }
+                .ptc__c__btn-hour{
+                    width: 8em;
+                    height: 100%;
+                    margin-right: .7em;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    cursor: pointer;
+                    background-color: var(--colorblock1)
+                }
+                .ptc__c__btn-hour:hover{
+                    color: var(--colorbtn);
+                }
+                .ptc__c__btn-hour:hover .ptc__c__btn-hour__text{
+                    transition: transform 300ms;
+                    transform: scale(1.1);
+                }
+                    .ptc__c__btn-hour__text{
+                        font-size: 1.5em;
+                        transition: transform 300ms;
+                    }
+                .ptc__c__btn-op{
+                    width: 8em;
+                    height: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    /* border-left: 1em solid var(--colorbtn);  */
+                    /* clip-path: polygon(0 0, 94% 10%, 100% 100%, 6% 94%); */
+                    cursor: pointer;
+                    background-color: var(--colorblock1)
+                }
+                .ptc__c__btn-op:hover{
+                    color: var(--colorbtn);
+                }
+                .ptc__c__btn-op:hover .ptc__c__btn-op__text{
+                    transition: transform 300ms;
+                    color: var(--colorbtn);
+                    transform: scale(1.1);
+                }
+                    .ptc__c__btn-op__text{
+                        color: white;
+                        font-size: 1.5em;
+                        transition: transform 300ms;
+                    }
+
+
+        /* MEDIA MEDIA MEDIA MEDIA MEDIA MEDIA MEDIA */
+
+
+
+
+
+
+@media screen and (max-width: 956px){
+    .menu-container{
+        margin-top: 4.25em;
+    }
+
+}
+@media screen and (max-width: 946px){
+    .menu-container{
+        height: 60em;
+        margin-top: .75em;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: .5fr 1fr 1fr 1fr 1fr 25em 1.5fr;
+        /* 18em original */
+        grid-template-areas: "msb msb msb msb"
+                            "mbtb mbtb mbtb mbtb"
+                            "motb motb motb motb"
+                            "mpb mpb mpb mpb"
+                            "mserb mserb mserb mserb"
+                            "ads ads ads ads"
+                            "mptc mptc mptc mptc";
+    }
+    .slider__img{
+        height: 21em;
+    }
+            .box__ads__arrow{
+                height: 18em;
+            }
+}
+@media screen and (max-width: 840px){
+            .sam__back{
+                height: 3em;
+            }
+            .sam__enter{
+                height: 3em;
+            }
+            .sam__text__text{
+                font-size: 1.05em;
+            }
+                            .sam__btn__text{
+                                font-size: 1.25em;
+                            }
+}
+@media screen and (max-width: 744px){
+    .menu-container{
+        height: 76em;
+    }    
+    .box__pharmacy-turn__container{
+        height: 26em;
+        grid-template-columns: 20em calc(100% - 20em);
+        grid-template-rows: 13em calc(100% - 13em);
+        grid-template-areas: "ptcp ptcb"
+                             "ptct ptct";
+    }
+    .ptc__conts__photo__container{
+        width: 20em;
+        height: 13em;
+    }
+        .ptc__cont__title__container{
+            padding: .5em .5em 0 .5em;
+        }
+            .ptc__cont__direction__text{
+                margin-left: .5em;
+                font-size: 1.6em;
+            }
+    .ptc__conts__btn__container{
+        width: 100%;
+        height: 100%;
+    }
+        .ptc__cont__btns__container{
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            padding-left: .5em;
+        }
+            .ptc__c__btn-hour{
+                width: 70%;
+                height: 3.5em;
+                margin-right: 0;
+            }
+            .ptc__c__btn-op{
+                width: 70%;
+                height: 3.5em;
+                justify-content: center;
+            }
+}
+@media screen and (max-width: 664px){
+    .menu-container{
+        margin-top: .5em;
+        grid-template-columns: 0.25fr 1.75fr 1.75fr 0.25fr;
+        grid-template-rows: 2em 1fr 1fr 1fr 1fr min-content 1.5fr;
+        grid-template-areas: "msb msb msb msb"
+                            "mbtb mbtb mbtb mbtb"
+                            "motb motb motb motb"
+                            "mpb mpb mpb mpb"
+                            "mserb mserb mserb mserb"
+                            "ads ads ads ads"
+                            "mptc mptc mptc mptc";
+    }
+    /* .m-s__logo{
+        color: white;
+    } */
+    .box__ads{
+        height: max-content;
+    }
+                .menu__ads-img{
+                    max-width: 100%;
+                }
+                .slider__img{
+                    height: 100%;
+                    max-width: 100%;
+                }
+            .ptc__c__btn-hour{
+                width: 80%;
+            }
+            .ptc__c__btn-op{
+                width: 80%;
+            }
+            .sam__box{
+                width: 60%;
+                /* height: 50vh; */
+            }
+}
+@media screen and (max-width: 581px){
+            .ptc__c__btn-hour{
+                width: 100%;
+            }
+            .ptc__c__btn-op{
+                width: 100%;
+            }
+            .sam__box{
+                width: 70%;
+            }
+}
+@media screen and (max-width: 480px){
+    .menu-container{
+        /* height: 83em; */
+        height: 72em;
+    }
+                            .sam__box{
+                                width: 90%;
+                            }
+    .box__pharmacy-turn__container{
+        height: 33em;
+        grid-template-columns: 100%;
+        grid-template-rows: 13em 14em 6em;
+        grid-template-areas: "ptcp"
+                             "ptct"
+                             "ptcb";
+    }
+    .ptc__conts__photo__container{
+        width: 20em;
+        height: 13em;
+        margin: auto;
+    }
+            .ptc__cont__direction__text{
+                font-size: 1.25em;
+            }
+                    .ptc__cont__pharmacy-name__text{
+                        font-size: 1.25em;
+                    }
+            .ptc__cont__title__text{
+                font-size: 1em;
+            }
+    .ptc__conts__btn__container{
+        width: 100%;
+        height: 100%;
+    }
+        .ptc__cont__btns__container{
+            flex-direction: row;
+        }
+            .ptc__c__btn-hour{
+                height: 3em;
+                width: 38%;
+            }
+                .ptc__c__btn-hour__text{
+                    font-size: 1.2em;
+                }
+            .ptc__c__btn-op{
+                height: 3em;
+                width: 38%;
+            }
+            .ptc__c__btn-op__text{
+                font-size: 1.2em;
+            }
+}
+@media screen and (max-width: 437px){
+    .menu-container{
+        margin-top: 2em;
+    }
+        .box__conts{
+            font-size: 2em;
+        }
+        .box__conts:hover{
+            font-size: 2.1em;
+        }
+    .box__ads{
+        height: max-content;
+    }
+        .menu__ads-img{
+            max-width: 100%;
+        }
+}
+@media screen and (max-width: 336px){
+    .box__pharmacy-turn__container{
+        height: 33em;
+        grid-template-columns: 100%;
+        grid-template-rows: 13em 14em 6em;
+        grid-template-areas: "ptcp"
+                             "ptct"
+                             "ptcb";
+    }
+        .ptc__conts__photo__container{
+            width: 100%;
+        }
+            /* .ptc__photo__box{ */
+                /* LA IMAGEN NO QUEDA BIEN ALINEADA */
+            /* } */
+}
