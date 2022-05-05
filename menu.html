@@ -175,33 +175,8 @@
         <a href="market_list_p.html" class="box__products principal__boxs box__conts var--center var--text" tabindex="0" accesskey="p">Productos</a>
         <div class="box__ot principal__boxs box__conts var--center" tabindex="0">Ofrecer Trabajo</div>
         <div class="box__services principal__boxs box__conts var--center" tabindex="0">Servicios</div>
-        <!-- <div class="box__ads" id="box-ads">
-                <div class="box__ads__arrow-l box__ads__arrow" id="left-arrow"></div>
-                <div class="box__ads__imgs__container" id="slider-container">
-                        <img class="menu__ads-img" src="assets\ads\ads1.webp" alt="Hola" height="368" id="imagen-s"> -->
-
-                        <!-- <img src="assets\ads\ads2.webp" alt="" class="menu__ads-img" height="368px"> -->
-                        <!-- <img src="assets\ads\ads3.webp" alt="" class="menu__ads-img" height="368px"> -->
-                        <!-- <img src="assets\ads\ads4.webp" alt="" class="menu__ads-img" height="368px"> -->
-
-                <!-- </div>
-                <div class="box__ads__arrow-r box__ads__arrow" id="right-arrow"></div>
-        </div> -->
-        <!-- <div class="contenedor box__ads">
-                <div class="atras botones">
-                        &#60
-                </div>
-                <div class="adelante botones">
-                        &#62
-                </div>
-                <img src="assets\ads\ads1.webp" alt="" class="menu__ads-img" id="imagen">
-        </div> -->
-
-
-
-
-
         <div class="slider box__ads">
+                <div class="slider__click__container" id="slider-click"></div>
                 <div class="slider__item slider__item--visible">
                         <img src="assets\ads\ads1.webp" class="slider__img" loading="lazy"/>
                 </div>
@@ -214,18 +189,43 @@
                 <div class="slider__item slider__item--hidden">
                         <img src="assets\ads\ads4.webp" class="slider__img" loading="lazy"/>
                 </div>
-          
-                <div class="slider__actions">
-                        <button id="slider__button--prev" class="slider__btn-prev slider__btn">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="slider__btn-izq__svg" enable-background="new 0 0 24 24" viewBox="0 0 24 24"><rect fill="none" height="24" width="24"/><g><polygon points="17.77,3.77 16,2 6,12 16,22 17.77,20.23 9.54,12"/></g></svg>
-                        </button>
+                <div class="slider__options__container">
+                        <div class="slider__options__boxs slider__options__b--prev" id="slider-prev-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="60.8" width="80" class="slider__options__svg--prev"><path d="M18.75 37.2 15.4 33.85 25.3 23.95 15.4 14.05 18.75 10.7 32 23.95Z"/></svg>
+                        </div>
+                        <div class="slider__options__boxs slider__options__b--pp" id="slider-play-pause-btn">
+                                <!-- <svg xmlns="http://www.w3.org/2000/svg" ><path class="slider__options__svg--play-pause" d="M16 37.85V9.85L38 23.85ZM19 23.85ZM19 32.4 32.45 23.85 19 15.3Z"/></svg> -->
+                                <svg xmlns="http://www.w3.org/2000/svg" height="60.8" width="80" class="slider__options__svg" id="slider-svg-play"><path d="M15.3 39.15V8.55L39.35 23.85ZM19.25 23.85ZM19.25 31.9 31.95 23.85 19.25 15.8Z"/></svg>
 
-                        <div onmouseover="stopover()" onmouseout="moveout()" class="slider__space__temp"></div>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="60.8" width="80" class="slider__options__svg--pause slider__options__svg--none" id="slider-svg-pause"><path d="M28.25 38V10H36V38ZM12 38V10H19.75V38Z"/></svg>
 
-                        <button id="slider__button--next" class="slider__btn-next slider__btn">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="slider__btn-der__svg" enable-background="new 0 0 24 24" viewBox="0 0 24 24"><rect fill="none" height="24" width="24"/><g><polygon points="17.77,3.77 16,2 6,12 16,22 17.77,20.23 9.54,12"/></g></svg>
-                        </button>
+                        </div>
+                        <div class="slider__options__boxs slider__options__b--next" id="slider-next-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="60.8" width="80" class="slider__options__svg--next slider__options__svg"><path d="M18.75 37.2 15.4 33.85 25.3 23.95 15.4 14.05 18.75 10.7 32 23.95Z"/></svg>
+                        </div>
                 </div>
+                        <div class="slider__ads__modal__container" id="slider-modal">
+                                <div class="sam__box">
+                                        <div class="sam__title">
+                                                <h2 class="sam__title__text">Atencion!</h2>
+                                        </div>
+                                        <div class="sam__text">
+                                                <h4 class="sam__text__text" id="sam-text">Lorem</h4>
+                                        </div>
+                                        <div class="sam__btns">
+                                                <div class="sam__back" id="sam-btn-back">
+                                                        <div class="sam__btn__back">
+                                                                <h3 class="sam__btn__text">Regresar</h3>
+                                                        </div>
+                                                </div>
+                                                <a class="sam__enter" target="_blank" id="sam-btn-enter">
+                                                        <div class="sam__btn__enter">
+                                                                <h3 class="sam__btn__text" >Continuar</h3>
+                                                        </div>
+                                                </a>
+                                        </div>
+                                </div>
+                        </div>
         </div>
           
 
