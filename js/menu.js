@@ -1,6 +1,11 @@
 let slidePosition = 0;
 const slides = document.getElementsByClassName("slider__item");
 const totalSlides = slides.length;
+// let slider_img_lazy = document.querySelectorAll(".slider__img__lazy");
+let img_lazy1 = document.getElementById("img-lazy1");
+let img_lazy2 = document.getElementById("img-lazy2");
+let img_lazy3 = document.getElementById("img-lazy3");
+
 let next = document.getElementById("slider-next-btn");
 let prev = document.getElementById("slider-prev-btn");
 
@@ -16,38 +21,6 @@ let pause_play = document.getElementById("slider-play-pause-btn");
 slider_svg_play = document.getElementById("slider-svg-play");
 slider_svg_pause = document.getElementById("slider-svg-pause");
 
-// let stCounter = 0
-
-// const stTemp = setInterval(() => {
-//   console.log(stCounter);
-//   stCounter++;
-//     if (stCounter == 5){
-//       stCounter = 0;
-//     }
-// }, 1500);
-
-// function stTemp(){
-//   stTemp500 = setInterval(() => {
-//     console.log(stCounter);
-//     stCounter++;
-//   }, 1000);
-// }
-// stTemp();
-
-    // if(      ){
-      // EL ADS "1" DURA "X" MILISEGUNDOS, Y NADA MAS PARA GUIARME DESPUES (COPMENTADO) LET ADS 1 TIENE TANTOS VALORES, LET ADS 2 TIENE TANTOS OTROS, Y CON ESO SE EJECUTAN LAS FUNCIONES PARA TENER LAS MISMAS CON UN IF 1,2,3,4 
-      // stCounter = 0;
-    // }
-
-// stTemp();
-
-// function move500(){
-//   timeToMove = setTimeout(() => {
-//     moveToNextSlide();
-//   }, 500);
-// }
-// clearInterval(stTemp)
-// setInterval(stTemp);
   // EVENTO CLICK EN ADS
 
 slider_click.addEventListener("click", ()=>{
@@ -71,7 +44,6 @@ slider_click.addEventListener("click", ()=>{
       // slider_modal.href = "ACA VA UN LINK DIRECTO A LA PAGINA DENTRO DE DECAP"
     // }
     slider_ads_text.textContent = `Usted esta a punto de salir de Decap y dirigirse a "${adsLink}", proporcionado por: "${adsName}"`
-    // slider_modal.classList.add("slider__ads__modal__container--show");
     if (slidePosition <= 3){
     slider_modal.classList.add("slider__ads__modal__container--show");
     }
@@ -172,7 +144,7 @@ function moveToPrevSlide(){
     move();
   }
 }
-
+  // LA FUNCION MOVER EL SLIDER HACIA LA DERECHA, CON UN IF POR CADA ADS + EL TIEMPO QUE DURA CADA IMAGEN
 function move(){
     if (slidePosition == 0){
         timeToMove = setTimeout(() => {
@@ -195,24 +167,9 @@ function move(){
       }, 4000);
     }
 }
-// function move5(){
-//   timeToMove = setTimeout(() => {
-//     moveToNextSlide();
-//   }, 5000);
-// }
+// sacarle el loading="lazy" con js despues de que termine de cargar la pagina con setatribute a todas las imagenes despues del 0 de ads
 
-// function move6(){
-//   timeToMove = setTimeout(() => {
-//     moveToNextSlide();
-//   }, 6000);
-// }
 
-// function stTemp(){
-//   stTemp= setInterval(() => {
-//     console.log(stCounter);
-//     stCounter++;
-//   }, 1000);
-// }
 
 
 
@@ -241,7 +198,16 @@ function move(){
 // }
 // stTemp();
 // Al CARGAR EL DOM, INICIA EL MOVIMIENTO DEL SLIDER
-
 document.addEventListener("DOMContentLoaded",()=>{
-    move();
+  move();
+});
+// function lazy(){
+//   slider_img_lazy.removeAttribute("loading","lazy");
+// }
+// lazy();
+window.addEventListener('load', () => {
+  // alert("Carga Completa");
+  img_lazy1.removeAttribute('loading','lazy');
+  img_lazy2.removeAttribute('loading','lazy');
+  img_lazy3.removeAttribute('loading','lazy');
 });
