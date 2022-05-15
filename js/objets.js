@@ -8,21 +8,27 @@ nav_bar_btn = document.getElementById("objets-btn_navbar");
 objets_navbar_logo = document.getElementById("objets-navbar-logo");
 objets_navbar = document.getElementById("objets-navbar");
 
+// FLOAT BTNS
+float_btn_search = document.getElementById("float-btn-search");
+float_input_search = document.getElementById("float-input-search");
+
+float_notifications_box = document.getElementById("float-notifications-box");
+float_btn_notifications = document.getElementById("float-btn-notifications");
+
+// NOTIFICATIONS MODAL
+ms_ntf_back_btn = document.getElementById("ms-notifications-back-btn");
+
 // BOTONES PARA LOS MENUS
 ms_cuenta = document.getElementById("ms-cuenta");
 ms_micomercio = document.getElementById("ms-micomercio");
-ms_contacto = document.getElementById("ms-contacto");
+ms_notifications = document.getElementById("ms-notifications");
 ms_configuracion = document.getElementById("ms-configuracion");
 
 // SUB MENUS DE LA SIDEBAR
 msil_cuenta = document.getElementById("msil-cuenta");
 msil_micomercio = document.getElementById("msil-micomercio");
-msil_contacto = document.getElementById("msil-contacto");
+msil_notifications = document.getElementById("msil-contacto");
 msil_configuracion = document.getElementById("msil-configuracion");
-
-// SUBMENU DUPPED
-
-d_mssm_perfil = document.getElementById("d-mssm-perfil");
 
 // BOTON SHOW COLOR SELECTOR
 teme_color_selector = document.getElementById("teme-color-selector");
@@ -51,9 +57,22 @@ tcs_point_6 = document.getElementById("tcs-point-6");
 
 // INICIO
 
+  // ACTIVE MODALS
+float_btn_search.addEventListener("click", ()=>{
+  float_input_search.classList.toggle("ms__float__search--expand");
+});
 
+float_btn_notifications.addEventListener("click", ()=>{
+  float_notifications_box.classList.toggle("ms__notifications__container--expand");
+})
 
-nav_bar_btn.addEventListener('click', () => {
+  // NTF MODAL
+  ms_ntf_back_btn.addEventListener("click", ()=>{
+    float_notifications_box.classList.remove("ms__notifications__container--expand");
+  });
+  
+// BTN EXPAND MOBILE MENU
+nav_bar_btn.addEventListener('click', ()=>{
     nav_bar.classList.toggle('active');
     objets_navbar_logo.classList.toggle("var--text-black");
     objets_navbar.classList.toggle("menu-sidebar--btn");
@@ -61,14 +80,8 @@ nav_bar_btn.addEventListener('click', () => {
     nav_bar.classList.toggle("opacity--1");
 })
 
-// SUBMENU DUPPED
-
-ms_cuenta.addEventListener('click', () => {
-  d_mssm_perfil.classList.toggle("display--block2");
-})
-
 // BOTON SELECTOR DE COLORES
-color_selector.addEventListener('click', () => {
+color_selector.addEventListener('click', ()=>{
     teme_color_selector.classList.toggle("show");
 })
 
