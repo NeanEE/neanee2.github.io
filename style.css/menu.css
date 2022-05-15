@@ -170,7 +170,7 @@
                 } */
                 .slider__options__svg--prev{
                     display: flex;
-                    fill: white;
+                    fill: var(--colorwb);
                     transform: translate(-1.1em, -.6em) scale(1.1) rotate(180deg);
                     transition: transform 300ms, fill 300ms;
                 }
@@ -182,7 +182,7 @@
 
                 .slider__options__svg{
                     display: flex;
-                    fill: white;
+                    fill: var(--colorwb);
                     transform: translate(1em, .2em) scale(1.1);
                     transition: transform 300ms, fill 300ms;
                 }
@@ -194,7 +194,7 @@
 
                 .slider__options__svg--pause{
                     display: flex;
-                    fill: white;
+                    fill: var(--colorwb);
                     transform: translate(1em, .25em) scale(1);
                     transition: transform 300ms, fill 300ms;
                 }
@@ -205,7 +205,7 @@
                 }
                 .slider__options__svg--next{
                     display: flex;
-                    fill: white;
+                    fill: var(--colorwb);
                     transform: translate(1em, .25em) scale(1.1);
                     transition: transform 300ms, fill 300ms;
                 }
@@ -245,7 +245,7 @@
                 }
                         .sam__close__btn{
                             width: 2.25em;
-                            fill: white;
+                            fill: var(--colorwb);
                             /* position: absolute; */
                         }
                 .sam__title{
@@ -308,7 +308,7 @@
                         justify-content: center;
                         align-items: center;
                         cursor: pointer;
-                        color: white;
+                        color: var(--colorwb);
                         background-color: var(--colorside1);
                     }
                     .sam__enter:hover .sam__btn__enter{
@@ -331,6 +331,12 @@
             transform: opacity linear;
             }
         }
+
+
+
+        /* PHARMACY PHARMACY PHARMACY PHARMACY PHARMACY PHARMACY PHARMACY PHARMACY PHARMACY */
+
+
 
     .box__pharmacy-turn__container{
         grid-area: mptc;
@@ -382,7 +388,7 @@
                     width: 2.3em;
                 }
                     .svg__icon--3{
-                        fill: white;
+                        fill: var(--colorwb);
                         width: 2.3em;   
                     }
                 .ptc__cont__pharmacy-name__text{
@@ -402,7 +408,7 @@
                 }
                     .icon__gg--1{
                         height: 2.4em;
-                        fill: white;
+                        fill: var(--colorwb);
                     }
                 .ptc__cont__direction__text{
                     margin-left: .5em;
@@ -442,6 +448,29 @@
                         font-size: 1.5em;
                         transition: transform 300ms;
                     }
+                .ptc__c__hour__modal__container{
+                    position: fixed;
+                    top: 0;
+                    right: 0;
+                    bottom: 0;
+                    left: 0;
+                    /* display: flex; */
+                    justify-content: center;
+                    align-items: center;
+                    background-color: rgba(0, 0, 0, .5);
+                    display: none;
+                    z-index: 100;
+                }
+                .ptc__c__hour__modal__container--expand{
+                    display: flex;
+                }
+                    .ptc__hour-modal__box{
+                        width: 50%;
+                        max-width: 50em;
+                        height: 50vh;
+                        max-height: 25em;
+                        background-color: var(--colorside1);
+                    }
                 .ptc__c__btn-op{
                     width: 8em;
                     height: 100%;
@@ -462,7 +491,7 @@
                     transform: scale(1.1);
                 }
                     .ptc__c__btn-op__text{
-                        color: white;
+                        color: var(--colorwb);
                         font-size: 1.5em;
                         transition: transform 300ms;
                     }
@@ -483,7 +512,7 @@
 }
 @media screen and (max-width: 946px){
     .menu-container{
-        height: 60em;
+        height: 61em;
         margin-top: .75em;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: .5fr 1fr 1fr 1fr 1fr 25em 1.5fr;
@@ -573,9 +602,6 @@
                             "ads ads ads ads"
                             "mptc mptc mptc mptc";
     }
-    /* .m-s__logo{
-        color: white;
-    } */
     .box__ads{
         height: max-content;
     }
@@ -611,7 +637,7 @@
 @media screen and (max-width: 480px){
     .menu-container{
         /* height: 83em; */
-        height: 72em;
+        height: 77em;
     }
                             .sam__box{
                                 width: 90%;
@@ -676,6 +702,11 @@
         .menu__ads-img{
             max-width: 100%;
         }
+}
+@media screen and (max-width: 375px){
+    .ptc__conts__photo__container{
+        width: 100%;
+    }
 }
 @media screen and (max-width: 336px){
     .box__pharmacy-turn__container{
