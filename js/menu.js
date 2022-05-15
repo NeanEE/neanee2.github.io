@@ -21,6 +21,10 @@ let pause_play = document.getElementById("slider-play-pause-btn");
 slider_svg_play = document.getElementById("slider-svg-play");
 slider_svg_pause = document.getElementById("slider-svg-pause");
 
+// BOTON DE HORARIOS
+ptc_btn_hour = document.getElementById("ptc-btn-hour");
+ptc_modal_hour = document.getElementById("ptc-modal-hour");
+
   // EVENTO CLICK EN ADS
 
 slider_click.addEventListener("click", ()=>{
@@ -61,6 +65,17 @@ sam_btn_back.addEventListener("click", ()=>{
   slider_modal.classList.remove("slider__ads__modal__container--show");
 });
 
+  // KEYUP EVENT "Escape" CLOSE MODALS
+
+window.addEventListener("keyup", event => {
+  if (slider_modal.classList.contains("slider__ads__modal__container--show") && event.keyCode === 27){
+    slider_modal.classList.remove("slider__ads__modal__container--show");
+  }
+  if (ptc_modal_hour.classList.contains("ptc__c__hour__modal__container--expand") && event.keyCode === 27){
+    ptc_modal_hour.classList.remove("ptc__c__hour__modal__container--expand");
+  }
+});
+
 // EVENTO CLICK EN EL BTN ENTER DEL MODAL DE ADS > URL DEL ADS
 
 sam_btn_enter.addEventListener("click", ()=>{
@@ -86,6 +101,7 @@ pause_play.addEventListener("click", ()=>{
   pause_play.classList.toggle("slider__pause__play");
   slider_svg_play.classList.toggle("slider__options__svg--none");
   slider_svg_pause.classList.toggle("slider__options__svg--none");
+    // DETIENE EL MOVIMIENTO DEL SLIDE(EL INTERVALO DE moveToNextSlide)
   if(pause_play.classList.contains("slider__pause__play") == true){
     clearInterval(timeToMove);
     // slider_svg_play.classList.toggle("slider__options__svg--none");
@@ -144,30 +160,30 @@ function moveToPrevSlide(){
     move();
   }
 }
+
   // LA FUNCION MOVER EL SLIDER HACIA LA DERECHA, CON UN IF POR CADA ADS + EL TIEMPO QUE DURA CADA IMAGEN
 function move(){
     if (slidePosition == 0){
-        timeToMove = setTimeout(() => {
+        timeToMove = setTimeout(()=>{
         moveToNextSlide();
       }, 4000);
     }
     if (slidePosition == 1){
-        timeToMove = setTimeout(() => {
+        timeToMove = setTimeout(()=>{
         moveToNextSlide();
       }, 4000);
     }
     if (slidePosition == 2){
-        timeToMove = setTimeout(() => {
+        timeToMove = setTimeout(()=>{
         moveToNextSlide();
       }, 7000);
     }
     if (slidePosition == 3){
-      timeToMove = setTimeout(() => {
+      timeToMove = setTimeout(()=>{
       moveToNextSlide();
       }, 4000);
     }
 }
-// sacarle el loading="lazy" con js despues de que termine de cargar la pagina con setatribute a todas las imagenes despues del 0 de ads
 
 
 
@@ -197,17 +213,25 @@ function move(){
 //   move();
 // }
 // stTemp();
-// Al CARGAR EL DOM, INICIA EL MOVIMIENTO DEL SLIDER
+
+  // Al CARGAR EL DOM, INICIA EL MOVIMIENTO DEL SLIDER
+
 document.addEventListener("DOMContentLoaded",()=>{
+  // LLAMA A MOVE PARA QUE SE MUEVA EL SLIDER
   move();
 });
-// function lazy(){
-//   slider_img_lazy.removeAttribute("loading","lazy");
-// }
-// lazy();
-window.addEventListener('load', () => {
+
+  // CUANDO SE CARGUE LA PAGINA, (INCLUYE IMAGEN ADS1, IMAGEN PHARMACY, SOLO QUEDA SIN CARGAR EL FAVICON(1.3KB) LLAMA A CARGAR A LAS DEMAS IMAGENES ADS(2,3,4) SACANDOLE EL LOADING LAZY A LAS IMGS ADS)
+
+window.addEventListener('load', ()=>{
   // alert("Carga Completa");
   img_lazy1.removeAttribute('loading','lazy');
   img_lazy2.removeAttribute('loading','lazy');
   img_lazy3.removeAttribute('loading','lazy');
 });
+
+  // EVENTO CLICK EN HORARIOS
+
+  ptc_btn_hour.addEventListener("click", ()=>{
+    ptc_modal_hour.classList.add("ptc__c__hour__modal__container--expand");
+  });
