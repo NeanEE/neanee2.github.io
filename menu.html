@@ -38,83 +38,142 @@
       } -->
 
 
-    <link rel="stylesheet" href="style.css\menu.css">
-    <link rel="stylesheet" href="style.css\generals.css">
+      <link rel="stylesheet" href="style.css\menu.css">
+      <link rel="stylesheet" href="style.css\generals.css">
+      <!-- <link rel="stylesheet" href="https://ssl.gstatic.com/docs/script/css/add-ons1.css"> -->
+      
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/brands.min.css" integrity="sha512-bSncow0ApIhONbz+pNI52n0trz5fMWbgteHsonaPk42JbunIeM9ee+zTYAUP1eLPky5wP0XZ7MSLAPxKkwnlzw==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
     <!-- <script src="https://kit.fontawesome.com/f11779bb83.js"></script> -->
     <title>Menu - Decap</title>
 </head>
-<body class="body-menu var--text teme--black" id="body-menu">
+<body class="body-menu teme--black" id="body-menu">
+
 <!-- SOPORTA HASTA 214PX DE RESOLUCION -->
-<!-- <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQKrQ9By5DED6Av4jhgtiFqf4eKsB00Yb9GDzw2Rc4-onQ_4JNEnOlcIx8RqA5dOmah94Xw092Ufklm/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false"></iframe> -->
 
 <!-- SIDEBAR -->
 
     <nav class="menu-sidebar var--fontUB expand" id="objets-navbar">
         <a href="menu.html" class="m-s__logo var--text"  id="objets-navbar-logo" tabindex="0">Decap</a>
         <ul class="m-s__items" id="objets-ms_items">
-            <li class="ms-items__search-container">
-                <svg xmlns="http://www.w3.org/2000/svg" class="ms-search__icon" viewBox="0 0 24 24"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+            <li class="ms-items__float-btn" id="float-btn-search">
+                <svg xmlns="http://www.w3.org/2000/svg" class="ms-items__float-svg" viewBox="0 0 24 24"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
             </li>
-            <li class="ms-items__list" tabindex="0" id="ms-cuenta">Cuenta
-                <div class="msil__dsm" id="msil-cuenta">
-                        <ul class="msil__submenu">
-                                <li><a href="profile.html" class="msil__text var--text" tabindex="0">Perfil</a></li>
-                                <li class="msil__text" tabindex="0">Mi CV</li>
-                                <li class="msil__text" tabindex="0">Mis Postulaciones</li>
+            <li class="ms-items__float-btn" id="float-btn-notifications">
+                <svg xmlns="http://www.w3.org/2000/svg" class="ms-items__float-svg--2" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M12 22c1.1 0 2-.9 2-2h-4c0 1.1.9 2 2 2zm6-6v-5c0-3.07-1.63-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.64 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2zm-2 1H8v-6c0-2.48 1.51-4.5 4-4.5s4 2.02 4 4.5v6z"/></svg>
+            </li>
+            <li class="ms-items__list" tabindex="0" id="ms-cuenta">
+                <h2 class="ms-items__list__text">Cuenta</h2>
+                <div class="ms__sm__container--1 ms__sm__container">
+                        <ul class="ms__sm__ul-box">
+                                <li class="ms__sm__li-box">
+                                        <a href="profile.html" class="ms__sm__text--a"><h3 class="ms__sm__text">Perfil</h3>
+                                        </a>
+                                </li>
+                                <li class="ms__sm__li-box">
+                                        <a href="" class="ms__sm__text--a"><h3 class="ms__sm__text">Mi Ci</h3>
+                                        </a>
+                                </li>
                         </ul>
                 </div>
             </li>
-            <li class="ms-items__list__dupped" id="d-mssm-perfil">
-                <div class="ms-dupped-list">
-                        <a href="profile.html" class="msil__text__dupped var--text">Perfil</a>
-                        <ul class="msil__text__dupped">Mi CV</ul>
-                        <ul class="msil__text__dupped">Mis Postulaciones</ul>
+            <li class="ms-items__list" id="ms-micomercio">
+                <h2 class="ms-items__list__text">Mi Comercio</h2>
+                <div class="ms__sm__container--2 ms__sm__container">
+                        <ul class="ms__sm__ul-box">
+                                <li class="ms__sm__li-box">
+                                        <a href="" class="ms__sm__text--a"><h3 class="ms__sm__text">Carniceria SANKARNY</h3>
+                                        </a>
+                                </li>
+                                <li class="ms__sm__li-box">
+                                        <a href="" class="ms__sm__text--a"><h3 class="ms__sm__text">Mejoras</h3>
+                                        </a>
+                                </li>
+                                <li class="ms__sm__li-box">
+                                        <a href="" class="ms__sm__text--a"><h3 class="ms__sm__text">Registrar</h3>
+                                        </a>
+                                </li>
+                        </ul>
                 </div>
-            </li>
-            <li class="ms-items__list" id="ms-micomercio">Mi Comercio
-                <div class="msil__dsm">
+                <!-- <div class="msil__dsm">
                         <ul class="msil__submenu" id="msil-micomercio">
                                 <li class="msil__text">Registrar</li>
                         </ul>
-                </div>
+                </div> -->
             </li>
-            <li class="ms-items__list__dupped">
-                <div class="ms-dupped-list">
-                        <ul class="msil__text__dupped">Registrar</ul>
-                </div>
-            </li>
-            <li class="ms-items__list" id="ms-contacto">Contacto
+            <!-- <li class="ms-items__list" id="ms-notifications">Notificaciones
                 <div class="msil__dsm">
-                        <ul class="msil__submenu" id="msil-contacto">
+                        <ul class="msil__submenu" id="msil-notifications">
                                 <li class="msil__text">Enviar Comentario</li>
                         </ul>
-                </div>
+                </div> -->
             </li>
-            <li class="ms-items__list__dupped">
-                <div class="ms-dupped-list">
-                        <ul class="msil__text__dupped">Enviar Comentario</ul>
-                </div>
-            </li>
-            <li class="ms-items__list" id="ms-configuracion">Configuracion
-                <div class="msil__dsm">
-                        <ul class="msil__submenu" id="msil-configuracion">
-                                <li class="msil__text">Notificaciones</li>
-                                <li class="msil__text" id="color-selector">Tema</li>
-                                <li class="msil__text">Salir</li>
+            <li class="ms-items__list" id="ms-configuracion">
+                <h2 class="ms-items__list__text">Configuracion</h2>
+                <div class="ms__sm__container--3 ms__sm__container">
+                        <ul class="ms__sm__ul-box">
+                                <li class="ms__sm__li-box">
+                                        <a href="" class="ms__sm__text--a"><h3 class="ms__sm__text">Notificaciones</h3>
+                                        </a>
+                                </li>
+                                <li class="ms__sm__li-box" id="color-selector">
+                                        <h3 class="ms__sm__text">Tema</h3>
+                                </li>
+                                <li class="ms__sm__li-box">
+                                        <a href="" class="ms__sm__text--a"><h3 class="ms__sm__text">Salir</h3>
+                                        </a>
+                                </li>
                         </ul>
-                </div>
-            </li>
-            <li class="ms-items__list__dupped">
-                <div class="ms-dupped-list">
-                        <ul class="msil__text__dupped">Notificaciones</ul>
-                        <ul class="msil__text__dupped">Tema</ul>
-                        <ul class="msil__text__dupped">Salir</ul>
                 </div>
             </li>
         </ul>
         <svg xmlns="http://www.w3.org/2000/svg" class="mw-btn__menu" id="objets-btn_navbar" viewBox="0 0 24 24"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
-    </nav>
+</nav>
+        <!-- MODAL SEARCHS -->
+        <div class="ms__search__container var--fontUB" id="float-input-search">
+                        <input class="ms__search__input" type="text" placeholder="Buscar...">
+                        <button class="ms__search__ok__btn">
+                                <h4 class="ms__search__ok__btn__text var--fontUB">Buscar</h4>
+                        </button>
+        </div>
+
+        <!-- MODAL NOTIFICATIONS -->
+        <div class="ms__notifications__container var--fontUB" id="float-notifications-box">
+                <div class="ms__notifications__box__title">
+                        <h4 class="ms__n__title__text">Notificaciones</h4>
+                </div>
+                <div class="ms__notifications__boxs__container">
+                        <div class="ms__n__box__box">
+                                <div class="ms__n__box__cont__container ms__n__box__cont__container--first">
+                                        <div class="ms__n__box__cont">
+                                                <h3 class="ms__n__box__transmitter">Decap:</h3>
+                                                <h3 class="ms__n__box__hour">22:39 p.m.</h3>
+                                                <h4 class="ms__n__box__text">Mira los cambios de la nueva actualizacion</h4>                                          
+                                        </div>
+                                </div>
+                                <div class="ms__n__box__cont__container">
+                                        <div class="ms__n__box__cont">
+                                                <h3 class="ms__n__box__transmitter">Nombre A:</h3>
+                                                <h3 class="ms__n__box__hour">2 mayo</h3>
+                                                <h4 class="ms__n__box__text">El Usuario "Nombre A." te a enviado su ci para tu busqueda "Se busca un carnicero con experiencia"</h4>
+                                        </div>
+                                </div>
+                                <div class="ms__n__box__cont__container">
+                                        <div class="ms__n__box__cont"></div>
+                                </div>
+                                <div class="ms__n__box__cont__container">
+                                        <div class="ms__n__box__cont"></div>
+                                </div>
+                        </div>
+                </div>
+                <div class="ms__notifications__box__btns">
+                        <div class="ms__n__back__btn" id="ms-notifications-back-btn">
+                                <h5 class="ms__n__back__btn__text">Cerrar</h5>
+                        </div>
+                        <div class="ms__n__more__btn">
+                                <a href="notifications.html" class="ms__n__more__btn__text--a"><h5 class="ms__n__more__btn__text">Ver Todas</h5></a>
+                        </div>
+                </div>
+        </div>
 
 
     <!-- SELECTOR DE COLORES -->
@@ -122,7 +181,7 @@
     <div class="teme-color-selector teme-color-selector" id="teme-color-selector">
             <div class="tcs__box var--fontUB">
                     <div class="tcs__close-btn" id="tcs-c-btn">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="tcs__close-btn-span" height="24px" viewBox="0 0 24 24" width="24px"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>                                
+                        <svg xmlns="http://www.w3.org/2000/svg" class="tcs__close-btn-span" height="24px" viewBox="0 0 24 24" width="24px"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
                     </div>
                 <div class="tcs__title">
                         <h4 class="tcs__h4">Tema</h4>
@@ -171,10 +230,10 @@
 <!-- CONTENIDO DEL MENU -->
 
     <div class="menu-container var--fontUB">
-        <a href="search-job-list.html" class="box__bt box__conts principal__boxs var--center var--text" tabindex="0">Buscar Trabajo</a>
-        <a href="market_list_p.html" class="box__products principal__boxs box__conts var--center var--text" tabindex="0" accesskey="p">Productos</a>
-        <div class="box__ot principal__boxs box__conts var--center" tabindex="0">Ofrecer Trabajo</div>
-        <div class="box__services principal__boxs box__conts var--center" tabindex="0">Servicios</div>
+        <a href="search-job-list.html" class="box__bt box__conts principal__boxs var--center var--text" tabindex="0">bb</a>
+        <a href="market_list_p.html" class="box__products principal__boxs box__conts var--center var--text" tabindex="0" accesskey="p">pp</a>
+        <div class="box__ot principal__boxs box__conts var--center" tabindex="0">oo</div>
+        <div class="box__services principal__boxs box__conts var--center" tabindex="0">ss</div>
         <div class="slider box__ads">
                 <div class="slider__click__container" id="slider-click"></div>
                 <div class="slider__item slider__item--visible">
@@ -257,8 +316,24 @@
                 </div>
                 <div class="ptc__conts__btn__container">
                         <div class="ptc__cont__btns__container">
-                                <div class="ptc__c__btn-hour">
+                                <div class="ptc__c__btn-hour" id="ptc-btn-hour">
                                         <h4 class="ptc__c__btn-hour__text">Horarios</h4>
+                                </div>
+                                <div class="ptc__c__hour__modal__container" id="ptc-modal-hour">
+                                        <!-- <table class="ptc__hour-modal__box">
+                                                <? for( var i in data ){ ? > 
+                                                        <tr>
+                                                          <? for ( var j in data[i] ){ ?>
+                                                            <? if ( i == 0 ){ ?>
+                                                              <th> <?= data[i][j] ?></th>
+                                                            <? } else { ?>
+                                                              <td> <?= data[i][j] ?></th>
+                                                            <? } ?>
+                                                          <? } ?>
+                                                        </tr>
+                                                      <? } ?>
+                                        </table> -->
+                                        <!-- <iframe src="https://script.google.com/macros/s/AKfycbwmd80cmvxGpp3xUPkKjx9F9j04CPw26QfHXzqWU-oJuDi0u5Wcb-MgS4-yKbrGc1pJ/exec" frameborder="0" width="50%" height="50%"></iframe> -->
                                 </div>
                                 <a href="index.html" class="ptc__c__btn-op">
                                         <h4 class="ptc__c__btn-op__text">Abierto</h4>
@@ -289,7 +364,7 @@
                 <div class="footer__find-us__box">
                         <div class="footer-boxs__content">
                                 <svg class="svg__icon--1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) --><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
-                                <a href="https://www.instagram.com/" target="_blank" class="footer__text footer__text--1 var--text">Instagram</a>
+                                <a href="https://www.instagram.com/" target="_blank" class="footer__text footer__text--1">Instagram</a>
                         </div>
                         <div class="footer-boxs__content">                    
                                 <svg class="svg__icon--2" fill="white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) --><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"/></svg>
