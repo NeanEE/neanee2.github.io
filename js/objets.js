@@ -86,7 +86,7 @@ if (window.matchMedia("(max-width:437px)").matches){
   // ms_list remove class
   ms_account.classList.remove("ms-items__list");
   ms_account.classList.add("ms-items__list--ghost");
-    ms_account.addEventListener("click", ()=>{
+    ms_account.addEventListener("touchstart", ()=>{
       ms_sm_account.classList.toggle("ms__sm__container--1--expand");
   });
 }
