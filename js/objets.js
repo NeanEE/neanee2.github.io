@@ -21,15 +21,12 @@ ms_ntf_back_btn = document.getElementById("ms-notifications-back-btn");
 // BOTONES PARA LOS MENUS
 ms_account = document.getElementById("ms-account");
 ms_sm_account = document.getElementById("ms-sm-account");
-ms_micomercio = document.getElementById("ms-micomercio");
+ms_my_market = document.getElementById("ms-my-market");
+ms_sm_my_market = document.getElementById("ms-sm-my-market");
+ms_config = document.getElementById("ms-config");
+ms_sm_config = document.getElementById("ms-sm-config");
 ms_notifications = document.getElementById("ms-notifications");
-ms_configuracion = document.getElementById("ms-configuracion");
 
-// SUB MENUS DE LA SIDEBAR
-msil_cuenta = document.getElementById("msil-cuenta");
-msil_micomercio = document.getElementById("msil-micomercio");
-msil_notifications = document.getElementById("msil-contacto");
-msil_configuracion = document.getElementById("msil-configuracion");
 
 // BOTON SHOW COLOR SELECTOR
 teme_color_selector = document.getElementById("teme-color-selector");
@@ -81,13 +78,22 @@ nav_bar_btn.addEventListener('click', ()=>{
     nav_bar.classList.toggle("opacity--1");
 })
 
-// REMOVE HOVER, ADD UN TOUCH FOR SIDEBAR
+// REMOVE HOVER AND FOCUS, ADD CLICK/TOUCH FOR SIDEBAR EXPAND SUBMENU
 if (window.matchMedia("(max-width:437px)").matches){
-  // ms_list remove class
   ms_account.classList.remove("ms-items__list");
+  ms_my_market.classList.remove("ms-items__list");
+  ms_config.classList.remove("ms-items__list");
   ms_account.classList.add("ms-items__list--ghost");
-    ms_account.addEventListener("touchstart", ()=>{
-      ms_sm_account.classList.toggle("ms__sm__container--1--expand");
+  ms_my_market.classList.add("ms-items__list--ghost");
+  ms_config.classList.add("ms-items__list--ghost");
+  ms_account.addEventListener("click", ()=>{
+    ms_sm_account.classList.toggle("ms__sm__container--1--expand");
+  });
+  ms_my_market.addEventListener("click", ()=>{
+    ms_sm_my_market.classList.toggle("ms__sm__container--2--expand");
+  });
+  ms_config.addEventListener("click", ()=>{
+    ms_sm_config.classList.toggle("ms__sm__container--3--expand");
   });
 }
 // BOTON SELECTOR DE COLORES
