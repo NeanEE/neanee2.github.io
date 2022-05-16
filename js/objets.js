@@ -96,6 +96,7 @@ if (window.matchMedia("(max-width:437px)").matches){
     ms_sm_config.classList.toggle("ms__sm__container--3--expand");
   });
 }
+
 // BOTON SELECTOR DE COLORES
 color_selector.addEventListener('click', ()=>{
     teme_color_selector.classList.toggle("show");
