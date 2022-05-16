@@ -19,7 +19,8 @@ float_btn_notifications = document.getElementById("float-btn-notifications");
 ms_ntf_back_btn = document.getElementById("ms-notifications-back-btn");
 
 // BOTONES PARA LOS MENUS
-ms_cuenta = document.getElementById("ms-cuenta");
+ms_account = document.getElementById("ms-account");
+ms_sm_account = document.getElementById("ms-sm-account");
 ms_micomercio = document.getElementById("ms-micomercio");
 ms_notifications = document.getElementById("ms-notifications");
 ms_configuracion = document.getElementById("ms-configuracion");
@@ -80,6 +81,12 @@ nav_bar_btn.addEventListener('click', ()=>{
     nav_bar.classList.toggle("opacity--1");
 })
 
+// REMOVE HOVER, ADD UN TOUCH FOR SIDEBAR
+if (window.matchMedia("(max-width:437px)").matches){
+    ms_account.addEventListener("click", ()=>{
+      ms_sm_account.classList.toggle("ms__sm__container--1--expand");
+  });
+}
 // BOTON SELECTOR DE COLORES
 color_selector.addEventListener('click', ()=>{
     teme_color_selector.classList.toggle("show");
