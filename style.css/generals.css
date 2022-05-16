@@ -957,7 +957,6 @@
             margin: 0.5em;
             /* height: 2em; */
             height: min-content;
-            /* UNO */
         }
             .ms-items__float-btn{
                 width: 2.15em;
@@ -1198,14 +1197,18 @@
         border-bottom: .4em solid var(--colorbtn);
     }
     .m-s__items{
-        height: 40em;
-        margin-top: 15em;
+        /* height: 40em; */
+        height: calc(100vh - 4.5em);
+        justify-content: start;
+        /* margin-top: 15em; */
+        margin-top: 23.25em;
         /* margin-top: 10em; ANTERIOR */
         padding: 0;
         transform: translate(-100%, 14.75em);
     }
         .ms-items__list{
-            height: 3em;
+            /* height: 3em; */
+            height: min-content;
         }
         .m-s__logo{
             margin-left: .25em;
@@ -1215,6 +1218,54 @@
             .active{
                 transform: translate(0, 14.75em);
             }
+        .ms-items__list:hover .ms-items__list__text::after{
+            width: 0%;
+            left: 50%;
+        }
+            /* .ms-items__list:hover .ms__sm__container--1{
+                height: 0em;
+                transform: translate(0em, 0em) scaleY(0%);
+            }
+            .ms-items__list:focus .ms__sm__container--1{
+                height: 0em;
+                transform: translate(0em, 0em) scaleY(0%);
+            }
+            .ms-items__list:hover .ms__sm__container--2{
+                transform: translate(0em, 0em) scaleY(0%);
+                height: 0em;
+            }
+            .ms-items__list:focus .ms__sm__container--2{
+                transform: translate(0em, 0em) scaleY(0%);
+                height: 0em;
+            }
+            .ms-items__list:hover .ms__sm__container--3{
+                transform: translate(0em, 0em) scaleY(0%);
+                height: 0em;
+            }
+            .ms-items__list:focus .ms__sm__container--3{
+                transform: translate(0em, 0em) scaleY(0%);
+                height: 0em;
+            }
+            .ms__sm__container--1{
+                width: 6.5em;
+                height: 0;
+                transform: translate(0em, 0em) scaleY(0%);
+            }
+            .ms__sm__container--2{
+                width: 12em;
+                height: 0;
+                transform: translate(0em, 0em) scaleY(0%);
+            }
+            .ms__sm__container--3{
+                width: 11em;
+                height: 0;
+                transform: translate(0em, 0em) scaleY(0%);
+            }
+            .ms__sm__container--1--expand{
+                height: 4.5em;
+                transform: translate(0em, 0em) scaleY(100%);
+                transition: transform 300ms;
+            } */
     .mw-btn__menu{
         height: 2.25em;
         margin-right: .5em;
