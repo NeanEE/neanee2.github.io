@@ -27,6 +27,8 @@ ms_config = document.getElementById("ms-config");
 ms_sm_config = document.getElementById("ms-sm-config");
 ms_notifications = document.getElementById("ms-notifications");
 
+// CHANGE RIG LEFT BTN
+ms_items_rig_lef_btn = document.getElementById("ms-items-rig-lef-btn");
 
 // BOTON SHOW COLOR SELECTOR
 teme_color_selector = document.getElementById("teme-color-selector");
@@ -72,10 +74,10 @@ float_btn_notifications.addEventListener("click", ()=>{
 // BTN EXPAND MOBILE MENU
 nav_bar_btn.addEventListener('click', ()=>{
     nav_bar.classList.toggle('active');
-    objets_navbar_logo.classList.toggle("var--text-black");
+    // objets_navbar_logo.classList.toggle("var--text-black");
     objets_navbar.classList.toggle("menu-sidebar--btn");
-    nav_bar_btn.classList.toggle("var--text-black");
-    nav_bar.classList.toggle("opacity--1");
+    // nav_bar_btn.classList.toggle("var--text-black");
+    // nav_bar.classList.toggle("opacity--1");
 })
 
 // REMOVE HOVER AND FOCUS, ADD CLICK/TOUCH FOR SIDEBAR EXPAND SUBMENU
@@ -96,6 +98,16 @@ if (window.matchMedia("(max-width:437px)").matches){
     ms_sm_config.classList.toggle("ms__sm__container--3--expand");
   });
 }
+
+// CHANGE SUBMENU RIGHT TO LEFT BTN
+
+ms_items_rig_lef_btn.addEventListener("click", ()=>{
+  nav_bar.classList.toggle("m-s__items--left");
+  ms_account.classList.toggle("ms-items__list--ghost--left");
+  ms_my_market.classList.toggle("ms-items__list--ghost--left");
+  ms_config.classList.toggle("ms-items__list--ghost--left");
+  ms_items_rig_lef_btn.classList.toggle("ms-items__right-left__btn--left");
+});
 
 // BOTON SELECTOR DE COLORES
 color_selector.addEventListener('click', ()=>{
