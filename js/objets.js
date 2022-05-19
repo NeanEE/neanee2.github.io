@@ -30,6 +30,8 @@ ms_notifications = document.getElementById("ms-notifications");
 // CHANGE RIG LEFT BTN
 ms_items_rig_lef_btn = document.getElementById("ms-items-rig-lef-btn");
 
+ms_sm_li_box_profile = document.getElementById("ms-sm-li-box-profile");
+
 // BOTON SHOW COLOR SELECTOR
 teme_color_selector = document.getElementById("teme-color-selector");
 color_selector = document.getElementById("color-selector");
@@ -76,12 +78,16 @@ nav_bar_btn.addEventListener('click', ()=>{
     nav_bar.classList.toggle('active');
     // objets_navbar_logo.classList.toggle("var--text-black");
     objets_navbar.classList.toggle("menu-sidebar--btn");
+    if (window.matchMedia("(max-width:437px)").matches){
+      float_input_search.classList.toggle("ms__float__search--expand");
+    }
     // nav_bar_btn.classList.toggle("var--text-black");
     // nav_bar.classList.toggle("opacity--1");
 })
 
 // REMOVE HOVER AND FOCUS, ADD CLICK/TOUCH FOR SIDEBAR EXPAND SUBMENU
 if (window.matchMedia("(max-width:437px)").matches){
+  float_btn_search.classList.toggle("ms-items__float__search--none");
   ms_account.classList.remove("ms-items__list");
   ms_my_market.classList.remove("ms-items__list");
   ms_config.classList.remove("ms-items__list");
@@ -103,10 +109,17 @@ if (window.matchMedia("(max-width:437px)").matches){
 
 ms_items_rig_lef_btn.addEventListener("click", ()=>{
   nav_bar.classList.toggle("m-s__items--left");
+  
   ms_account.classList.toggle("ms-items__list--ghost--left");
   ms_my_market.classList.toggle("ms-items__list--ghost--left");
   ms_config.classList.toggle("ms-items__list--ghost--left");
+
+  ms_sm_account.classList.toggle("ms__sm__container--left");
+  ms_sm_my_market.classList.toggle("ms__sm__container--left");
+  ms_sm_config.classList.toggle("ms__sm__container--left");
+
   ms_items_rig_lef_btn.classList.toggle("ms-items__right-left__btn--left");
+  ms_sm_li_box_profile .classList.toggle("ms__sm__li-box--left");
 });
 
 // BOTON SELECTOR DE COLORES
