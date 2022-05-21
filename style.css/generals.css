@@ -87,12 +87,6 @@
 .var--cont1{
     font-size: 3.5em;
 }
-.var--text{
-    color: white;
-}
-.var--text-black{
-    color: black;
-}
 .var--bgc-btn{
     background-color: rgb(0, 222, 255);
 }
@@ -372,6 +366,7 @@
         align-items: center;
         transform: translateX(-125%);
         transition: transform 800ms;
+        /* transition: transform 400ms; */
         z-index: 1;
         background-color: var(--colorblock1);
     }
@@ -768,7 +763,25 @@
                                 background-color: var(--colortext1);
                                 cursor: default;
                             }
-    
+            .tcs__close__btn__mobile{
+                width: 30%;
+                height: 2em;
+                left: 50%;
+                margin-left: -15%;
+                position: fixed;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                transform: translateY(1em);
+                background-color: var(--colorside1);
+            }
+            /* .tcs__close__btn__mobile:hover{
+
+            }
+                .tcs__close__btn__mobile__text{
+                    font-size: 1.5em;
+                } */
+                            
 
 
 
@@ -1095,7 +1108,7 @@
         height: min-content;
         margin-top: 16.5em;
         /* position: absolute; */
-        
+
         position: fixed;
         top: 0;
 
@@ -1267,6 +1280,10 @@
     .ms__search__container{
         width: 90%;
         margin-left: -45%;
+        transition: transform 400ms;
+    }
+    .ms__float__search--expand{
+        transition: transform 800ms;
     }
     .m-s__items{
         /* height: 40em; */
@@ -1294,7 +1311,7 @@
             margin-left: .25em;
             font-size: 3.5em;
             transform: translate(0,-.12em);
-            }
+        }
             .active{
                 transform: translate(0, 14.75em);
             }
@@ -1332,9 +1349,11 @@
         height: 2.25em;
         margin-right: .5em;
     }
-    /* COLOR SELECT TEME */
     .teme-color-selector{
         width: 100%;
+    }
+    .tcs__close-btn{
+        /* display: none; */
     }
     
 }
@@ -1370,4 +1389,16 @@
     .sub__footer{
         height: 9em;
     }
+}
+.var--text{
+    color: white;
+}
+.var--text-black{
+    color: black;
+}
+.var--fill{
+    fill: white;
+}
+.var--fill-black{
+    fill: black;
 }
