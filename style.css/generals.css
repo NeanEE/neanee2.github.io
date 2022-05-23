@@ -428,12 +428,12 @@
             /* transition: transform 400ms, left 400ms, top 400ms, right 400ms, bottom 400ms; */
             transform: rotate(180deg);
         }
-            .ms-items__btn__svg__container{
-                /* display: flex;
+            /* .ms-items__btn__svg__container{
+                display: flex;
                 justify-content: center;
                 align-items: center; */
-                /* background-color: chocolate; */
-            }
+                /* background-color: chocolate;
+            } */
                 .ms_items__rig-lef__svg{
                     display: flex;
                     fill: var(--colorwb);
