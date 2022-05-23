@@ -219,12 +219,14 @@
             display: flex;
             justify-content: center;
             align-items: flex-end;
+            /* align-items: flex-start; */
             flex-direction: column;
             /* transition: align-items 400ms; */
             /* transition: background-color 0ms; */
         }
         .ms-items__list--ghost--left{
             align-items: flex-start;
+            /* align-items: flex-end; */
             /* transition: align-items 400ms; */
         }
         .ms-items__list__text::after{
@@ -318,7 +320,8 @@
                     height: 2em;
                     display: flex;
                     align-items: center;
-                    justify-content: end;
+                    /* justify-content: end; */
+                    justify-content: start;
                     /* background-color: chocolate; */
                 }
                 .ms__sm__li-box:hover .ms__sm__text--a{
@@ -332,7 +335,8 @@
                     transition: transform 300ms, color 300ms;
                 }
                 .ms__sm__li-box--left{
-                    justify-content: start;
+                    /* justify-content: start; */
+                    justify-content: end;
                 }
                     .ms__sm__text--a{
                         color: var(--colorwb);
@@ -592,8 +596,80 @@
                     font-size: 1.5em;
                     transition: transform 300ms, color 300ms;
                 }
-
-
+                    .ms__sm__out__modal__container{
+                        position: fixed;
+                        top: 0;
+                        right: 0;
+                        bottom: 0;
+                        left: 0;
+                        /* display: flex; */
+                        justify-content: center;
+                        align-items: center;
+                        background-color: rgba(0, 0, 0, .5);
+                        display: none;
+                        z-index: 100;
+                    }
+                    .ms__sm__out__modal__container--flex{
+                        display: flex;
+                    }
+                        .ms__sm__out__box{
+                            width: 60vh;
+                            height: 20vh;
+                            display: grid;
+                            grid-template-columns: 1fr;
+                            grid-template-rows: 70% 30%;
+                            grid-template-areas: "msobt"
+                                                 "msobb";
+                            background-color: var(--colorblock1);
+                        }
+                            .ms__sm__out__box__text{
+                                grid-area: msobt;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                            }
+                            .ms__sm__out__box__btns{
+                                grid-area: msobb;
+                                display: flex;
+                                justify-content: space-around;
+                                align-items: center;
+                            }
+                                .ms__sm__out__box__back__btn{
+                                    width: 8em;
+                                    height: 2em;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    cursor: pointer;
+                                    background-color: var(--colorside1);
+                                }
+                                .ms__sm__out__box__back__btn:hover .mssm__out__box__btn__text{
+                                    color: var(--colorbtn);
+                                    transform: scale(1.1);
+                                    transition: transform 300ms, color 300ms;
+                                }
+                                .ms__sm__out__box__out__btn{
+                                    width: 8em;
+                                    height: 2em;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    cursor: pointer;
+                                    background-color: var(--colorside1);
+                                }
+                                .ms__sm__out__box__out__btn:hover .mssm__out__box__btn__text{
+                                    color: var(--colorbtn);
+                                    transform: scale(1.1);
+                                    transition: transform 300ms, color 300ms;
+                                }
+                                    .mssm__out__box__btn__text{
+                                        font-size: 1.25em;
+                                        color: var(--colorwb);
+                                        transition: transform 300ms, color 300ms;
+                                    }
+                                    .mssm__out__box__btn__text--a{
+                                        color: var(--colorwb);
+                                    }
 
 
 
@@ -769,18 +845,21 @@
                 left: 50%;
                 margin-left: -15%;
                 position: fixed;
-                display: flex;
+                /* display: flex; */
+                display: none;
                 justify-content: center;
                 align-items: center;
+                border: .2em solid var(--colorbtn);
                 transform: translateY(1em);
+                cursor: pointer;
                 background-color: var(--colorside1);
             }
             /* .tcs__close__btn__mobile:hover{
 
-            }
+            } */
                 .tcs__close__btn__mobile__text{
                     font-size: 1.5em;
-                } */
+                }
                             
 
 
@@ -1106,12 +1185,9 @@
     .m-s__items{
         width: 100%;
         height: min-content;
-        margin-top: 16.5em;
-        /* position: absolute; */
-
+        margin-top: 3em;
         position: fixed;
         top: 0;
-
         flex-direction: column;
         align-items: center;
         border-bottom: .25em solid var(--colorbtn);
@@ -1226,7 +1302,12 @@
                              "legal";
         justify-content: center;         
     }
-    
+    .tcs__close-btn{
+        display: none;
+    }
+    .tcs__close__btn__mobile{
+        display: flex;
+    }
         .footer-title--container::after{
             content: '';
             display: block;
@@ -1307,6 +1388,12 @@
             /* height: 3em; */
             height: min-content;
         }
+        /* .ms-items__list--ghost{
+            align-items: flex-end;
+        }
+        .ms-items__list--ghost--left{
+            align-items: flex-start;
+        } */
         .m-s__logo{
             margin-left: .25em;
             font-size: 3.5em;
@@ -1318,6 +1405,12 @@
         .ms-items__list:hover .ms-items__list__text::after{
             width: 0%;
             left: 50%;
+        }
+        .ms__sm__li-box{
+            justify-content: end;
+        }
+        .ms__sm__li-box--left{
+            justify-content: start;
         }
             .ms__sm__container{
                 border: none;
@@ -1352,10 +1445,30 @@
     .teme-color-selector{
         width: 100%;
     }
-    .tcs__close-btn{
-        /* display: none; */
+    .tcs__box{
+        width: 98%;
     }
-    
+}
+@media screen and (max-width: 416px){
+            .ms__sm__out__box{
+                width: 100%;
+                height: 7em;
+                grid-template-rows: 60% 40%;
+            }
+                .ms__sm__out__box__text__Text{
+                    font-size: 1em;
+                }
+                .ms__sm__out__box__back__btn{
+                    width: 30%;
+                    max-width: 8em;
+                }
+                .ms__sm__out__box__out__btn{
+                    width: 30%;
+                    max-width: 8em;
+                }
+                    .mssm__out__box__btn__text{
+                        font-size: 1.15em;
+                    }
 }
 @media screen and (max-width: 371px){
     .sub__footer{
@@ -1379,6 +1492,18 @@
             .footer__text{
                 font-size: .75em;
             }
+}
+@media screen and (max-width: 371px){
+    .tcs__point{
+        transform: translate(-2.5em);
+    }
+    .tcs__close__btn__mobile{
+        width: 50%;
+        margin-left: -25%;
+    }
+        .tcs__close__btn__mobile__text{
+            font-size: 1.25em;
+        }
 }
 @media screen and (max-width: 264px){
     .sub__footer{
