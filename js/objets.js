@@ -8,6 +8,10 @@ nav_bar_btn = document.getElementById("objets-btn_navbar");
 objets_navbar_logo = document.getElementById("objets-navbar-logo");
 objets_navbar = document.getElementById("objets-navbar");
 
+// MODAL BACK BTN OUT
+mssm_out_btn = document.getElementById("mssm-out-btn");
+mssm_out_modal = document.getElementById("mssm-out-modal");
+
 // FLOAT BTNS
 float_btn_search = document.getElementById("float-btn-search");
 float_input_search = document.getElementById("float-input-search");
@@ -31,11 +35,20 @@ ms_notifications = document.getElementById("ms-notifications");
 ms_items_rig_lef_btn = document.getElementById("ms-items-rig-lef-btn");
 
 ms_sm_li_box_profile = document.getElementById("ms-sm-li-box-profile");
+ms_sm_li_box_my_cv= document.getElementById("ms-sm-li-box-my-cv");
+ms_sm_li_box_my_market = document.getElementById("ms-sm-li-box-my-market");
+ms_sm_li_box_upgrades = document.getElementById("ms-sm-li-box-upgrades");
+ms_sm_li_box_register = document.getElementById("ms-sm-li-box-register");
+ms_sm_li_box_notifications = document.getElementById("ms-sm-li-box-notifications");
+ms_sm_li_box_teme = document.getElementById("ms-sm-li-box-teme");
+ms_sm_li_box_out = document.getElementById("ms-sm-li-box-out");
+
 
 // BOTON SHOW COLOR SELECTOR
 teme_color_selector = document.getElementById("teme-color-selector");
-color_selector = document.getElementById("color-selector");
+ms_sm_li_box_teme = document.getElementById("ms-sm-li-box-teme");
 tcs_c_btn = document.getElementById("tcs-c-btn");
+tcs_c_btn_2 = document.getElementById("tcs-c-btn-2");
 
 // COLORES / COLORS
 tcs_c_cian = document.getElementById("tcs-c-cian");
@@ -81,9 +94,23 @@ nav_bar_btn.addEventListener('click', ()=>{
     if (window.matchMedia("(max-width:437px)").matches){
       float_input_search.classList.toggle("ms__float__search--expand");
     }
+    if(body_menu.classList.contains("teme--white") == false){
+      objets_navbar_logo.classList.toggle("var--text-black");
+      nav_bar_btn.classList.toggle("var--fill-black");
+    }
     // nav_bar_btn.classList.toggle("var--text-black");
     // nav_bar.classList.toggle("opacity--1");
 })
+
+// MODAL OUT BTN
+ms_sm_li_box_out.addEventListener("click", ()=>{
+  mssm_out_modal.classList.toggle("ms__sm__out__modal__container--flex");
+});
+
+// MODAL BACK BTN OUT
+mssm_out_btn.addEventListener("click", ()=>{
+  mssm_out_modal.classList.toggle("ms__sm__out__modal__container--flex");
+});
 
 // REMOVE HOVER AND FOCUS, ADD CLICK/TOUCH FOR SIDEBAR EXPAND SUBMENU
 if (window.matchMedia("(max-width:437px)").matches){
@@ -96,12 +123,18 @@ if (window.matchMedia("(max-width:437px)").matches){
   ms_config.classList.add("ms-items__list--ghost");
   ms_account.addEventListener("click", ()=>{
     ms_sm_account.classList.toggle("ms__sm__container--1--expand");
+    ms_sm_my_market.classList.remove("ms__sm__container--2--expand");
+    ms_sm_config.classList.remove("ms__sm__container--3--expand");
   });
   ms_my_market.addEventListener("click", ()=>{
     ms_sm_my_market.classList.toggle("ms__sm__container--2--expand");
+    ms_sm_account.classList.remove("ms__sm__container--1--expand");
+    ms_sm_config.classList.remove("ms__sm__container--3--expand");
   });
   ms_config.addEventListener("click", ()=>{
     ms_sm_config.classList.toggle("ms__sm__container--3--expand");
+    ms_sm_account.classList.remove("ms__sm__container--1--expand");
+    ms_sm_my_market.classList.remove("ms__sm__container--2--expand");
   });
 }
 
@@ -109,6 +142,7 @@ if (window.matchMedia("(max-width:437px)").matches){
 
 ms_items_rig_lef_btn.addEventListener("click", ()=>{
   nav_bar.classList.toggle("m-s__items--left");
+  float_btn_notifications.classList.toggle("ms-items__float-btn--left");
   
   ms_account.classList.toggle("ms-items__list--ghost--left");
   ms_my_market.classList.toggle("ms-items__list--ghost--left");
@@ -119,11 +153,23 @@ ms_items_rig_lef_btn.addEventListener("click", ()=>{
   ms_sm_config.classList.toggle("ms__sm__container--left");
 
   ms_items_rig_lef_btn.classList.toggle("ms-items__right-left__btn--left");
-  ms_sm_li_box_profile .classList.toggle("ms__sm__li-box--left");
+
+  ms_sm_li_box_profile.classList.toggle("ms__sm__li-box--left");
+  ms_sm_li_box_my_cv.classList.toggle("ms__sm__li-box--left");
+  ms_sm_li_box_my_market.classList.toggle("ms__sm__li-box--left");
+  ms_sm_li_box_upgrades.classList.toggle("ms__sm__li-box--left");
+  ms_sm_li_box_register.classList.toggle("ms__sm__li-box--left");
+  ms_sm_li_box_notifications.classList.toggle("ms__sm__li-box--left");
+  ms_sm_li_box_teme.classList.toggle("ms__sm__li-box--left");
+  ms_sm_li_box_out.classList.toggle("ms__sm__li-box--left");
 });
 
+// BTN ACCOUNT OUT
+// ms_sm_li_box_out.addEventListener("click", ()=>{
+  
+// });
 // BOTON SELECTOR DE COLORES
-color_selector.addEventListener('click', ()=>{
+ms_sm_li_box_teme.addEventListener('click', ()=>{
     teme_color_selector.classList.toggle("show");
 })
 
@@ -146,6 +192,9 @@ tcs_t_dark.addEventListener("click", ()=>{
 
 // SALIR
 tcs_c_btn.addEventListener("click", ()=>{
+  teme_color_selector.classList.toggle("show");
+});
+tcs_c_btn_2.addEventListener("click", ()=>{
   teme_color_selector.classList.toggle("show");
 });
 
