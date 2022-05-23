@@ -52,7 +52,7 @@
 
 <!-- SIDEBAR -->
 
-    <nav class="menu-sidebar var--fontUB expand" id="objets-navbar">
+        <nav class="menu-sidebar var--fontUB expand" id="objets-navbar">
         <a href="menu.html" class="m-s__logo"  id="objets-navbar-logo" tabindex="0">Decap</a>
         <ul class="m-s__items" id="objets-ms_items">
             <li class="ms-items__float-btn ms-items__float__search" id="float-btn-search">
@@ -102,14 +102,13 @@
                 <div class="ms__sm__container--3 ms__sm__container" id="ms-sm-config">
                         <ul class="ms__sm__ul-box">
                                 <li class="ms__sm__li-box" id="ms-sm-li-box-notifications">
-                                        <h3 class="ms__sm__text">Notificaciones</h3>
+                                        <a href="notifications.html" class="ms__sm__text--a"><h3 class="ms__sm__text">Notificaciones</h3></a>
                                 </li>
                                 <li class="ms__sm__li-box" id="ms-sm-li-box-teme">
                                         <h3 class="ms__sm__text">Tema</h3>
                                 </li>
                                 <li class="ms__sm__li-box" id="ms-sm-li-box-out">
-                                        <a href="" class="ms__sm__text--a"><h3 class="ms__sm__text">Salir</h3>
-                                        </a>
+                                        <h3 class="ms__sm__text">Salir</h3>
                                 </li>
                         </ul>
                 </div>
@@ -120,8 +119,27 @@
                 </div>
             </li>
         </ul>
+        <!-- EXPAND-CONTRACT SIDEBAR MENU (MOBILE) -->
         <svg xmlns="http://www.w3.org/2000/svg" class="mw-btn__menu" id="objets-btn_navbar" viewBox="0 0 24 24"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
-</nav>
+        </nav>
+
+        <!-- MODAL OUT ACCOUNT -->
+        <div class="ms__sm__out__modal__container var--fontUB" id="mssm-out-modal">
+                <div class="ms__sm__out__box">
+                        <div class="ms__sm__out__box__text">
+                                <h3 class="ms__sm__out__box__text__Text">Seguro que desea salir de su cuenta?</h3>
+                        </div>
+                        <div class="ms__sm__out__box__btns">
+                                <div class="ms__sm__out__box__back__btn" id="mssm-out-btn">
+                                        <h3 class="mssm__out__box__btn__text">Regresar</h3>
+                                </div>
+                                <div class="ms__sm__out__box__out__btn">
+                                        <a href="reg-log.html" class="mssm__out__box__btn__text--a"><h3 class="mssm__out__box__btn__text">Salir</h3></a>
+                                </div>
+                        </div>
+                </div>
+        </div>
+
         <!-- MODAL SEARCHS -->
         <div class="ms__search__container var--fontUB" id="float-input-search">
                         <input class="ms__search__input" type="text" placeholder="Buscar...">
@@ -217,7 +235,7 @@
                                 </div>
                         </div>
                 </div>
-                <div class="tcs__close__btn__mobile">
+                <div class="tcs__close__btn__mobile" id="tcs-c-btn-2">
                         <h3 class="tcs__close__btn__mobile__text">Cerrar</h3>
                 </div>
             </div>
