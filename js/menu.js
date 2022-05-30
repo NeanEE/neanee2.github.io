@@ -47,7 +47,7 @@ slider_click.addEventListener("click", ()=>{
     // if (slidePosition == 4){
       // slider_modal.href = "ACA VA UN LINK DIRECTO A LA PAGINA DENTRO DE DECAP"
     // }
-    slider_ads_text.textContent = `Usted esta a punto de salir de Decap y dirigirse a "${adsLink}", proporcionado por: "${adsName}"`
+    slider_ads_text.textContent = `Usted esta a punto de salir de Decap y dirigirse a "${adsLink}" proporcionado por: "${adsName}"`
     if (slidePosition <= 3){
     slider_modal.classList.add("slider__ads__modal__container--show");
     }
@@ -98,20 +98,20 @@ prev.addEventListener("click", function(){
   // EVENTO PAUSE-PLAY 
 
 pause_play.addEventListener("click", ()=>{
+  pauseReanudeSlider();
+});
+function pauseReanudeSlider(){
   pause_play.classList.toggle("slider__pause__play");
   slider_svg_play.classList.toggle("slider__options__svg--none");
   slider_svg_pause.classList.toggle("slider__options__svg--none");
     // DETIENE EL MOVIMIENTO DEL SLIDE(EL INTERVALO DE moveToNextSlide)
   if(pause_play.classList.contains("slider__pause__play") == true){
     clearInterval(timeToMove);
-    // slider_svg_play.classList.toggle("slider__options__svg--none");
   }
   if(pause_play.classList.contains("slider__pause__play") == false){
     move();
-    // slider_svg_pause.classList.toggle("slider__options__svg--none");
   }
-});
-
+}
 function updateSlidePosition(){
   for (let slide of slides)
   {
