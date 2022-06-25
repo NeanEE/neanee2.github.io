@@ -45,7 +45,7 @@ slider_click.addEventListener("click", ()=>{
       adsName = "Steam"
     }
     // if (slidePosition == 4){
-      // slider_modal.href = "ACA VA UN LINK DIRECTO A LA PAGINA DENTRO DE DECAP"
+      // slider_modal.href = "ACA VA UN LINK DIRECTO A LA PAGINA DENTRO DE DEEEE"
     // }
     slider_ads_text.textContent = `Usted esta a punto de salir de Deeee y dirigirse a "${adsLink}" proporcionado por: "${adsName}"`
     if (slidePosition <= 3){
