@@ -1,0 +1,305 @@
+.menu__container{
+    width: 95%;
+    height: min-content;
+    margin: 5em auto 2em auto;
+    /* background-color: var(--colorblock1); */
+}
+    .cv__portfolio__selector__container{
+        width: 100%;
+        height: 3em;
+        margin-bottom: 2em;
+        display: flex;
+    }
+        .cv__select__box{
+            width: 75%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: width 300ms;
+            cursor: default;
+            background-color: var(--colorblock1);
+        }
+        .cv__select__box:hover .cv__select__text{
+            transform: scale(1.1);
+            color: var(--colorbtn);
+        }
+        .cv__select__box--port{
+            width: 25%;
+            cursor: pointer;
+            transition: width 300ms;
+        }
+            /* .cv__select__text{
+
+            } */
+        .portfolio__select__box{
+            width: 25%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: width 300ms;
+            cursor: pointer;
+            background-color: var(--colorside1);
+        }
+        .portfolio__select__box--port{
+            width: 75%;
+            transition: width 300ms;
+            cursor: default;
+        }
+    .cv-port__block__dats{
+        width: 100%;
+        height: min-content;
+        padding: .5em;
+        display: flex;
+        justify-content: space-between;
+        background-color: var(--colorblock1);
+    }
+        .cv-port__b-dats__photo__container{
+            width: 13em;
+            height: 13em;
+            background-color: var(--colorside1);
+        }
+        .cv-port__b-dats__dats__container{
+            width: calc(100% - 13.5em);
+            height: 13em;
+            padding: .5em;
+            display: flex;
+            flex-wrap: wrap;
+            background-color: var(--colorside1);
+        }
+            .cv-port__b-dats__text{
+                font-size: 1.5em;
+                height: min-content;
+            }
+            .cv-port__b-dats__dats-name{
+                width: 100%;
+                background-color: cadetblue;
+            }
+            .cv-port__b-dats__dats-first-date{
+                width: 33.3%;
+                background-color: coral;
+            }
+            .cv-port__b-dats__dats-gender{
+                width: 33.3%;
+                background-color: olivedrab;
+            }
+            .cv-port__b-dats__dats-document{
+                width: 33.3%;
+                background-color: darkseagreen;
+            }
+            .cv-port__b-dats__dats-direction{
+                width: 100%;
+                background-color: crimson;
+            }
+            .cv-port__b-dats__dats-phone{
+                width: 50%;
+                background-color: saddlebrown;
+            }
+            .cv-port__b-dats__dats-nationality{
+                width: 50%;
+                background-color: royalblue;
+            }
+            .cv-port__b-dats__dats-civil-state{
+                width: 50%;
+                background-color: indianred;
+            }
+            .cv-port__b-dats__dats-city{
+                width: 50%;
+                background-color: peru;
+            }
+
+.cv-port__variable__box{
+    display: flex;
+}
+        /* CV BLOCK */
+
+    .cv__block__container{
+        width: 100%;
+        height: min-content;
+        /* display: flex; */
+        /* justify-content: space-around; */
+        /* align-items: flex-start; */
+        /* flex-wrap: wrap; */
+        padding: 1em;
+
+        display: grid;
+        grid-template-columns: 40% 60%;
+        grid-template-rows: min-content min-content;
+        grid-template-areas: "cvbapt cvbfor"
+                             "cvbabi cvbjob";
+        gap: 1em;
+        background-color: var(--colorblock1);
+    }
+        .cv__container--one{
+            width: 100%;
+            height: min-content;
+            /* background-color: black; */
+        }
+        .cv__container--two{
+            width: 100%;
+            height: min-content;
+            /* background-color: black; */
+        }
+            .cv-port__b-aptitudes{
+                grid-area: cvbapt;
+                /* background-color: olive; */
+            }
+            .cv__b-formation{
+                grid-area: cvbfor;
+                /* background-color: slateblue; */
+            }
+            .cv__b-abilities{
+                grid-area: cvbabi;
+                /* background-color: cadetblue; */
+            }
+            .cv__b-job-summary{
+                grid-area: cvbjob;
+                /* background-color: coral; */
+            }
+
+            /* CVPORT-ULLI */
+
+        .cvport-ulli{
+            height: min-content;
+            width: 100%;
+            /* margin-left: 1em; */
+            padding: .5em;
+            background-color: var(--colorside1);
+        }
+            /* .cvport-ulli__title{
+
+            } */
+                .cvport-ulli__title__text{
+                    font-size: 1.85em;
+                    color: var(--colorbtn);
+                }
+            .cvport-ulli-sub{
+                margin-left: 1em;
+                /* background-color: cadetblue; */
+            }
+
+                /* .cvport-ulli-sub__title{
+
+                } */
+                    .cvport-ulli-sub__title__text{
+                        font-size: 1.5em;
+                        text-decoration: underline;
+                    }
+                .cvport-ulli-sub__ul{
+                    margin-left: 1em;
+                }
+                /* .cvport-ulli-sub__ul__line{
+                    position: absolute;
+                    width: .25em;
+                    height: 100%;
+                    background-color: var(--colorblock1);
+                } */
+                    .cvport-ulli-sub__li{
+                        list-style: outside;
+                        margin-bottom: .75em;
+                    }
+                        .cvport-ulli-sub__li__two{
+                            margin-left: .75em;
+                        }
+                        /* .cvport-ulli-sub__li__three{
+                            list-style: circle;
+                            margin-left: 1.5em;
+                        } */
+                        /* .cvport-ulli-sub__li__more{
+
+                        } */
+                            /* .cvport-ulli-sub__li__title{
+
+                            } */
+                                /* .cvport-ulli-sub__li__title__text{
+
+                                } */
+                            /* .cvport-ulli-sub__li__ul{
+
+                            } */
+                                .cvport-ulli-sub__li__ul__li{
+                                    list-style: circle;
+                                }
+                                    /* .cvport-ulli-sub__li__ul__li__text{
+
+                                    } */
+        .cvport__b-simple{
+            height: min-content;
+            width: 100%;
+            padding: .5em;
+            display: flex;
+            flex-direction: column;
+            background-color: var(--colorside1);
+        }
+            .cvport__b-simple__title__text{
+                font-size: 1.75em;
+                color: var(--colorbtn);
+            }
+            .cvport__b-simple__box{
+                margin-left: 1em;
+                font-size: 1.35em;
+            }
+
+
+
+
+
+
+    .cv__block__container--disable{
+        display: none;
+    }
+
+        /* PORT BLOCK */
+
+    .port__block__container{
+        width: 100%;
+        height: 40em;
+        display: none;
+        background-color: cornflowerblue;
+    }
+    .port__block__container--active{
+        display: flex;
+    }
+        /* CV-PORT */
+
+
+    .cv-port__block__contact{
+        width: 100%;
+        height: min-content;
+        padding: .5em;
+        display: flex;
+        flex-direction: column;
+        background-color: tomato;
+    }
+        .cv-port__b-contact__title{
+            margin-top: 1.5em;
+            background-color: cornflowerblue;
+        }
+            .cv-port__b-contact__title__text{
+                font-size: 1.85em;
+            }
+        .cv-port__b-contact__contact__text{
+            margin-left: 1em;
+            font-size: 1.5em;
+            background-color: peru;
+        }
+    /* .cv-port__block__disponibility{
+        width: 100%;
+        height: min-content;
+        padding: .5em;
+        display: flex;
+        flex-direction: column;
+        background-color: var(--colorblock1);
+    }
+        .cv-port__b-disponibility__title{
+
+        }
+            .cv-port__b-disponibility__title__text{
+                font-size: 1.75em;
+            }
+        .cv-port__b-disponibility__text{
+            margin-left: 1em;
+            font-size: 1.5em;
+        }
+            .cv-port__b-disponibility__travel__text{
+
+            } */
