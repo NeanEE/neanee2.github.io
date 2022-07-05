@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Decap es un sitio web para conectar a las personas, donde puedes encontrar u ofrecer trabajo, publicitar tu comercio o emprendimiento y mucho mas! (disponible por el momento solo para Salto, Bs.As)">
+    <meta name="author" content="N">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@500;600;700&display=opcional" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Signika+Negative&display=opcional" rel="stylesheet"> -->
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Material+Icons+Outlined"> -->
+
+    <link rel="apple-touch-icon" sizes="57x57" href="assets\icons\favicons\apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="assets\icons\favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets\icons\favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets\icons\favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets\icons\favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets\icons\favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets\icons\favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets\icons\favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets\icons\favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="assets\icons\favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets\icons\favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets\icons\favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets\icons\favicons/favicon-16x16.png">
+    <link rel="manifest" href="assets\icons\favicons/manifest.json">
+    <!-- <meta name="msapplication-TileColor" content="#373737"> -->
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <!-- <meta name="theme-color" content="#ffffff"> -->
+    <meta name="theme-color" content="#282828">
+
+
+    <!-- MANIFEST.JSON -->
+    <!-- {
+        "theme_color": "#282828"
+      } -->
+
+
+      <link rel="stylesheet" href="style.css\my_cv_show.css">
+      <link rel="stylesheet" href="style.css\generals.css">
+      <!-- <link rel="stylesheet" href="https://ssl.gstatic.com/docs/script/css/add-ons1.css"> -->
+      
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/brands.min.css" integrity="sha512-bSncow0ApIhONbz+pNI52n0trz5fMWbgteHsonaPk42JbunIeM9ee+zTYAUP1eLPky5wP0XZ7MSLAPxKkwnlzw==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+    <!-- <script src="https://kit.fontawesome.com/f11779bb83.js"></script> -->
+    <title>Mi Cv - Decap</title>
+</head>
+<body class="body-menu">
+
+<!-- INICIO SIDEBAR -->
+
+<nav class="menu-sidebar var--fontUB expand" id="objets-navbar">
+    <a href="menu.html" class="m-s__logo"  id="objets-navbar-logo" tabindex="0">Decap</a>
+    <ul class="m-s__items" id="objets-ms_items">
+        <li class="ms-items__float-btn ms-items__float__search" id="float-btn-search">
+                <!-- <input type="text"> -->
+            <svg xmlns="http://www.w3.org/2000/svg" class="ms-items__float-svg" viewBox="0 0 24 24"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+        </li>
+        <li class="ms-items__float-btn ms-items__float__notifications" id="float-btn-notifications">
+                <!-- <h3 class="temp-1">hola</h3> -->
+            <svg xmlns="http://www.w3.org/2000/svg" class="ms-items__float-svg--2" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M12 22c1.1 0 2-.9 2-2h-4c0 1.1.9 2 2 2zm6-6v-5c0-3.07-1.63-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.64 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2zm-2 1H8v-6c0-2.48 1.51-4.5 4-4.5s4 2.02 4 4.5v6z"/></svg>
+        </li>
+        <li class="ms-items__list" id="ms-account">
+            <h2 class="ms-items__list__text">Cuenta</h2>
+            <div class="ms__sm__container--1 ms__sm__container" id="ms-sm-account">
+                    <ul class="ms__sm__ul-box">
+                            <li class="ms__sm__li-box" id="ms-sm-li-box-profile">
+                                    <a href="profile.html" class="ms__sm__text--a"><h3 class="ms__sm__text">Perfil</h3>
+                                    </a>
+                            </li>
+                            <li class="ms__sm__li-box" id="ms-sm-li-box-my-cv">
+                                    <a href="my_cv.html" class="ms__sm__text--a"><h3 class="ms__sm__text">Mi Ci</h3>
+                                    </a>
+                            </li>
+                    </ul>
+            </div>
+        </li>
+        <li class="ms-items__list" id="ms-my-market">
+            <h2 class="ms-items__list__text">Mi Comercio</h2>
+            <div class="ms__sm__container--2 ms__sm__container" id="ms-sm-my-market">
+                    <ul class="ms__sm__ul-box">
+                            <li class="ms__sm__li-box" id="ms-sm-li-box-my-market">
+                                    <a href="" class="ms__sm__text--a"><h3 class="ms__sm__text">Carniceria SANKARNY</h3>
+                                    </a>
+                                    <!-- programador: hay que hacer que cuando (device=laptop o pc) Se limite la cantidad de caracteres que se muestran, y cuando es (device=mobile o tablet), que se pongan los que tenga para que no se bugee -->
+                            </li>
+                            <li class="ms__sm__li-box" id="ms-sm-li-box-upgrades">
+                                    <a href="upgrades.html" class="ms__sm__text--a"><h3 class="ms__sm__text">Mejoras</h3>
+                                    </a>
+                            </li>
+                            <li class="ms__sm__li-box" id="ms-sm-li-box-register">
+                                    <a href="form_reg_log.html" class="ms__sm__text--a"><h3 class="ms__sm__text">Registrar</h3>
+                                    </a>
+                            </li>
+                    </ul>
+            </div>
+        </li>
+        <li class="ms-items__list" id="ms-config">
+            <h2 class="ms-items__list__text">Configuracion</h2>
+            <div class="ms__sm__container--3 ms__sm__container" id="ms-sm-config">
+                    <ul class="ms__sm__ul-box">
+                            <li class="ms__sm__li-box" id="ms-sm-li-box-notifications">
+                                    <a href="notifications.html" class="ms__sm__text--a"><h3 class="ms__sm__text">Notificaciones</h3></a>
+                            </li>
+                            <li class="ms__sm__li-box" id="ms-sm-li-box-teme">
+                                    <h3 class="ms__sm__text">Tema</h3>
+                            </li>
+                            <li class="ms__sm__li-box" id="ms-sm-li-box-device">
+                                    <h3 class="ms__sm__text">Dispositivo</h3>
+                            </li>
+                            <li class="ms__sm__li-box" id="ms-sm-li-box-out">
+                                    <h3 class="ms__sm__text">Salir</h3>
+                            </li>
+                    </ul>
+            </div>
+        </li>
+        <!-- RIGHT-LEFT BTN -->
+        <li class="ms-items__right-left__btn" id="ms-items-rig-lef-btn">
+            <div class="ms-items__rig-lef__btn__svg__container">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="ms_items__rig-lef__svg" enable-background="new 0 0 24 24" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><rect fill="none" height="24" width="24"/><g><polygon points="17.77,3.77 16,2 6,12 16,22 17.77,20.23 9.54,12"/></g></svg>
+            </div>
+        </li>
+        <li class="ms__items__reset__btn" id="ms-items-reset-btn">
+            <div class="ms__items__reset__btn__svg__container">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="ms__items__reset__svg" height="24" width="24"><path d="M15.975 5 11.975 9 10.575 7.6 12.175 6H12Q9.5 6 7.75 7.762Q6 9.525 6 12.05Q6 12.7 6.15 13.325Q6.3 13.95 6.6 14.55L5.1 16.05Q4.55 15.1 4.275 14.1Q4 13.1 4 12.05Q4 8.7 6.325 6.35Q8.65 4 12 4H12.175L10.575 2.4L11.975 1ZM8.025 19 12.025 15 13.425 16.4 11.825 18H12Q14.5 18 16.25 16.238Q18 14.475 18 11.95Q18 11.3 17.85 10.675Q17.7 10.05 17.4 9.45L18.9 7.95Q19.45 8.9 19.725 9.9Q20 10.9 20 11.95Q20 15.3 17.675 17.65Q15.35 20 12 20H11.825L13.425 21.6L12.025 23Z"/></svg>
+            </div>
+        </li>
+    </ul>
+    <!-- EXPAND-CONTRACT SIDEBAR MENU (MOBILE) -->
+    <svg xmlns="http://www.w3.org/2000/svg" class="mw-btn__menu" id="objets-btn_navbar" viewBox="0 0 24 24"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
+    </nav>
+
+    <!-- MODAL OUT ACCOUNT -->
+    <div class="ms__sm__out__modal__container var--fontUB" id="mssm-out-modal">
+            <div class="ms__sm__out__box">
+                    <div class="ms__sm__out__box__text">
+                            <h3 class="ms__sm__out__box__text__Text">Seguro que desea salir de su cuenta?</h3>
+                    </div>
+                    <div class="ms__sm__out__box__btns">
+                            <div class="ms__sm__out__box__back__btn" id="mssm-out-btn">
+                                    <h3 class="mssm__out__box__btn__text">Regresar</h3>
+                            </div>
+                            <div class="ms__sm__out__box__out__btn">
+                                    <a href="reg-log.html" class="mssm__out__box__btn__text--a"><h3 class="mssm__out__box__btn__text">Salir</h3></a>
+                            </div>
+                    </div>
+            </div>
+    </div>
+
+    <!-- MODAL SEARCHS -->
+    <div class="ms__search__container var--fontUB" id="float-input-search">
+                    <input class="ms__search__input" type="text" placeholder="Buscar...">
+                    <button class="ms__search__ok__btn">
+                            <h4 class="ms__search__ok__btn__text var--fontUB">Buscar</h4>
+                    </button>
+    </div>
+
+    <!-- MODAL NOTIFICATIONS -->
+    <div class="ms__notifications__container var--fontUB" id="float-notifications-box">
+            <div class="ms__notifications__box__title">
+                    <h4 class="ms__n__title__text">Notificaciones</h4>
+            </div>
+            <div class="ms__notifications__boxs__container">
+                    <div class="ms__n__box__box">
+                            <div class="ms__n__box__cont__container ms__n__box__cont__container--first">
+                                    <div class="ms__n__box__cont">
+                                            <h3 class="ms__n__box__transmitter">Decap:</h3>
+                                            <h3 class="ms__n__box__hour">22:39 p.m.</h3>
+                                            <h4 class="ms__n__box__text">Mira los cambios de la nueva actualizacion</h4>                                          
+                                    </div>
+                            </div>
+                            <div class="ms__n__box__cont__container">
+                                    <div class="ms__n__box__cont">
+                                            <h3 class="ms__n__box__transmitter">Nombre A:</h3>
+                                            <h3 class="ms__n__box__hour">2 mayo</h3>
+                                            <h4 class="ms__n__box__text">El Usuario "Nombre A." te a enviado su ci para tu busqueda "Se busca un carnicero con experiencia"</h4>
+                                    </div>
+                            </div>
+                            <div class="ms__n__box__cont__container">
+                                    <div class="ms__n__box__cont"></div>
+                            </div>
+                            <div class="ms__n__box__cont__container">
+                                    <div class="ms__n__box__cont"></div>
+                            </div>
+                    </div>
+            </div>
+            <div class="ms__notifications__box__btns">
+                    <div class="ms__n__back__btn" id="ms-notifications-back-btn">
+                            <h5 class="ms__n__back__btn__text">Cerrar</h5>
+                    </div>
+                    <div class="ms__n__more__btn">
+                            <a href="notifications.html" class="ms__n__more__btn__text--a"><h5 class="ms__n__more__btn__text">Ver Todas</h5></a>
+                    </div>
+            </div>
+    </div>
+
+    <!-- MODAL DEVICE SELECTOR -->
+    <div class="ms__device-selector__container var--fontUB" id="mssm-device-selector-modal">
+            <div class="ms__device-selector__close__container" id="ms-device-selector-close-modal">
+                    <h3 class="ms__device-selector__close__text">Cerrar</h3>
+            </div>
+            <div class="ms__device-selector__box">
+                    <div class="ms__ds__box ms__ds__box--mobile" id="msds-mobile-btn">
+                            <div class="ms__ds__box__act-dis--disable" id="ms-ds-act-dis-mobile">
+                                    <h3 class="ms__ds__box__active__text">Activo</h3>
+                            </div>
+                            <div class="ms__ds__box__icon--disable" id="ms-ds-icon-mobile">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="ms__ds__box__icon__svg" id="ms-ds-icon-svg-mobile" height="48" width="48"><path d="M24 42.25Q24.65 42.25 25.075 41.825Q25.5 41.4 25.5 40.75Q25.5 40.1 25.075 39.675Q24.65 39.25 24 39.25Q23.35 39.25 22.925 39.675Q22.5 40.1 22.5 40.75Q22.5 41.4 22.925 41.825Q23.35 42.25 24 42.25ZM13 35.5H35V9.5H13ZM13 46Q11.8 46 10.9 45.1Q10 44.2 10 43V5Q10 3.8 10.9 2.9Q11.8 2 13 2H35Q36.2 2 37.1 2.9Q38 3.8 38 5V43Q38 44.2 37.1 45.1Q36.2 46 35 46ZM13 6.5H35V5Q35 5 35 5Q35 5 35 5H13Q13 5 13 5Q13 5 13 5ZM13 5Q13 5 13 5Q13 5 13 5V6.5V5Q13 5 13 5Q13 5 13 5ZM13 38.5V43Q13 43 13 43Q13 43 13 43H35Q35 43 35 43Q35 43 35 43V38.5ZM13 43Q13 43 13 43Q13 43 13 43V38.5V43Q13 43 13 43Q13 43 13 43Z"/></svg>
+                            </div>
+                            <div class="ms__ds__box__name">
+                                    <h3 class="ms__ds__box__name__text">Movil</h3>
+                            </div>
+                    </div>
+
+
+
+                    <div class="ms__ds__box ms__ds__box--tablet" id="msds-tablet-btn">
+                            <div class="ms__ds__box__act-dis--disable" id="ms-ds-act-dis-tablet">
+                                    <h3 class="ms__ds__box__active__text">Activo</h3>
+                            </div>
+                            <div class="ms__ds__box__icon--disable" id="ms-ds-icon-tablet">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="ms__ds__box__icon__svg" id="ms-ds-icon-svg-tablet" height="48" width="48"><path d="M19.9 41.75H28.1V39.75H19.9ZM9 46Q7.75 46 6.875 45.125Q6 44.25 6 43V5Q6 3.75 6.875 2.875Q7.75 2 9 2H39Q40.25 2 41.125 2.875Q42 3.75 42 5V43Q42 44.25 41.125 45.125Q40.25 46 39 46ZM9 35.5H39V9.5H9ZM9 38.5V43Q9 43 9 43Q9 43 9 43H39Q39 43 39 43Q39 43 39 43V38.5ZM9 6.5H39V5Q39 5 39 5Q39 5 39 5H9Q9 5 9 5Q9 5 9 5ZM9 5Q9 5 9 5Q9 5 9 5V6.5V5Q9 5 9 5Q9 5 9 5ZM9 43Q9 43 9 43Q9 43 9 43V38.5V43Q9 43 9 43Q9 43 9 43Z"/></svg>
+                            </div>
+
+                            <div class="ms__ds__box__name">
+                                    <h3 class="ms__ds__box__name__text">Tablet</h3>
+                            </div>
+                    </div>
+
+
+                    
+                    <div class="ms__ds__box ms__ds__box--laptop" id="msds-laptop-btn">
+                            <div class="ms__ds__box__act-dis--disable" id="ms-ds-act-dis-laptop">
+                                    <h3 class="ms__ds__box__active__text">Activo</h3>
+                            </div>
+                            <div class="ms__ds__box__icon--disable" id="ms-ds-icon-laptop">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="ms__ds__box__icon__svg" id="ms-ds-icon-svg-laptop" height="48" width="48"><path d="M0 40V37H4V6H44V37H48V40ZM19.8 37H28.3V34.9H19.8ZM7.2 31.9H41.2V9H7.2ZM7.2 31.9V9V31.9Z"/></svg>
+                            </div>
+                            <div class="ms__ds__box__name">
+                                    <h3 class="ms__ds__box__name__text">Laptop</h3>
+                            </div>
+                    </div>
+
+                    
+
+                    <div class="ms__ds__box ms__ds__box--pc" id="msds-pc-btn">
+                            <div class="ms__ds__box__act-dis--disable" id="ms-ds-act-dis-pc">
+                                    <h3 class="ms__ds__box__active__text">Activo</h3>
+                            </div>
+                            <div class="ms__ds__box__icon--disable" id="ms-ds-icon-pc">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="ms__ds__box__icon__svg" id="ms-ds-icon-svg-pc" height="48" width="48"><path d="M16.75 44V41H21.05V36H7.05Q5.85 36 4.95 35.1Q4.05 34.2 4.05 33V9Q4.05 7.8 4.95 6.9Q5.85 6 7.05 6H41.05Q42.25 6 43.15 6.9Q44.05 7.8 44.05 9V33Q44.05 34.2 43.15 35.1Q42.25 36 41.05 36H27.05V41H31.35V44ZM7.05 33H41.05Q41.05 33 41.05 33Q41.05 33 41.05 33V9Q41.05 9 41.05 9Q41.05 9 41.05 9H7.05Q7.05 9 7.05 9Q7.05 9 7.05 9V33Q7.05 33 7.05 33Q7.05 33 7.05 33ZM7.05 33Q7.05 33 7.05 33Q7.05 33 7.05 33V9Q7.05 9 7.05 9Q7.05 9 7.05 9Q7.05 9 7.05 9Q7.05 9 7.05 9V33Q7.05 33 7.05 33Q7.05 33 7.05 33Z"/></svg>
+                            </div>
+                            <div class="ms__ds__box__name">
+                                    <h3 class="ms__ds__box__name__text">Pc</h3>
+                            </div>
+                    </div>
+            </div>
+            <div class="ms__device-selector__auto__container">
+                    <div class="ms__ds__auto__box" id="ms-ds-auto-box">
+                            <h3 class="ms__ds__auto__text">Automatico</h3>
+                            <!-- <svg xmlns="http://www.w3.org/2000/svg" class="ms__ds__auto__svg ms__ds__auto__svg--active" id="ms-ds-auto-svg" height="48" width="48"><path d="M18.9 35.7 7.7 24.5 9.85 22.35 18.9 31.4 38.1 12.2 40.25 14.35Z"/></svg> -->
+                            <svg xmlns="http://www.w3.org/2000/svg" class="ms__ds__auto__svg ms__ds__auto__svg--active" id="ms-ds-auto-svg" height="48" width="48"><path d="M18.9 36.9 6.5 24.5 9.9 21.1 18.9 30.1 38.05 10.95 41.45 14.35Z"/></svg>
+                    </div>
+            </div>
+            <div class="ms__device-selector__tip__box">
+                    <h3>Si no tienes ningun problema, te recomendamos dejarlo en automatico</h3>
+            </div>
+    </div>
+
+    <!-- SELECTOR DE COLORES -->
+
+<div class="teme-color-selector teme-color-selector" id="teme-color-selector">
+        <div class="tcs__box var--fontUB">
+            <div class="tcs__close-btn" id="tcs-c-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="tcs__close-btn-span" height="24px" viewBox="0 0 24 24" width="24px"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+            </div>
+            <div class="tcs__title">
+                    <h4 class="tcs__h4">Tema</h4>
+                    <div class="tcs__teme">
+                            <div class="tcs__t-light" id="tcs-t-light">Claro</div>
+                            <div class="tcs__t-dark tcs--active" id="tcs-t-dark">Oscuro</div>
+                    </div>
+            </div>
+            <div class="tcs__subtitle">
+                    <h4 class="tcs__colors">Colores</h4>
+
+                    <div class="tcs__colors-selectors">
+                            <div class="tcs-colors__cian tcs-colors__boxs tcs--cb-active" id="tcs-c-cian">
+                                    <div class="tcs__point" id="tcs-point-1"></div>
+                                    <h4 class="tcs-h4__cian tcs-h4__colors">Cian</h4>
+                            </div>
+                            <div class="tcs-colors__aqua tcs-colors__boxs" id="tcs-c-aqua">
+                                    <div class="" id="tcs-point-2"></div>
+                                    <h4 class="tcs-h4__aqua tcs-h4__colors">Aqua</h4>
+                            </div>
+                            <div class="tcs-colors__malaquita tcs-colors__boxs" id="tcs-c-malaquita">
+                                    <div class="" id="tcs-point-3"></div>
+                                    <h4 class="tcs-h4__malaquita tcs-h4__colors">Malaquita</h4>
+                            </div>
+
+                            <div class="tcs-colors__malva tcs-colors__boxs" id="tcs-c-malva">
+                                    <div class="" id="tcs-point-4"></div>
+                                    <h4 class="tcs-h4__malva tcs-h4__colors">Malva</h4>
+                            </div>
+
+                            <div class="tcs-colors__coral tcs-colors__boxs" id="tcs-c-coral">
+                                    <div class="" id="tcs-point-5"></div>
+                                    <h4 class="tcs-h4__coral tcs-h4__colors">Coral</h4>
+                            </div>
+
+                            <div class="tcs-colors__oro tcs-colors__boxs" id="tcs-c-oro">
+                                    <div class="" id="tcs-point-6"></div>
+                                    <h4 class="tcs-h4__oro tcs-h4__colors">Oro</h4>
+                            </div>
+                    </div>
+            </div>
+            <div class="tcs__close__btn__mobile" id="tcs-c-btn-2">
+                    <h3 class="tcs__close__btn__mobile__text">Cerrar</h3>
+            </div>
+        </div>
+</div>
+
+<!-- FIN SIDEBAR -->
+
+<!-- CONTENIDO DEL MENU CV -->
+<div class="menu__container var--fontUB">
+        <div class="cv__portfolio__selector__container">
+            <div class="cv__select__box" id="cv-select-box">
+                    <h2 class="cv__select__text">Ci</h2>
+            </div>
+            <div class="portfolio__select__box" id="portfolio-select-box">
+                    <h2 class="portfolio__select__text">Port</h2>
+            </div>
+        </div>
+        <div class="cv-port__block__dats">
+                <div class="cv-port__b-dats__photo__container">
+                        <img src="" class="cv-port__b-dats__photo__img" alt="" srcset="">
+                </div>
+                <div class="cv-port__b-dats__dats__container">
+                        <h4 class="cv-port__b-dats__text cv-port__b-dats__dats-name">Name</h4>
+                        <h4 class="cv-port__b-dats__text cv-port__b-dats__dats-first-date">00/00/0000</h4>
+                        <h4 class="cv-port__b-dats__text cv-port__b-dats__dats-gender">Male</h4>
+                        <h4 class="cv-port__b-dats__text cv-port__b-dats__dats-document">DNI: 00000000</h4>
+                        <h4 class="cv-port__b-dats__text cv-port__b-dats__dats-direction">Direction</h4>
+                        <h4 class="cv-port__b-dats__text cv-port__b-dats__dats-phone">2474000000</h4>
+                        <h4 class="cv-port__b-dats__text cv-port__b-dats__dats-nationality">Nacionality</h4>
+                        <h4 class="cv-port__b-dats__text cv-port__b-dats__dats-civil-state">Civil State</h4>
+                        <h4 class="cv-port__b-dats__text cv-port__b-dats__dats-city">City</h4>
+                </div>
+        </div>
+        <!-- <div class="cv__block__title">
+
+        </div> -->
+        <div class="cv-port__variable__box">
+                <!-- CV -->
+                <div class="cv__block__container" id="cv-block-container">
+
+                <!-- CVPORT SIMPLE -->
+
+                        <!-- <div class="cvport__b-simple">
+                                <div class="cvport__b-simple__title">
+                                        <h3 class="cvport__b-simple__title__text">Simple title</h3>
+                                </div>
+                                <div class="cvport__b-simple__box">
+                                        <h4 class="">Simple AutoAdd</h4>
+                                        <h4 class="">Simple AutoAdd</h4>
+                                        <h4 class="">Simple AutoAdd</h4>
+                                        <h4 class="">Simple AutoAdd</h4>
+                                </div>
+                        </div> -->
+
+                <!-- CVPORT ULLI -->
+
+                        <!-- <div class="cvport-ulli">
+                                gg
+                                gg
+                                <div class="cvport-ulli__title">
+                                        <h3 class="cvport-ulli__title__text">Ulli Title</h3>
+                                </div>
+                                <div class="cvport-ulli-sub">
+                                        <div class="cvport-ulli-sub__title">
+                                                <h4 class="cvport-ulli-sub__title__text">Ulli Sub-Title 1</h4>
+                                        </div>
+                                        <ul class="cvport-ulli-sub__ul">
+                                                <li class="cvport-ulli-sub__li">
+                                                        <h4 class="">Ulli li 1°</h4>
+                                                        <h4 class="cvport-ulli-sub__li__two">Ulli li 2°+</h4>
+                                                        <h4 class="cvport-ulli-sub__li__two">Ulli li 2°+</h4>
+                                                </li>
+                                                <li class="cvport-ulli-sub__li">
+                                                        <h4 class="">Ulli li 1°</h4>
+                                                        <h4 class="cvport-ulli-sub__li__two">Ulli li 2°+</h4>
+                                                        <h4 class="cvport-ulli-sub__li__two">Ulli li 2°+</h4>
+                                                </li>
+                                                <li class="cvport-ulli-sub__li">
+                                                        <h4 class="">Ulli li 1°</h4>
+                                                        <h4 class="cvport-ulli-sub__li__two">Ulli li 2°+</h4>
+                                                        <h4 class="cvport-ulli-sub__li__two">Ulli li 2°+</h4>
+
+                                                        ESTE BLOQUE "MORE" ES OPCIONAL, NO SIEMPRE ESTA EN ULLI
+                                                        -------------
+                                                        <div class="cvport-ulli-sub__li__more">
+                                                                <div class="cvport-ulli-sub__li__title">
+                                                                        <h4 class="cvport-ulli-sub__li__title__text">Ulli sub-sub-title:</h4>
+                                                                </div>
+                                                                <ul class="cvport-ulli-sub__li__ul">
+                                                                        <li class="cvport-ulli-sub__li__ul__li">
+                                                                                <h4 class="cvport-ulli-sub__li__ul__li__text">Ulli sub-sub-add
+                                                                        </li>
+                                                                        <li class="cvport-ulli-sub__li__ul__li">
+                                                                                <h4 class="cvport-ulli-sub__li__ul__li__text">Ulli sub-sub-add
+                                                                        </li>
+                                                                        <li class="cvport-ulli-sub__li__ul__li">
+                                                                                <h4 class="cvport-ulli-sub__li__ul__li__text">Ulli sub-sub-add
+                                                                        </li>
+                                                                </ul>
+                                                        </div>
+                                                        -------------
+                                                </li>
+                                        </ul>
+                                </div>
+                                <div class="cvport-ulli-sub">
+                                        <div class="cvport-ulli-sub__title">
+                                                <h4 class="cvport-ulli-sub__title__text">Ulli Sub-Title 2</h4>
+                                        </div>
+                                        <ul class="cvport-ulli-sub__ul">
+                                                <li class="cvport-ulli-sub__li">
+                                                        <h4 class="">Ulli li 1°</h4>
+                                                        <h4 class="cvport-ulli-sub__li__two">Ulli li 2°+</h4>
+                                                        <h4 class="cvport-ulli-sub__li__two">Ulli li 2°+</h4>
+                                                </li>
+                                                <li class="cvport-ulli-sub__li">
+                                                        <h4 class="">Ulli li 1°</h4>
+                                                        <h4 class="cvport-ulli-sub__li__two">Ulli li 2°+</h4>
+                                                        <h4 class="cvport-ulli-sub__li__two">Ulli li 2°+</h4>
+                                                </li>
+                                                <li class="cvport-ulli-sub__li">
+                                                        <h4 class="">Ulli li 1°</h4>
+                                                        <h4 class="cvport-ulli-sub__li__two">Ulli li 2°+</h4>
+                                                        <h4 class="cvport-ulli-sub__li__two">Ulli li 2°+</h4>
+                                                </li>
+                                        </ul>
+                                </div>
+                        </div> -->
+
+                        <div class="cv__container--one">
+                                <!-- Aptitudes -->
+                                <div class="cvport__b-simple cv-port__b-aptitudes">
+                                        <div class="cvport__b-simple__title cv-port__b-aptitudes__title">
+                                                <h3 class="cvport__b-simple__title__text cv-port__b-aptitudes__title__text">Aptitudes</h3>
+                                        </div>
+                                        <div class="cvport__b-simple__box cv-port__box">
+                                                <h4 class="cv-port__b__aptitudes-add">Fast Work</h4>
+                                                <h4 class="cv-port__b__aptitudes-add">Good communication</h4>
+                                                <h4 class="cv-port__b__aptitudes-add">Work Under Pressure</h4>
+                                                <h4 class="cv-port__b__aptitudes-add">Sociable</h4>
+                                        </div>
+                                </div>
+        
+                                <!-- Formation -->
+                                <div class="cvport-ulli cv__b-formation">
+                                        <div class="cvport-ulli__title cv__b-formation__title">
+                                                <h3 class="cvport-ulli__title__text cv__b-formation__title__text">Formation</h3>
+                                        </div>
+                                        <div class="cvport-ulli-sub cv__b-formation__studies">
+                                                <div class="cvport-ulli-sub__title cv__b-formation__studies__title">
+                                                        <h4 class="cvport-ulli-sub__title__text cv__b-formation__studies__title__text">Formation Studies</h4>
+                                                </div>
+                                                <ul class="cvport-ulli-sub__ul cv__b-formation__studies__text">
+                                                        <!-- (formacion academica) -->
+                                                        <li class="cv__b-formation__studies__box cvport-ulli-sub__li">
+                                                                <h4 class="cv__b-formation__studies__school__type">Primary:</h4>
+                                                                <h4 class="cvport-ulli-sub__li__two cv__b-formation__studies__school__name">School Name - city</h4>
+                                                                <h4 class="cvport-ulli-sub__li__two cv__b-formation__studies__date">Marzo 2004 - Diciembre 2009</h4>
+                                                        </li>
+                                                        <li class="cv__b-formation__studies__box cvport-ulli-sub__li">
+                                                                <h4 class="cv__b-formation__studies__school__type">Secundary:</h4>
+                                                                <h4 class="cvport-ulli-sub__li__two cv__b-formation__studies__school__name">School Name - city</h4></h4>
+                                                                <h4 class="cvport-ulli-sub__li__two cv__b-formation__studies__date">Marzo 2010 - Diciembre 2017</h4>
+                                                        </li>
+                                                        <li class="cv__b-formation__studies__box cvport-ulli-sub__li">
+                                                                <h4 class="cv__b-formation__studies__school__type">Terciary:</h4>
+                                                                <h4 class="cvport-ulli-sub__li__two cv__b-formation__studies__school__name">School Name - city</h4></h4>
+                                                                <h4 class="cvport-ulli-sub__li__two cv__b-formation__studies__date">Marzo 2018 - En curso</h4>
+                                                        </li>
+        
+                                                        <!-- (Escuela primaria)
+                                                        (Escuela secundaria)
+                                                        (Terciario)
+                                                        (Cursos) -->
+                                                </ul>
+                                        </div>
+                                        <div class="cv__b-courses cvport-ulli-sub">
+                                                <div class="cv__b-courses__title cvport-ulli-sub__title">
+                                                        <h4 class="cv__b-courses__title__text cvport-ulli-sub__title__text">Courses</h4>
+                                                </div>
+                                                <ul class="cv__b-courses__text cvport-ulli-sub__ul">
+                                                        <li class="cvport-ulli-sub__li">
+                                                                <h4 class="cv__b-courses__text">Full Stack developer - Microsoft Certification (certification)</h4>
+                                                        </li>
+                                                        <li class="cvport-ulli-sub__li">
+                                                                <h4 class="cv__b-courses__text">Data Science - Udemy (Master)</h4>
+                                                        </li>
+                                                </ul>
+                                        </div>
+                                </div>
+                        </div>
+                        <div class="cv__container--two">
+                                <!-- Abilities -->
+                                <div class="cvport-ulli cv__b-abilities">
+                                        <div class="cvport-ulli__title cv__b-abilities__title">
+                                                <h3 class="cvport-ulli__title__text cv__b-abilities__title__text">Abilities</h3>
+                                        </div>
+                                        <div class="cvport-ulli-sub cv__b-abilities__languages">
+                                                <div class="cvport-ulli-sub__title cv__b-abilities__languages__title">
+                                                        <h3 class="cvport-ulli-sub__title__text cv__b-abilities__languages__title__text">Languages</h3>
+                                                </div>
+                                                <ul class="cvport-ulli-sub__ul cv__b-abilities__languages__text">
+                                                        <li class="cvport-ulli-sub__li cv__b-abilities__languages__language-box">
+                                                                <h4 class="cv__b-abilities__languages__language__name">Spanish</h4>
+                                                                <h4 class="cvport-ulli-sub__li__two cv__b-abilities__languages__writing-level">Writing Level: Natal</h4>
+                                                                <h4 class="cvport-ulli-sub__li__two cv__b-abilities__languages__text-comprehencion-level">Comprehencion Level: Natal</h4>
+                                                                <h4 class="cvport-ulli-sub__li__two cv__b-abilities__languages__speech-level">Speech: Natal</h4>
+                                                                <h4 class="cvport-ulli-sub__li__two cv__b-abilities__languages__listening-level">Listening Level: Natal</h4>
+                                                        </li>
+                                                        <li class="cvport-ulli-sub__li cv__b-abilities__languages__language-box">
+                                                                <h4 class="cv__b-abilities__languages__language__name">English</h4>
+                                                                <h4 class="cvport-ulli-sub__li__two cv__b-abilities__languages__writing-level">Writing Level: Advanced</h4>
+                                                                <h4 class="cvport-ulli-sub__li__two cv__b-abilities__languages__text-comprehencion-level">Comprehencion Level: Higth</h4>
+                                                                <h4 class="cvport-ulli-sub__li__two cv__b-abilities__languages__speech-level">Speech: Medium</h4>
+                                                                <h4 class="cvport-ulli-sub__li__two cv__b-abilities__languages__listening-level">Listening Level: Medium</h4>
+                                                        </li>
+                                                        <li class="cvport-ulli-sub__li cv__b-abilities__languages__language-box">
+                                                                <h4 class="cv__b-abilities__languages__language__name">Mandarin</h4>
+                                                                <h4 class="cvport-ulli-sub__li__two cv__b-abilities__languages__writing-level">Writing Level: Medium</h4>
+                                                                <h4 class="cvport-ulli-sub__li__two cv__b-abilities__languages__text-comprehencion-level">Comprehencion Level: Medium</h4>
+                                                                <h4 class="cvport-ulli-sub__li__two cv__b-abilities__languages__speech-level">Speech: Basic</h4>
+                                                                <h4 class="cvport-ulli-sub__li__two cv__b-abilities__languages__listening-level">Listening Level: Basic</h4>
+                                                        </li>
+                                                </ul>
+                                        </div>
+                                        <div class="cvport-ulli-sub cv__b-abilities__programs">
+                                                <div class="cvport-ulli-sub__title cv__b-abilities__programs__title">
+                                                        <h4 class="cvport-ulli-sub__title__text cv__b-abilities__programs__title__text">Programs</h4>
+                                                </div>
+                                                <ul class="cvport-ulli-sub__ul cv__b-abilities__programs__text">
+                                                        <li class="cvport-ulli-sub__li cv__b-abilities__programs__box">
+                                                                <h4 class="cv__b-abilities__programs__programs__name">Excel</h4>
+                                                                <h4 class="cvport-ulli-sub__li__two  cv__b-abilities__programs__programs__level">Level: Professional</h4>
+                                                        </li>
+                                                        <li class="cvport-ulli-sub__li cv__b-abilities__programs__box">
+                                                                <h4 class="cv__b-abilities__programs__programs__name">Power Point</h4>
+                                                                <h4 class="cvport-ulli-sub__li__two  cv__b-abilities__programs__programs__level">Level: Advanced</h4>
+                                                        </li>
+                                                        <li class="cvport-ulli-sub__li cv__b-abilities__programs__box">
+                                                                <h4 class="cv__b-abilities__programs__programs__name">Blender</h4>
+                                                                <h4 class="cvport-ulli-sub__li__two  cv__b-abilities__programs__programs__level">Level: Medium</h4>
+                                                        </li>
+                                                        <li class="cvport-ulli-sub__li cv__b-abilities__programs__box">
+                                                                <h4 class="cv__b-abilities__programs__programs__name">Unreal Engine</h4>
+                                                                <h4 class="cvport-ulli-sub__li__two  cv__b-abilities__programs__programs__level">Level: Basic</h4>
+                                                        </li>
+                                                </ul>
+                                        </div>
+                                        <div class="cvport-ulli-sub cv__b-abilities__knowledge-and-skills">
+                                                <div class="cvport-ulli-sub__title cv__b-abilities__knowledge-and-skills__title">
+                                                        <h4 class="cvport-ulli-sub__title__text cv__b-abilities__knowledge-and-skills__title__text">Knowledge and Skills</h4>
+                                                </div>
+                                                <div class="cvport-ulli-sub__ul cv__b-abilities__knowledge-and-skills__text">
+                                                        <li class="cvport-ulli-sub__li">
+        
+                                                        </li>
+                                                </div>
+                                        </div>
+                                </div>
+        
+                                <!-- Job-Summary -->
+                                <!-- gg 
+                                        gg-->
+                                <div class="cvport-ulli cv__b-job-summary">
+                                        <div class="cvport-ulli__title cv__b-job-summary__title">
+                                                <h3 class="cvport-ulli__title__text cv__b-job-summary__title__text">Job Summary</h3>
+                                        </div>
+                                        <div class="cvport-ulli-sub cv__b-job-summary__previous-jobs">
+                                                <div class="cvport-ulli-sub__title cv__b-job-summary__provious-jobs__title">
+                                                        <h3 class="cvport-ulli-sub__title__text cv__b-job-summary__provious-jobs__title">Previous Jobs</h3>
+                                                </div>
+                                                        <ul class="cvport-ulli-sub__ul cv__b-job-summary__previous-jobs__text">
+                                                                <li class="cvport-ulli-sub__li cv__b-job-summary__previous-jobs__job">
+                                                                        <h4 class="cv__b-job-summay__previous-jobs__job__title">Google</h4>
+                                                                        <h4 class="cvport-ulli-sub__li__two  cv__b-job-summay__previous-jobs__job__area">Area: Cleaning</h4>
+                                                                        <h4 class="cvport-ulli-sub__li__two  cv__b-job-summay__previous-jobs__job__position">Position: Cleaning Boss</h4>
+                                                                        <div class="cvport-ulli-sub__li__more">
+                                                                                <div class="cvport-ulli-sub__li__title">
+                                                                                        <h4 class="cvport-ulli-sub__li__title__text cv__b-job-summay__previous-jobs__job__tasks">Tasks:</h4>
+                                                                                </div>
+                                                                                <ul class="cvport-ulli-sub__li__ul">
+                                                                                        <li class="cvport-ulli-sub__li__ul__li">
+                                                                                                <h4 class="cvport-ulli-sub__li__ul__li__text  cv__b-job-summay__previous-jobs__job__task">Cleaning Bathrooms
+                                                                                        </li>
+                                                                                        <li class="cvport-ulli-sub__li__ul__li">
+                                                                                                <h4 class="cvport-ulli-sub__li__ul__li__text  cv__b-job-summay__previous-jobs__job__task">Cleaning Offices
+                                                                                        </li>
+                                                                                        <li class="cvport-ulli-sub__li__ul__li">
+                                                                                                <h4 class="cvport-ulli-sub__li__ul__li__text  cv__b-job-summay__previous-jobs__job__task">Stock control of all cleaning products
+                                                                                        </li>
+                                                                                </ul>
+                                                                        </div>
+                                                                </li>
+                                                                        <h4 class="cvport-ulli-sub__li__two  cv__b-job-summay__previous-jobs__job__from-to">April 2020 - April 2021</h4>
+                                                                        <!-- Nombre de la empresa
+                                                                        Area
+                                                                        Cargo
+                                                                        Funciones de tu cargo
+                                                                        Desde/Hasta -->
+                                                                <li class="cvport-ulli-sub__li cv__b-job-summary__previous-jobs__job">
+                                                                        <h4 class="cv__b-job-summay__previous-jobs__job__title"></h4>
+                                                                        <h4 class="cvport-ulli-sub__li__two  cv__b-job-summay__previous-jobs__job__area"></h4>
+                                                                        <h4 class="cvport-ulli-sub__li__two  cv__b-job-summay__previous-jobs__job__"></h4>
+                                                                        <h4 class="cvport-ulli-sub__li__two  cv__b-job-summay__previous-jobs__job__title"></h4>
+                                                                        <h4 class="cvport-ulli-sub__li__two  cv__b-job-summay__previous-jobs__job__title"></h4>
+                                                                </li>
+                                                                <li class="cvport-ulli-sub__li cv__b-job-summary__previous-jobs__job">
+                                                                        <h4 class="cv__b-job-summay__previous-jobs__job__title"></h4>
+                                                                        <h4 class="cvport-ulli-sub__li__two cv__b-job-summay__previous-jobs__job__area"></h4>
+                                                                        <h4 class="cvport-ulli-sub__li__two  cv__b-job-summay__previous-jobs__job__"></h4>
+                                                                        <h4 class="cvport-ulli-sub__li__two  cv__b-job-summay__previous-jobs__job__title"></h4>
+                                                                        <h4 class="cvport-ulli-sub__li__two  cv__b-job-summay__previous-jobs__job__title"></h4>
+                                                                </li>
+                                                        </ul>
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+                <!-- PORT -->
+                <div class="port__block__container" id="port-block-container">
+
+                </div>
+        </div>
+
+        <div class="cv-port__block__contact">
+                <div class="cv-port__b-contact__title">
+                        <h3 class="cv-port__b-contact__title__text">Contact</h3>
+                </div>
+                <div class="cv-port__b-contact__text">
+                        <h4 class="cv-port__b-contact__contact__text">mail:mail@gmail.com</h4>
+                        <h4 class="cv-port__b-contact__contact__text"></h4>
+                        <h4 class="cv-port__b-contact__contact__text"></h4>
+                </div>
+        </div>
+
+        <!-- CVPORT SIMPLE -->
+
+        <div class="cvport__b-simple cv-port__block__disponibility">
+                <div class="cvport__b-simple__title cv-port__b-disponibility__title">
+                        <h3 class="cvport__b-simple__title__text cv-port__b-disponibility__title__text">Diponibility:</h3>
+                </div>
+                <div class="cvport__b-simple__box cv-port__b-disponibility__text">
+                        <h4 class="cv-port__b-disponibility__travel">Disponibility to travel: Yes</h4>
+                        <h4 class="cv-port__b-disponibility__change-residence">Disponibility to change residence: No</h4>
+                        <h4 class="cv-port__b-disponibility__license">License: B1</h4>
+                        <h4 class="cv-port__b-disponibility__own-vehicle">Own Vehicle: Yes</h4>
+                        <h4 class="cv-port__b-disponibility__disability">Discapacidad: No</h4>
+                        <h4 class="cv-port__b-disponibility__split-shift">Split Shift: No</h4>
+                        <h4 class="cv-port__b-disponibility__night-turn">Night Turn: No</h4>
+                </div>
+        </div>
+        <div class="cv-port__block__other">
+                <div class="cv-port__b-other__intended-salary">
+                        <h3 class="cv-port__b-other__intended-salary__title__text"></h3>
+                        <h3 class="cv-port__b-other__intended-salary__text"></h3>
+                </div>
+                <div class="cv-port__b-other__autoadd">
+                        <h3 class="cv-port__b-other__autoadd__text">AutoAdd</h3>
+                </div>
+        </div>
+        <div class="cv-port__block__description">
+                <h3 class="cv-port__block__description__title__text">Description</h3>
+                <h4 class="cv-port__block__description__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum asperiores reiciendis, quis laboriosam ut, inventore in beatae exercitationem nobis id voluptatibus eligendi placeat! Consequuntur, iste sint nesciunt perspiciatis vitae odit?</h4>
+        </div>
+
+        <!-- <div class="port__block__abilities"></div> -->
+</div>
+
+
+<footer>
+    <footer class="menu-footer wh--100 var--fontUB" id="footerprueba">
+    <div class="footer__find-us__container footer__container--display">
+            <div class="footer-title--container var--fzsubmenu">
+                    Encontranos en
+            </div>
+            <div class="footer__find-us__box">
+                    <div class="footer-boxs__content">
+                            <svg class="svg__icon--1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) --><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+                            <a href="https://www.instagram.com/" target="_blank" class="footer__text footer__text--1">Instagram</a>
+                    </div>
+                    <div class="footer-boxs__content">                    
+                            <svg class="svg__icon--2" fill="white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) --><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"/></svg>
+                            <a href="https://www.youtube.com/" target="_blank" class="footer__text">Youtube</a>
+                    </div>
+            </div>
+            <div class="footer__find-us__outline"></div>
+    </div>
+    <div class="footer__contact__container footer__container--display">
+            <div class="footer-title--container var--fzsubmenu">
+                    Contacto
+            </div>
+            <div class="footer__find-us__box">
+                    <div class="footer-boxs__content">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="footer__icon" enable-background="new 0 0 24 24" viewBox="0 0 24 24"><g><rect fill="none" height="24" width="24" y="0"/></g><g><g><g><path d="M19.05,4.91C17.18,3.03,14.69,2,12.04,2c-5.46,0-9.91,4.45-9.91,9.91c0,1.75,0.46,3.45,1.32,4.95L2.05,22l5.25-1.38 c1.45,0.79,3.08,1.21,4.74,1.21h0c0,0,0,0,0,0c5.46,0,9.91-4.45,9.91-9.91C21.95,9.27,20.92,6.78,19.05,4.91z M12.04,20.15 L12.04,20.15c-1.48,0-2.93-0.4-4.2-1.15l-0.3-0.18l-3.12,0.82l0.83-3.04l-0.2-0.31c-0.82-1.31-1.26-2.83-1.26-4.38 c0-4.54,3.7-8.24,8.24-8.24c2.2,0,4.27,0.86,5.82,2.42c1.56,1.56,2.41,3.63,2.41,5.83C20.28,16.46,16.58,20.15,12.04,20.15z M16.56,13.99c-0.25-0.12-1.47-0.72-1.69-0.81c-0.23-0.08-0.39-0.12-0.56,0.12c-0.17,0.25-0.64,0.81-0.78,0.97 c-0.14,0.17-0.29,0.19-0.54,0.06c-0.25-0.12-1.05-0.39-1.99-1.23c-0.74-0.66-1.23-1.47-1.38-1.72c-0.14-0.25-0.02-0.38,0.11-0.51 c0.11-0.11,0.25-0.29,0.37-0.43c0.12-0.14,0.17-0.25,0.25-0.41c0.08-0.17,0.04-0.31-0.02-0.43c-0.06-0.12-0.56-1.34-0.76-1.84 c-0.2-0.48-0.41-0.42-0.56-0.43C8.86,7.33,8.7,7.33,8.53,7.33c-0.17,0-0.43,0.06-0.66,0.31C7.65,7.89,7.01,8.49,7.01,9.71 c0,1.22,0.89,2.4,1.01,2.56c0.12,0.17,1.75,2.67,4.23,3.74c0.59,0.26,1.05,0.41,1.41,0.52c0.59,0.19,1.13,0.16,1.56,0.1 c0.48-0.07,1.47-0.6,1.67-1.18c0.21-0.58,0.21-1.07,0.14-1.18S16.81,14.11,16.56,13.99z"/></g></g></g></svg>
+                            <!-- <a href="https://web.whatsapp.com/" target="_blank"class="footer__text var--text">1010101010</a> -->
+                            <a href="https://api.whatsapp.com/send?text=Pagina web Decap: https://neanee.github.io/neanee2.github.io/menu.html" target="_blank"class="footer__text">1010101010</a>
+                    </div>
+                    <div class="footer-boxs__content">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="footer__icon" viewBox="0 0 24 24"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M4.01 6.03l7.51 3.22-7.52-1 .01-2.22m7.5 8.72L4 17.97v-2.22l7.51-1M2.01 3L2 10l15 2-15 2 .01 7L23 12 2.01 3z"/></svg>
+                            <a href="contact.html" class="footer__text--a"><p class="footer__text">Enviar comentarios</p></a>
+                    </div>
+                    <div class="footer-boxs__content">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="footer__icon" viewBox="0 0 24 24"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6zm-2 0l-8 5-8-5h16zm0 12H4V8l8 5 8-5v10z"/></svg>
+                            <p class="footer__text">correo@mail.com</p>
+                    </div> 
+            </div>
+    </div>
+    <div class="footer__help__container footer__container--display">
+            <div class="footer-title--container var--fzsubmenu ">
+                    Ayuda
+            </div>
+            <div class="footer__find-us__box">
+                    <div class="footer-boxs__content">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="footer__icon" viewBox="0 0 24 24"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M11 18h2v-2h-2v2zm1-16C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm0-14c-2.21 0-4 1.79-4 4h2c0-1.1.9-2 2-2s2 .9 2 2c0 2-3 1.75-3 5h2c0-2.25 3-2.5 3-5 0-2.21-1.79-4-4-4z"/></svg>
+                            <p class="footer__text">Guia</p>
+                    </div>
+                    <div class="footer-boxs__content">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="footer__icon" viewBox="0 0 24 24"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M15 4v7H5.17l-.59.59-.58.58V4h11m1-2H3c-.55 0-1 .45-1 1v14l4-4h10c.55 0 1-.45 1-1V3c0-.55-.45-1-1-1zm5 4h-2v9H6v2c0 .55.45 1 1 1h11l4 4V7c0-.55-.45-1-1-1z"/></svg>
+                            <p class="footer__text">Preguntas frecuentes</p>
+                    </div>
+            </div>
+    </div>
+    <div class="footer__legal__container footer__container--display">
+            <div class="footer-title--container var--fzsubmenu">
+                    Legales
+            </div>
+            <div class="footer__find-us__box">
+                    <div class="footer-boxs__content">
+                            <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" class="footer__icon" viewBox="0 0 24 24"><g><rect fill="none" height="24" width="24"/></g><g><g/><g><path d="M12,1L3,5v6c0,5.55,3.84,10.74,9,12c5.16-1.26,9-6.45,9-12V5L12,1z M19,11c0,1.85-0.51,3.65-1.38,5.21l-1.45-1.45 c1.29-1.94,1.07-4.58-0.64-6.29c-1.95-1.95-5.12-1.95-7.07,0c-1.95,1.95-1.95,5.12,0,7.07c1.71,1.71,4.35,1.92,6.29,0.64 l1.72,1.72c-1.19,1.42-2.73,2.51-4.47,3.04C7.98,19.69,5,15.52,5,11V6.3l7-3.11l7,3.11V11z M12,15c-1.66,0-3-1.34-3-3s1.34-3,3-3 s3,1.34,3,3S13.66,15,12,15z"/></g></g></svg>
+                            <p class="footer__text">Politica de privacidad</p>
+                    </div>
+                    <div class="footer-boxs__content">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="footer__icon" viewBox="0 0 24 24"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6h2c0-1.66 1.34-3 3-3s3 1.34 3 3v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm0 12H6V10h12v10zm-6-3c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z"/></svg>
+                            <p class="footer__text">Condiciones de uso</p>
+                    </div>
+                    <div class="footer-boxs__content">
+                            <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" class="footer__icon" viewBox="0 0 24 24"><g><rect fill="none" height="24" width="24"/></g><g><g><circle cx="10.5" cy="8.5" r="1.5"/><circle cx="8.5" cy="13.5" r="1.5"/><circle cx="15" cy="15" r="1"/><path d="M21.95,10.99c-1.79-0.03-3.7-1.95-2.68-4.22c-2.97,1-5.78-1.59-5.19-4.56C7.11,0.74,2,6.41,2,12c0,5.52,4.48,10,10,10 C17.89,22,22.54,16.92,21.95,10.99z M12,20c-4.41,0-8-3.59-8-8c0-3.31,2.73-8.18,8.08-8.02c0.42,2.54,2.44,4.56,4.99,4.94 c0.07,0.36,0.52,2.55,2.92,3.63C19.7,16.86,16.06,20,12,20z"/></g></g></svg>
+                            <p class="footer__text">Cookies</p>
+                    </div> 
+            </div>
+    </div>
+    <!-- <i class="fab fa-instagram var--fz4"></i> -->
+    </footer>
+    <div class="sub__footer">
+    <div class="sub__footer-cont1">
+            <div class="sfc__icn__container">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="sfc__icon" viewBox="0 0 24 24"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M10.08 10.86c.05-.33.16-.62.3-.87s.34-.46.59-.62c.24-.15.54-.22.91-.23.23.01.44.05.63.13.2.09.38.21.52.36s.25.33.34.53.13.42.14.64h1.79c-.02-.47-.11-.9-.28-1.29s-.4-.73-.7-1.01-.66-.5-1.08-.66-.88-.23-1.39-.23c-.65 0-1.22.11-1.7.34s-.88.53-1.2.92-.56.84-.71 1.36S8 11.29 8 11.87v.27c0 .58.08 1.12.23 1.64s.39.97.71 1.35.72.69 1.2.91c.48.22 1.05.34 1.7.34.47 0 .91-.08 1.32-.23s.77-.36 1.08-.63.56-.58.74-.94.29-.74.3-1.15h-1.79c-.01.21-.06.4-.15.58s-.21.33-.36.46-.32.23-.52.3c-.19.07-.39.09-.6.1-.36-.01-.66-.08-.89-.23-.25-.16-.45-.37-.59-.62s-.25-.55-.3-.88-.08-.67-.08-1v-.27c0-.35.03-.68.08-1.01zM12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/></svg>
+            </div>
+            <h4 class="sfc__text">Decap - 2022 Todos los Derechos Reservados</h4>
+    </div>
+    <div class="sub__footer-cont2">
+            <div class="sfc__text1__container">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="sfc__text1" viewBox="0 0 24 24"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M20 8h-2.81c-.45-.78-1.07-1.45-1.82-1.96L17 4.41 15.59 3l-2.17 2.17C12.96 5.06 12.49 5 12 5s-.96.06-1.41.17L8.41 3 7 4.41l1.62 1.63C7.88 6.55 7.26 7.22 6.81 8H4v2h2.09c-.05.33-.09.66-.09 1v1H4v2h2v1c0 .34.04.67.09 1H4v2h2.81c1.04 1.79 2.97 3 5.19 3s4.15-1.21 5.19-3H20v-2h-2.09c.05-.33.09-.66.09-1v-1h2v-2h-2v-1c0-.34-.04-.67-.09-1H20V8zm-4 4v3c0 .22-.03.47-.07.7l-.1.65-.37.65c-.72 1.24-2.04 2-3.46 2s-2.74-.77-3.46-2l-.37-.64-.1-.65C8.03 15.48 8 15.23 8 15v-4c0-.23.03-.48.07-.7l.1-.65.37-.65c.3-.52.72-.97 1.21-1.31l.57-.39.74-.18c.31-.08.63-.12.94-.12.32 0 .63.04.95.12l.68.16.61.42c.5.34.91.78 1.21 1.31l.38.65.1.65c.04.22.07.47.07.69v1zm-6 2h4v2h-4zm0-4h4v2h-4z"/></svg>
+            </div>
+            <h4 class="sfc__text2">Reportar error</h4>
+    </div>
+
+    </div>
+</footer>
+
+        <script src="js\objets.js"></script>
+        <script src="js\my_cv_show.js"></script>
+
+</body>
