@@ -4,6 +4,7 @@ portfolio_select_box = document.getElementById("portfolio-select-box");
 cv_block_container = document.getElementById("cv-block-container");
 port_block_container = document.getElementById("port-block-container");
 
+    // VARIABLES
 
 cv_variable_status = "active"
 port_variable_status = "disable"
